@@ -101,71 +101,11 @@
     </div>
 
     <div class="results-layout">
-      <aside class="results-sidebar">
-        <div class="results-filter-controls">
-          <div class="filter-block">
-            <h3>Filter Results</h3>
-          </div>
-
-          <div class="filter-block">
-            <label>Category</label>
-            <div id="category-filters" class="filter-categories">
-              <button type="button" class="filter-btn active" data-category="All">All Schemes</button>
-              <button type="button" class="filter-btn" data-category="Likely Eligible">Likely Eligible</button>
-              <button type="button" class="filter-btn" data-category="Agriculture">Agriculture &amp; Farmers</button>
-              <button type="button" class="filter-btn" data-category="Business">Business</button>
-              <button type="button" class="filter-btn" data-category="Healthcare">Healthcare</button>
-              <button type="button" class="filter-btn" data-category="Housing">Housing</button>
-              <button type="button" class="filter-btn" data-category="Women">Women</button>
-              <button type="button" class="filter-btn" data-category="Workers">Workers</button>
-            </div>
-          </div>
-
-          <div class="filter-block">
-            <label for="state-filter-select">State</label>
-            <select id="state-filter-select" class="form-control form-control-sm" aria-label="Filter by State">
-              <option value="All">All India</option>
-              <option value="Madhya Pradesh">Madhya Pradesh</option>
-              <option value="Maharashtra">Maharashtra</option>
-              <option value="Delhi">Delhi</option>
-              <option value="Rajasthan">Rajasthan</option>
-              <option value="Uttar Pradesh">Uttar Pradesh</option>
-            </select>
-          </div>
-
-          <div class="filter-block">
-            <label for="audience-filter-select">Audience</label>
-            <select id="audience-filter-select" class="form-control form-control-sm" aria-label="Filter by audience">
-              <option value="All">All Citizens</option>
-              <option value="Student">Students</option>
-              <option value="Farmer">Farmers</option>
-              <option value="Women">Women</option>
-              <option value="Worker">Workers</option>
-              <option value="Senior Citizen">Senior Citizens</option>
-            </select>
-          </div>
-
-          <div class="filter-block">
-            <label>Eligibility Status</label>
-            <div class="check-list">
-              <label><input type="checkbox" checked> Fully Eligible (5)</label>
-              <label><input type="checkbox" checked> Partially Eligible (2)</label>
-              <label><input type="checkbox"> Not Eligible (1)</label>
-            </div>
-          </div>
-
-          <div class="filter-block">
-            <label for="sort-select">Sort By</label>
-            <select id="sort-select" class="form-control form-control-sm" aria-label="Sort schemes">
-              <option value="match_desc">Best Match</option>
-              <option value="name_asc">Name</option>
-              <option value="match_asc">Lowest Match</option>
-            </select>
-          </div>
-        </div>
-      </aside>
-
       <section class="results-main">
+        <div class="results-search-bar">
+          <label for="search-input">Search Schemes</label>
+          <input type="search" id="search-input" class="form-control" placeholder="Search by scheme name, benefit, category or occupation" aria-label="Search schemes">
+        </div>
         <div id="schemes-container" class="schemes-grid">
           <!-- Populated dynamically by script.js -->
         </div>

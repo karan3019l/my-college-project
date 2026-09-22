@@ -48,8 +48,7 @@ const SCHEME_DATABASE = [
       "occupations": [
         "Farmer",
         "Agricultural Worker",
-        "Dairy Farmer",
-        "All"
+        "Dairy Farmer"
       ],
       "maxIncome": 0,
       "minMarks": 0,
@@ -117,8 +116,7 @@ const SCHEME_DATABASE = [
       ],
       "occupations": [
         "Farmer",
-        "Agricultural Worker",
-        "All"
+        "Agricultural Worker"
       ],
       "maxIncome": 0,
       "minMarks": 0,
@@ -183,8 +181,7 @@ const SCHEME_DATABASE = [
         "Farmer",
         "Dairy Farmer",
         "Fisherman",
-        "Agricultural Worker",
-        "All"
+        "Agricultural Worker"
       ],
       "maxIncome": 0,
       "minMarks": 0,
@@ -245,8 +242,7 @@ const SCHEME_DATABASE = [
         "Other"
       ],
       "occupations": [
-        "Farmer",
-        "All"
+        "Farmer"
       ],
       "maxIncome": 0,
       "minMarks": 0,
@@ -3820,6 +3816,73 @@ const SCHEME_DATABASE = [
       "domicileRequired": false,
       "domicileStates": [
         "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma",
+        "Postgraduate"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "mp-medhavi-vidyarthi-yojana",
+    "name": "Madhya Pradesh Mukhyamantri Medhavi Vidyarthi Yojana (MMVY)",
+    "short_description": "Financial support for meritorious Madhya Pradesh students pursuing eligible undergraduate professional courses in engineering, medicine, law and other notified programs.",
+    "category": "Scholarships",
+    "state": "Madhya Pradesh",
+    "benefits": "Tuition fee support at eligible government and private institutions, subject to the scheme's course, marks, entrance and income conditions.",
+    "required_documents": [
+      "aadhaar",
+      "income_cert",
+      "domicile_cert",
+      "student_id",
+      "marksheet",
+      "bank_account"
+    ],
+    "application_process": "Apply through the Madhya Pradesh Scholarship Portal using MP domicile, income, academic marks and admission details. The institution verifies the application before sanction.",
+    "important_dates": "Application windows are announced for each academic admission cycle.",
+    "official_source": "Government of Madhya Pradesh, Higher Education Department",
+    "application_url": "https://medhavikalyan.mp.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 16,
+      "maxAge": 35,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 600000,
+      "minMarks": 70,
+      "states": [
+        "Madhya Pradesh"
+      ],
+      "domicileRequired": true,
+      "domicileStates": [
+        "Madhya Pradesh"
       ],
       "categories": [
         "All",
@@ -7672,21 +7735,8 @@ function initResultsPage() {
   const resultsCount = document.getElementById("results-count");
 
   const searchInput = document.getElementById("search-input");
-  const sortSelect = document.getElementById("sort-select");
-  const categoryFilterSelect = document.getElementById("category-filter-select");
-  const stateFilterSelect = document.getElementById("state-filter-select");
-  const audienceFilterSelect = document.getElementById("audience-filter-select");
-  const eduFilterSelect = document.getElementById("edu-filter-select");
-  const scoreFilterSelect = document.getElementById("score-filter-select");
-  const filterBtns = document.querySelectorAll(".filter-btn");
 
-  let activeCategory = "All";
-  let activeState = "All";
-  let activeAudience = "All";
-  let activeEdu = "All";
-  let activeScoreFilter = "All";
   let searchQuery = "";
-  let sortOrder = "match_desc";
 
   // If no profile exists, render an empty state banner prompting user to complete profile
   if (!hasProfileData) {
@@ -7776,80 +7826,53 @@ function initResultsPage() {
   const overallDocs = Math.min(100, Math.round((userDocs.length / totalTrackableDocs) * 100));
   if (statDocs) statDocs.textContent = overallDocs + "%";
 
-  // Dynamic Filter Button Text
-  const allSchemesBtn = document.querySelector('.filter-btn[data-category="All"]');
-  if (allSchemesBtn) {
-    allSchemesBtn.textContent = `All Schemes (${evaluatedSchemes.length})`;
-  }
-
   function renderSchemes() {
     let filtered = evaluatedSchemes.filter(s => {
       const r = s.eligibilityRules || {};
 
-      // Category Filter
-      if (activeCategory === "Likely Eligible") {
-        if (s.matchScore < 80) return false;
-      } else if (activeCategory !== "All") {
-        if (!s.category.toLowerCase().includes(activeCategory.toLowerCase())) return false;
-      }
-
-      // State Filter
-      if (activeState !== "All") {
-        const inState = (r.states && (r.states.includes("All India") || r.states.includes(activeState))) ||
-          (r.domicileStates && (r.domicileStates.includes("All India") || r.domicileStates.includes(activeState)));
-        if (!inState) return false;
-      }
-
-      // Audience filter, including the requested Student view.
-      if (activeAudience !== "All") {
+      // Show only schemes explicitly matching the selected occupation. Generic
+      // "All" rules are intentionally excluded from personalized results.
+      if (hasProfileData && profile.occupation && profile.occupation !== "All") {
         const occupations = (r.occupations || []).map(o => o.toLowerCase());
-        const audience = activeAudience.toLowerCase();
-        const educationLevels = (r.educationLevels || []).map(e => e.toLowerCase());
-        const isStudentScheme = audience === "student" && (
-          occupations.some(o => o.includes("student") || o.includes("scholar")) ||
-          educationLevels.some(e => e !== "all" && (e.includes("school") || e.includes("10th") || e.includes("12th") || e.includes("undergraduate") || e.includes("postgraduate") || e.includes("diploma"))) ||
-          /scholar|education|student/i.test(s.category + " " + s.name)
+        const userOccupation = profile.occupation.toLowerCase();
+        const occupationMatches = occupations.some(o =>
+          o !== "all" && (o === userOccupation || o.includes(userOccupation) || userOccupation.includes(o))
         );
-        const audienceMatch = isStudentScheme || occupations.some(o => o.includes(audience) || audience.includes(o));
-        if (!audienceMatch) return false;
-      }
-
-      // Education Filter
-      if (activeEdu !== "All") {
-        const edus = r.educationLevels || [];
-        const inEdu = edus.includes("All") || edus.some(e => e.toLowerCase().includes(activeEdu.toLowerCase()));
-        if (!inEdu) return false;
-      }
-
-      // Score Filter
-      if (activeScoreFilter === "80+") {
-        if (s.matchScore < 80) return false;
-      } else if (activeScoreFilter === "60-79") {
-        if (s.matchScore < 60 || s.matchScore >= 80) return false;
-      } else if (activeScoreFilter === "40-59") {
-        if (s.matchScore < 40 || s.matchScore >= 60) return false;
+        if (!occupationMatches) return false;
       }
 
       // Keyword Search
       if (searchQuery) {
-        const q = searchQuery.toLowerCase();
-        const inName = s.name.toLowerCase().includes(q);
-        const inDesc = s.short_description.toLowerCase().includes(q);
-        const inCat = s.category.toLowerCase().includes(q);
-        const inState = s.state.toLowerCase().includes(q);
-        const inBen = s.benefits.toLowerCase().includes(q);
-        if (!inName && !inDesc && !inCat && !inState && !inBen) return false;
+        const q = searchQuery.toLocaleLowerCase("en-IN");
+        const searchableText = [s.name, s.short_description, s.category, s.state, s.benefits, ...(r.occupations || [])]
+          .filter(Boolean)
+          .join(" ")
+          .toLocaleLowerCase("en-IN");
+        if (!searchableText.includes(q)) return false;
       }
 
       return true;
     });
 
-    // Sorting
+    const preferredStates = profile
+      ? [profile.state, profile.domicileState]
+        .filter(state => state && state !== "All India")
+        .map(state => state.toLowerCase())
+      : [];
+    const getStatePriority = scheme => {
+      if (preferredStates.length === 0) return 0;
+      const rules = scheme.eligibilityRules || {};
+      const schemeStates = [scheme.state, ...(rules.states || []), ...(rules.domicileStates || [])]
+        .filter(Boolean)
+        .map(state => state.toLowerCase());
+      if (preferredStates.some(state => schemeStates.includes(state))) return 0;
+      if (schemeStates.includes("all india")) return 1;
+      return 2;
+    };
+
     filtered.sort((a, b) => {
-      if (sortOrder === "match_desc") return b.matchScore - a.matchScore;
-      if (sortOrder === "match_asc") return a.matchScore - b.matchScore;
-      if (sortOrder === "name_asc") return a.name.localeCompare(b.name);
-      return 0;
+      const stateOrder = getStatePriority(a) - getStatePriority(b);
+      return stateOrder || (b.matchScore - a.matchScore);
     });
 
     if (resultsCount) {
@@ -7862,30 +7885,19 @@ function initResultsPage() {
           <div style="font-size: 2.8rem; margin-bottom: 0.75rem;">🔍</div>
           <h3 style="color: #ffffff;">No Schemes Found</h3>
           <p style="color: var(--text-muted); max-width: 520px; margin: 0 auto 1.5rem; line-height: 1.6;">
-            No schemes match your current filter parameters. Try resetting filters or adjusting search terms.
+            No schemes match your search. Try another name, category or keyword.
           </p>
           <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-            <button type="button" id="btn-reset-filters" class="btn btn-cyan btn-sm">Reset All Filters</button>
+            <button type="button" id="btn-reset-search" class="btn btn-cyan btn-sm">Clear Search</button>
             <a href="find-schemes.html" class="btn btn-outline btn-sm">Update Profile Details</a>
           </div>
         </div>
       `;
-      const resetBtn = document.getElementById("btn-reset-filters");
+      const resetBtn = document.getElementById("btn-reset-search");
       if (resetBtn) {
         resetBtn.addEventListener("click", () => {
-          activeCategory = "All";
-          activeState = "All";
-          activeAudience = "All";
-          activeEdu = "All";
-          activeScoreFilter = "All";
           searchQuery = "";
           if (searchInput) searchInput.value = "";
-          if (categoryFilterSelect) categoryFilterSelect.value = "All";
-          if (stateFilterSelect) stateFilterSelect.value = "All";
-          if (audienceFilterSelect) audienceFilterSelect.value = "All";
-          if (eduFilterSelect) eduFilterSelect.value = "All";
-          if (scoreFilterSelect) scoreFilterSelect.value = "All";
-          filterBtns.forEach(b => b.classList.toggle("active", b.getAttribute("data-category") === "All"));
           renderSchemes();
         });
       }
@@ -7968,61 +7980,9 @@ function initResultsPage() {
     }).join("");
   }
 
-  // Filter Listeners
-  filterBtns.forEach(btn => {
-    btn.addEventListener("click", function() {
-      filterBtns.forEach(b => b.classList.remove("active"));
-      this.classList.add("active");
-      activeCategory = this.getAttribute("data-category") || "All";
-      renderSchemes();
-    });
-  });
-
-  if (categoryFilterSelect) {
-    categoryFilterSelect.addEventListener("change", (e) => {
-      activeCategory = e.target.value;
-      renderSchemes();
-    });
-  }
-
-  if (stateFilterSelect) {
-    stateFilterSelect.addEventListener("change", (e) => {
-      activeState = e.target.value;
-      renderSchemes();
-    });
-  }
-
-  if (audienceFilterSelect) {
-    audienceFilterSelect.addEventListener("change", (e) => {
-      activeAudience = e.target.value;
-      renderSchemes();
-    });
-  }
-
-  if (eduFilterSelect) {
-    eduFilterSelect.addEventListener("change", (e) => {
-      activeEdu = e.target.value;
-      renderSchemes();
-    });
-  }
-
-  if (scoreFilterSelect) {
-    scoreFilterSelect.addEventListener("change", (e) => {
-      activeScoreFilter = e.target.value;
-      renderSchemes();
-    });
-  }
-
   if (searchInput) {
     searchInput.addEventListener("input", (e) => {
-      searchQuery = e.target.value.trim();
-      renderSchemes();
-    });
-  }
-
-  if (sortSelect) {
-    sortSelect.addEventListener("change", (e) => {
-      sortOrder = e.target.value;
+      searchQuery = e.target.value.trim().toLocaleLowerCase("en-IN");
       renderSchemes();
     });
   }
