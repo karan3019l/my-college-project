@@ -1,5 +1,5 @@
 /**
- * SchemeMatch – Government Scheme Finder & Eligibility System
+ * SchemeMatch – Scheme Eligibility Platform
  * Unified Core JavaScript Engine (script.js)
  * 
  * Features:
@@ -4656,12 +4656,12 @@ const DEMO_PROFILES = {
 const I18N = {
   "en-IN": {
     langName: "English",
-    tag_portal: "GOVT CITIZEN PORTAL",
-    top_bar_initiative: "National Scheme Finder & Student Benefit Discovery Service",
+    tag_portal: "SCHEME ELIGIBILITY PLATFORM",
+    top_bar_initiative: "Student & Citizen Benefit Discovery Service",
     lang_label: "Language:",
     access_title: "Accessibility Tools:",
     access_desc: "Adjust text size, contrast, and voice assistance for effortless reading",
-    brand_subtitle: "Government Scheme Finder",
+    brand_subtitle: "Scheme Eligibility Platform",
     nav_home: "Home",
     nav_find: "Find Schemes",
     nav_results: "Results",
@@ -5670,7 +5670,7 @@ function getMatchScoreState(score, status, missingReasons, unmatchedReasons) {
   return {
     cssClass: "match-state-excellent",
     label: "Likely Eligible",
-    badgeText: score + "% Likely Eligible"
+    badgeText: "Eligibility Match: " + score + "%"
   };
 }
 
@@ -6751,7 +6751,6 @@ function initHeroQuickScreener() {
   const catSelect = document.getElementById('hero-screener-cat');
   const incSelect = document.getElementById('hero-screener-inc');
   const countBadge = document.getElementById('hero-screener-count');
-  const benefitBadge = document.getElementById('hero-screener-benefit');
   const screenerBtn = document.getElementById('hero-screener-submit');
 
   if (!incSelect) return;
@@ -6777,9 +6776,6 @@ function initHeroQuickScreener() {
     });
 
     if (countBadge) countBadge.textContent = matching.length + ' Schemes Found';
-    if (benefitBadge) {
-      benefitBadge.textContent = 'Up to ₹50,000/yr Assistance';
-    }
   }
 
   if (occSelect) occSelect.addEventListener('change', updateQuickMatch);
