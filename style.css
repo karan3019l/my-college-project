@@ -338,6 +338,13 @@ a:hover {
   list-style: none;
   gap: 0.5rem;
   align-items: center;
+  justify-content: center;
+}
+
+.site-header nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-link {
