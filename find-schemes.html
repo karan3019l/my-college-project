@@ -393,9 +393,14 @@
           </div>
 
           <div class="form-group">
-            <label for="academic-marks" class="form-label">Current Academic Marks / CGPA Percentage</label>
-            <input type="number" id="academic-marks" class="form-control" placeholder="Enter percentage" min="0" max="100" value="">
-            <small class="form-helper-text">Overall percentage in current course or latest semester exam.</small>
+            <label for="academic-score-type" class="form-label">Current Academic Score Type</label>
+            <select id="academic-score-type" class="form-control">
+              <option value="percentage" selected>Percentage</option>
+              <option value="cgpa">CGPA (out of 10)</option>
+            </select>
+            <label for="academic-marks" class="form-label" style="margin-top: 0.75rem;">Current Academic Marks / CGPA</label>
+            <input type="number" id="academic-marks" class="form-control" placeholder="Enter percentage" min="0" max="100" step="0.01" value="">
+            <small id="academic-score-helper" class="form-helper-text">Overall percentage in current course or latest semester exam.</small>
           </div>
 
           <div class="form-group">

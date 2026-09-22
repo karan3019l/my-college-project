@@ -3876,7 +3876,7 @@ const SCHEME_DATABASE = [
         "College Student"
       ],
       "maxIncome": 600000,
-      "minMarks": 70,
+      "minMarks": 75,
       "states": [
         "Madhya Pradesh"
       ],
@@ -5325,9 +5325,14 @@ function calculateSchemeMatch(user, scheme) {
     ? parseFloat(user.income) 
     : null;
 
-  const userMarks = (hasUser && user.academicMarks !== null && user.academicMarks !== undefined && user.academicMarks !== "" && !isNaN(parseFloat(user.academicMarks))) 
-    ? parseFloat(user.academicMarks) 
+  const rawAcademicMarks = (hasUser && user.academicMarks !== null && user.academicMarks !== undefined && user.academicMarks !== "" && !isNaN(parseFloat(user.academicMarks)))
+    ? parseFloat(user.academicMarks)
     : null;
+  const userMarks = rawAcademicMarks === null ? null : (user.academicMarksType === "cgpa" ? rawAcademicMarks * 10 : rawAcademicMarks);
+  const userPrevMarks = (hasUser && user.prevMarks !== null && user.prevMarks !== undefined && user.prevMarks !== "" && !isNaN(parseFloat(user.prevMarks)))
+    ? parseFloat(user.prevMarks)
+    : null;
+  const marksForScheme = scheme.id === "mp-medhavi-vidyarthi-yojana" ? userPrevMarks : userMarks;
 
   const userCat = (hasUser && user.category && user.category !== "" && user.category !== "Select Category") 
     ? user.category 
@@ -5509,17 +5514,19 @@ function calculateSchemeMatch(user, scheme) {
     addWeight(marksWeight, true);
     matchedReasons.push("Academic marks: No minimum qualifying percentage required.");
   } else {
-    if (userMarks === null) {
+    if (marksForScheme === null) {
       if (userOccupation && isStudentOccupation(userOccupation)) {
-        missingReasons.push("Academic marks percentage is required to verify merit eligibility.");
+        missingReasons.push(scheme.id === "mp-medhavi-vidyarthi-yojana"
+          ? "Class 12th percentage is required to verify Medhavi eligibility."
+          : "Academic marks percentage is required to verify merit eligibility.");
       }
       addWeight(marksWeight, false);
-    } else if (userMarks >= rules.minMarks) {
+    } else if (marksForScheme >= rules.minMarks) {
       addWeight(marksWeight, true);
-      matchedReasons.push("Academic marks satisfied: Entered " + userMarks + "% meets or exceeds minimum required " + rules.minMarks + "%.");
+      matchedReasons.push((scheme.id === "mp-medhavi-vidyarthi-yojana" ? "Class 12th marks" : "Academic marks") + " satisfied: Entered " + marksForScheme + "% meets or exceeds minimum required " + rules.minMarks + "%.");
     } else {
       addWeight(marksWeight, false);
-      unmatchedReasons.push("Academic marks: Minimum required is " + rules.minMarks + "% (Your entered score: " + userMarks + "%).");
+      unmatchedReasons.push((scheme.id === "mp-medhavi-vidyarthi-yojana" ? "Class 12th marks" : "Academic marks") + ": Minimum required is " + rules.minMarks + "% (Your entered score: " + marksForScheme + "%).");
     }
   }
 
@@ -7134,8 +7141,10 @@ function initFindSchemesPage() {
         const marksVal = document.getElementById("academic-marks")?.value?.trim();
         if (marksVal !== undefined && marksVal !== "") {
           const marksNum = parseFloat(marksVal);
-          if (isNaN(marksNum) || marksNum < 0 || marksNum > 100) {
-            alert("Please enter a valid marks percentage between 0 and 100.");
+          const scoreType = document.getElementById("academic-score-type")?.value || "percentage";
+          const maxScore = scoreType === "cgpa" ? 10 : 100;
+          if (isNaN(marksNum) || marksNum < 0 || marksNum > maxScore) {
+            alert(scoreType === "cgpa" ? "Please enter a valid CGPA between 0 and 10." : "Please enter a valid marks percentage between 0 and 100.");
             document.getElementById("academic-marks")?.focus();
             return false;
           }
@@ -7647,6 +7656,24 @@ function initFindSchemesPage() {
   updateReadinessUI();
   showStep(1);
 
+  const academicScoreType = document.getElementById("academic-score-type");
+  const academicMarksInput = document.getElementById("academic-marks");
+  const academicScoreHelper = document.getElementById("academic-score-helper");
+  function updateAcademicScoreInput() {
+    const isCgpa = academicScoreType?.value === "cgpa";
+    if (academicMarksInput) {
+      academicMarksInput.max = isCgpa ? "10" : "100";
+      academicMarksInput.placeholder = isCgpa ? "Enter CGPA out of 10" : "Enter percentage";
+    }
+    if (academicScoreHelper) {
+      academicScoreHelper.textContent = isCgpa
+        ? "CGPA will be converted to percentage using CGPA × 10 for eligibility checks."
+        : "Overall percentage in current course or latest semester exam.";
+    }
+  }
+  academicScoreType?.addEventListener("change", updateAcademicScoreInput);
+  updateAcademicScoreInput();
+
   // ==========================================
   // STEP 6: ANALYZING PROFILE LOADER & SUBMIT
   // ==========================================
@@ -7678,6 +7705,7 @@ function initFindSchemesPage() {
       collegeType: isHigherEdu ? getFieldStr("college-type") : null,
       collegeState: isHigherEdu ? getFieldStr("college-state") : null,
       academicMarks: isStudent ? getFieldNum("academic-marks") : null,
+      academicMarksType: isStudent ? (getFieldStr("academic-score-type") || "percentage") : null,
       prevMarks: isStudent ? getFieldNum("prev-marks") : null,
       income: getFieldNum("income"),
       incomeCertStatus: getFieldStr("income-cert-status"),
@@ -7871,8 +7899,9 @@ function initResultsPage() {
     };
 
     filtered.sort((a, b) => {
+      const scoreOrder = b.matchScore - a.matchScore;
       const stateOrder = getStatePriority(a) - getStatePriority(b);
-      return stateOrder || (b.matchScore - a.matchScore);
+      return scoreOrder || stateOrder;
     });
 
     if (resultsCount) {
