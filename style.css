@@ -830,6 +830,184 @@ a:hover {
   padding: 1rem 1.25rem;
 }
 
+/* --- About Team Section --- */
+.about-section {
+  border-top: 1px solid var(--border-subtle);
+  background: linear-gradient(180deg, rgba(13, 26, 51, 0.18), rgba(7, 14, 28, 0.05));
+}
+
+.about-section .section-header {
+  margin-bottom: 2.8rem;
+}
+
+.about-team-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: #ff8420;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.about-team-name::before,
+.about-team-name::after,
+.about-team-footer::before,
+.about-team-footer::after {
+  width: 3.5rem;
+  height: 1px;
+  background: #ff8420;
+  content: '';
+  opacity: 0.9;
+}
+
+.about-section .section-title {
+  margin-bottom: 0.9rem;
+}
+
+.about-section .section-title span {
+  color: #ff8420;
+}
+
+.about-section .section-desc {
+  max-width: 700px;
+  margin-bottom: 1rem;
+}
+
+.about-college-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: #ff8420;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.about-college-label::before,
+.about-college-label::after {
+  width: 3.5rem;
+  height: 1px;
+  background: #ff8420;
+  content: '';
+  opacity: 0.9;
+}
+
+.about-team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.about-team-card {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+  min-height: 178px;
+  padding: 1.65rem;
+  background: rgba(18, 35, 68, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-left: 3px solid var(--gov-saffron);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-team-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(249, 115, 22, 0.55);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(249, 115, 22, 0.08);
+}
+
+.about-team-initial {
+  display: grid;
+  place-items: center;
+  flex: 0 0 4.25rem;
+  width: 4.25rem;
+  height: 4.25rem;
+  border-radius: 50%;
+  background: rgba(249, 115, 22, 0.14);
+  border: 1px solid rgba(249, 115, 22, 0.38);
+  color: var(--text-saffron);
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.about-team-card h3 {
+  margin-bottom: 0.35rem;
+  font-size: 1.15rem;
+}
+
+.about-team-content {
+  min-width: 0;
+}
+
+.about-team-role {
+  margin-bottom: 0.65rem;
+  color: #ff8420;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.about-team-degree,
+.about-team-year {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.about-team-year {
+  margin-top: 0.35rem;
+}
+
+.about-team-detail-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 1.1rem;
+  width: 1.1rem;
+  color: #ff8420;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.about-team-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 2.4rem auto 0;
+  color: var(--text-light);
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.about-team-footer::before,
+.about-team-footer::after {
+  width: 3rem;
+}
+
+.about-team-footer strong {
+  color: #ff8420;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+}
+
+.about-team-footer span {
+  color: var(--text-light);
+}
+
 .trust-note-icon {
   font-size: 1.3rem;
   line-height: 1;
@@ -2161,6 +2339,22 @@ body.home-page .trust-banner-note {
 }
 
 @media (max-width: 640px) {
+  .about-team-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .about-team-card {
+    min-height: 0;
+    padding: 1.25rem;
+  }
+
+  .about-team-footer {
+    flex-direction: column;
+    gap: 0.35rem;
+    line-height: 1.5;
+  }
+
   body.home-page .hero-wrapper {
     padding: 3.5rem 0 3rem;
   }
