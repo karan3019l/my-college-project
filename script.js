@@ -7962,6 +7962,7 @@ function initResultsPage() {
 
       return `
         <article class="scheme-card">
+          <div class="scheme-card-main">
           <div class="scheme-card-header">
             <div>
               <div class="scheme-badge-group">
@@ -7973,10 +7974,6 @@ function initResultsPage() {
               <p class="scheme-desc">${escapeHtml(scheme.short_description)}</p>
             </div>
 
-            <div class="score-badge-box ${stateMeta.cssClass}">
-              <span class="score-pct-large">${scheme.matchScore}%</span>
-              <span class="score-tag-text">${stateMeta.label}</span>
-            </div>
           </div>
 
           <div class="scheme-benefit-box">
@@ -7994,6 +7991,14 @@ function initResultsPage() {
           <div class="scheme-card-footer">
             <div class="doc-tags-wrap">
               ${docBadgesHtml}
+            </div>
+          </div>
+          </div>
+
+          <div class="scheme-card-aside">
+            <div class="score-badge-box ${stateMeta.cssClass}">
+              <span class="score-pct-large">${scheme.matchScore}%</span>
+              <span class="score-tag-text">${stateMeta.label}</span>
             </div>
             <div class="card-actions">
               <a href="scheme-details.html?id=${encodeURIComponent(scheme.id)}" class="btn btn-primary btn-sm">
