@@ -1,0 +1,4500 @@
+[
+  {
+    "id": "pm-kisan",
+    "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+    "short_description": "Direct financial income support of ₹6,000/- per year in three equal installments of ₹2,000 each to all landholding farmer families across India.",
+    "category": "Agriculture & Farmers",
+    "state": "All India",
+    "benefits": "₹6,000/- annually transferred directly into bank accounts via Direct Benefit Transfer (DBT) in 3 equal four-monthly installments of ₹2,000.",
+    "required_documents": [
+      "aadhaar",
+      "land_records",
+      "bank_account",
+      "citizenship_proof"
+    ],
+    "application_process": "Register online at pmkisan.gov.in under 'New Farmer Registration' or visit nearest CSC. Complete Aadhaar eKYC, submit Khasra/Khatauni land record copy, and active bank account seeded with NPCI.",
+    "important_dates": "Registration open year-round; Installments released in April-July, August-November, and December-March.",
+    "official_source": "Department of Agriculture and Farmers Welfare, Govt. of India",
+    "application_url": "https://pmkisan.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 18,
+      "maxAge": 85,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Farmer",
+        "Agricultural Worker",
+        "Dairy Farmer",
+        "All"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All",
+        "Class 10th",
+        "Class 12th",
+        "Undergraduate / Diploma",
+        "Postgraduate",
+        "No Formal Education"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pm-fasal-bima",
+    "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "short_description": "Comprehensive crop insurance scheme protecting farmers against non-preventable natural risks from pre-sowing to post-harvest at minimal premium.",
+    "category": "Agriculture & Farmers",
+    "state": "All India",
+    "benefits": "Full sum insured payout for crop loss due to drought, flood, pests, or hailstorms. Farmer pays only 1.5% premium for Rabi, 2% for Kharif, and 5% for commercial/horticultural crops.",
+    "required_documents": [
+      "aadhaar",
+      "land_records",
+      "bank_account",
+      "sowing_certificate"
+    ],
+    "application_process": "Apply via pmfby.gov.in, local bank branch, cooperative society, or CSC. Submit Aadhaar, land possession certificate/RoR, bank passbook, and crop sowing certificate issued by Patwari/Village Officer.",
+    "important_dates": "Kharif cutoff usually July 31; Rabi cutoff usually December 31 annually.",
+    "official_source": "Ministry of Agriculture and Farmers Welfare",
+    "application_url": "https://pmfby.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 18,
+      "maxAge": 80,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Farmer",
+        "Agricultural Worker",
+        "All"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "kisan-credit-card",
+    "name": "Kisan Credit Card (KCC) Scheme",
+    "short_description": "Affordable, timely institutional credit for farmers to meet crop cultivation expenses, post-harvest costs, and maintenance of farm assets.",
+    "category": "Agriculture & Farmers",
+    "state": "All India",
+    "benefits": "Collateral-free loan up to ₹1.60 Lakhs (and up to ₹3 Lakhs with interest subvention at effective 4% p.a. upon prompt repayment). Covers crop cultivation, dairy, poultry, and fisheries.",
+    "required_documents": [
+      "aadhaar",
+      "land_records",
+      "bank_account",
+      "pan_card"
+    ],
+    "application_process": "Download 1-page KCC application from agricoop.nic.in or visit any commercial bank/RRB/Cooperative bank. Submit with land record (Khatauni) and Aadhaar.",
+    "important_dates": "Open throughout the year at all bank branches.",
+    "official_source": "Reserve Bank of India & Ministry of Agriculture",
+    "application_url": "https://agricoop.nic.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 18,
+      "maxAge": 75,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Farmer",
+        "Dairy Farmer",
+        "Fisherman",
+        "Agricultural Worker",
+        "All"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pm-kisan-maandhan",
+    "name": "PM Kisan Maandhan Yojana (PM-KMY)",
+    "short_description": "Old age pension scheme for small and marginal farmers providing a monthly assured pension after age 60.",
+    "category": "Agriculture & Farmers",
+    "state": "All India",
+    "benefits": "Guaranteed minimum pension of ₹3,000/- per month on reaching 60 years of age with equal government co-contribution.",
+    "required_documents": [
+      "aadhaar",
+      "bank_account",
+      "land_records"
+    ],
+    "application_process": "Enroll at nearest CSC or online at maandhan.in with Aadhaar and Khasra/Khatauni showing cultivable land up to 2 hectares.",
+    "important_dates": "Open enrollment for farmers aged 18 to 40 years.",
+    "official_source": "Ministry of Agriculture & LIC of India",
+    "application_url": "https://maandhan.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 18,
+      "maxAge": 40,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Farmer",
+        "All"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pm-vishwakarma",
+    "name": "PM Vishwakarma Yojana",
+    "short_description": "Holistic support scheme for traditional artisans and craftspersons with collateral-free credit at 5%, modern toolkits, and skill upgrade.",
+    "category": "Business, MSME & Artisans",
+    "state": "All India",
+    "benefits": "PM Vishwakarma Certificate & ID card, ₹15,000 e-voucher for modern toolkits, 5-7 days skill training with ₹500/day stipend, and collateral-free enterprise credit up to ₹3 Lakhs in two tranches (₹1L + ₹2L) at concessional 5% interest rate.",
+    "required_documents": [
+      "aadhaar",
+      "bank_account",
+      "pan_card",
+      "trade_proof"
+    ],
+    "application_process": "Register via CSC with Aadhaar and trade verification across 18 designated trades (Carpenter, Blacksmith, Potter, Sculptor, Cobbler, Tailor, Barber, etc.) on pmvishwakarma.gov.in.",
+    "important_dates": "Open year-round across all districts of India.",
+    "official_source": "Ministry of Micro, Small and Medium Enterprises (MSME)",
+    "application_url": "https://pmvishwakarma.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 18,
+      "maxAge": 75,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Artisan",
+        "Worker",
+        "Self-Employed",
+        "Business Owner",
+        "All"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pm-mudra-yojana",
+    "name": "Pradhan Mantri MUDRA Yojana (PMMY)",
+    "short_description": "Collateral-free institutional business loans up to ₹20 Lakhs to non-corporate, non-farm small and micro enterprises.",
+    "category": "Business, MSME & Artisans",
+    "state": "All India",
+    "benefits": "Collateral-free loans in 4 categories: Shishu (loans up to ₹50,000), Kishore (₹50,000 to ₹5 Lakhs), Tarun (₹5 Lakhs to ₹10 Lakhs), and Tarun Plus (₹10 Lakhs to ₹20 Lakhs) for shopkeepers, service units, and manufacturing micro-units.",
+    "required_documents": [
+      "aadhaar",
+      "pan_card",
+      "business_address_proof",
+      "bank_account"
+    ],
+    "application_process": "Apply online at udyamimitra.in or visit any commercial bank, RRB, MFI, or Small Finance Bank with business proposal and KYC.",
+    "important_dates": "Open continuously through all participating financial institutions.",
+    "official_source": "Department of Financial Services, Ministry of Finance",
+    "application_url": "https://www.mudra.org.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 18,
+      "maxAge": 70,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Business Owner",
+        "Self-Employed",
+        "Entrepreneur",
+        "Artisan",
+        "Worker",
+        "All"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pm-svanidhi",
+    "name": "PM SVANidhi (Street Vendor's AtmaNirbhar Nidhi)",
+    "short_description": "Affordable working capital micro-credit scheme empowering street vendors and hawkers to resume and expand their livelihoods.",
+    "category": "Business, MSME & Artisans",
+    "state": "All India",
+    "benefits": "Collateral-free working capital loan starting with ₹10,000 in 1st tranche, graduating to ₹20,000 in 2nd tranche, and ₹50,000 in 3rd tranche upon timely repayment. Interest subsidy of 7% p.a. credited directly, plus monthly digital transaction cashback up to ₹100.",
+    "required_documents": [
+      "aadhaar",
+      "bank_account",
+      "vending_id"
+    ],
+    "application_process": "Apply via pmsvanidhi.mohua.gov.in or SVANidhi mobile app. Submit Aadhaar and Urban Local Body (ULB) Certificate of Vending or recommendation letter.",
+    "important_dates": "Scheme active across all urban local bodies.",
+    "official_source": "Ministry of Housing and Urban Affairs (MoHUA)",
+    "application_url": "https://pmsvanidhi.mohua.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 18,
+      "maxAge": 75,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Worker",
+        "Self-Employed",
+        "Business Owner",
+        "All"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "stand-up-india",
+    "name": "Stand-Up India Scheme",
+    "short_description": "Promotes entrepreneurship among women and SC/ST communities for setting up greenfield manufacturing, service, or trading enterprises.",
+    "category": "Business, MSME & Artisans",
+    "state": "All India",
+    "benefits": "Bank loans between ₹10 Lakhs and ₹1 Crore to at least one SC or ST borrower and at least one Woman borrower per bank branch for setting up greenfield enterprises.",
+    "required_documents": [
+      "aadhaar",
+      "pan_card",
+      "caste_cert",
+      "project_report",
+      "bank_account"
+    ],
+    "application_process": "Apply online through standupmitra.in portal or visit commercial bank branches with detailed business project report.",
+    "important_dates": "Scheme extended up to 2026.",
+    "official_source": "Ministry of Finance & SIDBI",
+    "application_url": "https://www.standupmitra.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 18,
+      "maxAge": 65,
+      "genders": [
+        "All",
+        "Female",
+        "Male"
+      ],
+      "occupations": [
+        "Entrepreneur",
+        "Business Owner",
+        "Woman",
+        "Self-Employed",
+        "All"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "General",
+        "OBC",
+        "EWS",
+        "All"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "ayushman-bharat-pmjay",
+    "name": "Ayushman Bharat PM-JAY (Pradhan Mantri Jan Arogya Yojana)",
+    "short_description": "World's largest government-funded health insurance scheme offering cashless treatment of up to ₹5 Lakhs per family per year for secondary and tertiary care.",
+    "category": "Healthcare & Wellness",
+    "state": "All India",
+    "benefits": "₹5,00,000/- per family per year cashless hospitalization coverage across 27,000+ empanelled public and private hospitals. Covers surgery, medicine, diagnostics, ICU, and pre/post-hospitalization expenses. Extended to all senior citizens aged 70+ regardless of income.",
+    "required_documents": [
+      "aadhaar",
+      "ration_card",
+      "family_id"
+    ],
+    "application_process": "Check eligibility at beneficiary.nha.gov.in using Aadhaar or Ration Card number, or visit any empanelled hospital/CSC to generate Ayushman Golden Card.",
+    "important_dates": "Ayushman cards can be generated anytime throughout the year.",
+    "official_source": "National Health Authority (NHA), Ministry of Health & Family Welfare",
+    "application_url": "https://pmjay.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 0,
+      "maxAge": 100,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "All",
+        "Worker",
+        "Farmer",
+        "Senior Citizen",
+        "Homemaker",
+        "Student"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pm-jan-aushadhi",
+    "name": "Pradhan Mantri Bharatiya Janaushadhi Pariyojana (PMBJP)",
+    "short_description": "Provides quality generic medicines and surgical products at 50% to 90% cheaper prices than branded market medicines to all citizens.",
+    "category": "Healthcare & Wellness",
+    "state": "All India",
+    "benefits": "Over 2,000 quality generic medicines, 300 surgical consumables, and oxo-biodegradable sanitary pads (Suvidha at ₹1/pad) available at 10,000+ Janaushadhi Kendras across India.",
+    "required_documents": [
+      "doctor_prescription"
+    ],
+    "application_process": "Visit any nearest Jan Aushadhi Kendra with a valid doctor prescription. Locate nearby Kendra via Janaushadhi Sugam mobile app or website.",
+    "important_dates": "Open daily across all towns and districts in India.",
+    "official_source": "Pharmaceuticals & Medical Devices Bureau of India (PMBI)",
+    "application_url": "https://janaushadhi.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 0,
+      "maxAge": 100,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "All"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pm-matru-vandana",
+    "name": "Pradhan Mantri Matru Vandana Yojana (PMMVY)",
+    "short_description": "Maternity financial benefit scheme compensating for wage loss and providing cash incentives to pregnant women and lactating mothers for health and nutrition.",
+    "category": "Healthcare & Wellness",
+    "state": "All India",
+    "benefits": "Direct cash benefit of ₹5,000 for first child in 2 installments, and ₹6,000 for second girl child transferred directly into mother's Aadhaar-seeded bank account.",
+    "required_documents": [
+      "aadhaar",
+      "mcp_card",
+      "bank_account"
+    ],
+    "application_process": "Register online at pmmvy.wcd.gov.in or visit nearest Anganwadi Centre / primary health center with Mother & Child Protection (MCP) card and Aadhaar.",
+    "important_dates": "Apply within 270 days from Last Menstrual Period (LMP) date.",
+    "official_source": "Ministry of Women and Child Development",
+    "application_url": "https://pmmvy.wcd.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 19,
+      "maxAge": 45,
+      "genders": [
+        "Female"
+      ],
+      "occupations": [
+        "Woman",
+        "Homemaker",
+        "Worker",
+        "All"
+      ],
+      "maxIncome": 800000,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pm-awas-gramin",
+    "name": "Pradhan Mantri Awas Yojana - Gramin (PMAY-G)",
+    "short_description": "Flagship rural housing scheme providing direct financial assistance to houseless rural families and those living in kutcha/dilapidated houses to build a pucca house.",
+    "category": "Housing & Shelter",
+    "state": "All India",
+    "benefits": "Financial grant of ₹1,20,000/- in plain areas and ₹1,30,000/- in hilly/difficult/Himalayan states. Additionally provides 90-95 days of unskilled labor wage under MGNREGA (~₹20,000) and ₹12,000 assistance for toilet construction under Swachh Bharat.",
+    "required_documents": [
+      "aadhaar",
+      "job_card_mgnrega",
+      "bank_account",
+      "bpl_ration_card"
+    ],
+    "application_process": "Beneficiaries identified through SECC/Awaas+ verified list. Register through Gram Panchayat, Block Development Office, or via pmayg.nic.in with geotagged house photos.",
+    "important_dates": "Ongoing continuous implementation with direct installment releases based on construction stages.",
+    "official_source": "Ministry of Rural Development, Govt. of India",
+    "application_url": "https://pmayg.nic.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 18,
+      "maxAge": 85,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Farmer",
+        "Worker",
+        "Homemaker",
+        "All"
+      ],
+      "maxIncome": 200000,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pm-awas-urban",
+    "name": "Pradhan Mantri Awas Yojana - Urban (PMAY-U 2.0)",
+    "short_description": "Comprehensive urban housing mission ensuring all-weather pucca houses to all eligible urban households in EWS, LIG, and Middle Income categories.",
+    "category": "Housing & Shelter",
+    "state": "All India",
+    "benefits": "Interest subsidy up to ₹2.67 Lakhs on home loans for first-time homebuyers, and central financial assistance up to ₹1.5 Lakhs for beneficiary-led individual house construction.",
+    "required_documents": [
+      "aadhaar",
+      "pan_card",
+      "income_cert",
+      "land_property_papers",
+      "bank_account"
+    ],
+    "application_process": "Apply online at pmaymis.gov.in under 'Citizen Assessment' or through municipal corporations and CSCs.",
+    "important_dates": "PMAY-U 2.0 approved for 1 crore additional urban houses.",
+    "official_source": "Ministry of Housing and Urban Affairs",
+    "application_url": "https://pmaymis.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 18,
+      "maxAge": 75,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Worker",
+        "Self-Employed",
+        "Business Owner",
+        "Salaried Employee",
+        "All"
+      ],
+      "maxIncome": 600000,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "lakhpati-didi",
+    "name": "Lakhpati Didi Scheme",
+    "short_description": "National economic empowerment mission training and supporting women members of Self-Help Groups (SHGs) to achieve a sustainable annual household income of at least ₹1 Lakh.",
+    "category": "Women & Child Welfare",
+    "state": "All India",
+    "benefits": "Collateral-free credit support up to ₹5 Lakhs, enterprise skill training (drone piloting/Namo Drone Didi, tailoring, LED manufacturing, solar panel maintenance, organic farming), access to GeM portal for selling products, and financial mentoring.",
+    "required_documents": [
+      "aadhaar",
+      "shg_membership_proof",
+      "bank_account"
+    ],
+    "application_process": "Apply through local Deendayal Antyodaya Yojana - NRLM village organization or Block Mission Management Unit (BMMU).",
+    "important_dates": "Active target to empower 3 Crore Lakhpati Didis.",
+    "official_source": "Deendayal Antyodaya Yojana - NRLM, Ministry of Rural Development",
+    "application_url": "https://aajeevika.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 18,
+      "maxAge": 60,
+      "genders": [
+        "Female"
+      ],
+      "occupations": [
+        "Woman",
+        "Homemaker",
+        "Self-Employed",
+        "Farmer",
+        "All"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pm-ujjwala-yojana",
+    "name": "Pradhan Mantri Ujjwala Yojana (PMUY 2.0)",
+    "short_description": "Provides clean cooking fuel (LPG connections) free of deposit to adult women from poor and BPL households across India.",
+    "category": "Women & Child Welfare",
+    "state": "All India",
+    "benefits": "Free deposit-free LPG gas connection, complimentary first gas cylinder refill, free hotplate (gas stove), and ₹300 per cylinder direct targeted subsidy on up to 12 refills per year.",
+    "required_documents": [
+      "aadhaar",
+      "ration_card",
+      "bank_account"
+    ],
+    "application_process": "Apply online at pmuy.gov.in or submit physical 2-page form at any nearest Indane, Bharatgas, or HP Gas distributorship.",
+    "important_dates": "Open for enrollment under PMUY 2.0 expansion.",
+    "official_source": "Ministry of Petroleum and Natural Gas",
+    "application_url": "https://www.pmuy.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 18,
+      "maxAge": 80,
+      "genders": [
+        "Female"
+      ],
+      "occupations": [
+        "Woman",
+        "Homemaker",
+        "Worker",
+        "All"
+      ],
+      "maxIncome": 250000,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "sukanya-samriddhi",
+    "name": "Sukanya Samriddhi Yojana (SSY)",
+    "short_description": "Government-backed high-yield small savings scheme under Beti Bachao Beti Padhao for girl children to finance higher education and marriage.",
+    "category": "Women & Child Welfare",
+    "state": "All India",
+    "benefits": "Guaranteed 8.2% p.a. tax-free interest rate (highest among small savings). Minimum deposit ₹250/year up to ₹1.5 Lakhs/year. 100% tax exemption on deposit (Section 80C), interest earned, and maturity payout (EEE status).",
+    "required_documents": [
+      "birth_certificate_girl",
+      "aadhaar_parent",
+      "pan_parent"
+    ],
+    "application_process": "Open account at any Post Office or authorized commercial bank (SBI, PNB, BoB, etc.) using girl child's birth certificate and parents' KYC.",
+    "important_dates": "Account can be opened from birth until the girl child reaches 10 years of age.",
+    "official_source": "National Savings Institute & Department of Posts",
+    "application_url": "https://www.indiapost.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 0,
+      "maxAge": 10,
+      "genders": [
+        "Female"
+      ],
+      "occupations": [
+        "Student",
+        "Woman",
+        "All"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "mahila-samman-savings",
+    "name": "Mahila Samman Savings Certificate (MSSC)",
+    "short_description": "One-time small savings scheme for women and girls offering 7.5% fixed interest. The subscription window for opening new accounts closed on March 31, 2025.",
+    "category": "Women & Child Welfare",
+    "state": "All India",
+    "benefits": "Guaranteed fixed interest rate of 7.5% per annum compounded quarterly. Minimum deposit ₹1,000 up to maximum ₹2 Lakhs for a 2-year tenure. Partial withdrawal up to 40% allowed after 1 year.",
+    "required_documents": [
+      "aadhaar",
+      "pan_card",
+      "photo"
+    ],
+    "application_process": "Open account at any Post Office branch or designated nationalized banks.",
+    "important_dates": "New subscription closed on March 31, 2025. Existing accounts continue until 2-year maturity.",
+    "official_source": "Ministry of Finance, Govt. of India",
+    "application_url": "https://www.indiapost.gov.in",
+    "status": "CLOSED",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 10,
+      "maxAge": 90,
+      "genders": [
+        "Female"
+      ],
+      "occupations": [
+        "Woman",
+        "Homemaker",
+        "Salaried Employee",
+        "All"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "e-shram-card",
+    "name": "e-Shram Universal Social Security Card",
+    "short_description": "National database and universal welfare identity for 30+ crore unorganized workers providing seamless portability of all government benefits.",
+    "category": "Workers & Labor Welfare",
+    "state": "All India",
+    "benefits": "Universal 12-digit UAN card, ₹2 Lakh free accidental death cover (and ₹1 Lakh for partial disability) under PMSBY, direct financial aid during national emergencies, and unified access to social security pensions, rations, and healthcare schemes.",
+    "required_documents": [
+      "aadhaar",
+      "bank_account",
+      "mobile_linked_aadhaar"
+    ],
+    "application_process": "Self-register online at eshram.gov.in using Aadhaar OTP or visit any CSC centre. Takes under 5 minutes.",
+    "important_dates": "Registration open continuously. No expiry date on UAN card.",
+    "official_source": "Ministry of Labour and Employment",
+    "application_url": "https://eshram.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 16,
+      "maxAge": 59,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Worker",
+        "Agricultural Worker",
+        "Driver",
+        "Artisan",
+        "Self-Employed",
+        "All"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pm-shram-yogi-maandhan",
+    "name": "Pradhan Mantri Shram Yogi Maan-dhan (PM-SYM)",
+    "short_description": "Voluntary and contributory pension scheme for unorganized workers to ensure old age protection and financial dignity.",
+    "category": "Workers & Labor Welfare",
+    "state": "All India",
+    "benefits": "Guaranteed minimum monthly pension of ₹3,000/- upon reaching 60 years of age. Monthly contribution ranges from ₹55 to ₹200 (matched 50:50 by Central Government). 50% family pension to spouse upon pensioner's death.",
+    "required_documents": [
+      "aadhaar",
+      "bank_account"
+    ],
+    "application_process": "Enroll at any Common Services Centre (CSC) or online at maandhan.in with Aadhaar and Jan Dhan/savings account details.",
+    "important_dates": "Open enrollment for workers earning up to ₹15,000/month.",
+    "official_source": "Ministry of Labour and Employment & LIC",
+    "application_url": "https://maandhan.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 18,
+      "maxAge": 40,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Worker",
+        "Agricultural Worker",
+        "Driver",
+        "Artisan",
+        "All"
+      ],
+      "maxIncome": 180000,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "mgnrega",
+    "name": "Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA)",
+    "short_description": "Statutory social security measure guaranteeing 100 days of wage employment per financial year to rural households willing to do unskilled manual work.",
+    "category": "Workers & Labor Welfare",
+    "state": "All India",
+    "benefits": "Legal entitlement to 100 days of guaranteed wage employment per family. Daily wage rates ranging from ₹234 to ₹374 per day (state-specific). Unemployment allowance paid if work is not provided within 15 days.",
+    "required_documents": [
+      "aadhaar",
+      "ration_card",
+      "bank_account",
+      "mgnrega_job_card"
+    ],
+    "application_process": "Apply for MGNREGA Job Card at local Gram Panchayat. Submit work demand application (Form 6) to receive formal dated receipt and work allocation.",
+    "important_dates": "Available 365 days a year across all rural districts.",
+    "official_source": "Ministry of Rural Development, Govt. of India",
+    "application_url": "https://nrega.nic.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 18,
+      "maxAge": 75,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Worker",
+        "Agricultural Worker",
+        "Farmer",
+        "Homemaker",
+        "All"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "atal-pension-yojana",
+    "name": "Atal Pension Yojana (APY)",
+    "short_description": "Flagship government-backed pension scheme guaranteeing a fixed lifelong monthly pension of ₹1,000 to ₹5,000 to all Indian citizens.",
+    "category": "Social Security & Pension",
+    "state": "All India",
+    "benefits": "Guaranteed fixed monthly pension of ₹1,000, ₹2,000, ₹3,000, ₹4,000, or ₹5,000 starting from age 60 until death. Same pension continues to spouse upon death, and full accumulated pension corpus is returned to nominee.",
+    "required_documents": [
+      "aadhaar",
+      "bank_account",
+      "nominee_details"
+    ],
+    "application_process": "Subscribe at any bank branch or online through netbanking/mobile banking. Auto-debit facility from savings account.",
+    "important_dates": "Must enroll between 18 and 40 years of age. Non-income tax payers eligible.",
+    "official_source": "Pension Fund Regulatory and Development Authority (PFRDA)",
+    "application_url": "https://www.npscra.nsdl.co.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 18,
+      "maxAge": 40,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "All",
+        "Worker",
+        "Self-Employed",
+        "Business Owner",
+        "Farmer",
+        "Homemaker"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pm-jeevan-jyoti-bima",
+    "name": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+    "short_description": "Affordable one-year term life insurance scheme offering ₹2 Lakh cover for death due to any reason at a nominal annual premium.",
+    "category": "Social Security & Pension",
+    "state": "All India",
+    "benefits": "₹2,00,000/- life insurance payout to nominee in the event of subscriber's death due to any cause. Annual premium of only ₹436/- auto-debited from bank account.",
+    "required_documents": [
+      "aadhaar",
+      "bank_account",
+      "nominee_aadhaar"
+    ],
+    "application_process": "Enable auto-debit through any bank branch or internet banking portal. Requires simple consent form.",
+    "important_dates": "Coverage period runs June 1 to May 31 annually with automatic yearly renewal.",
+    "official_source": "Department of Financial Services, Ministry of Finance",
+    "application_url": "https://financialservices.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 18,
+      "maxAge": 50,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "All"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pm-suraksha-bima",
+    "name": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
+    "short_description": "Most affordable accident insurance scheme in the world providing ₹2 Lakh cover for accidental death and permanent disability at just ₹20 per year.",
+    "category": "Social Security & Pension",
+    "state": "All India",
+    "benefits": "₹2,00,000/- on accidental death or permanent total disability, and ₹1,00,000/- on permanent partial disability. Annual premium of just ₹20/- per year.",
+    "required_documents": [
+      "aadhaar",
+      "bank_account",
+      "nominee_details"
+    ],
+    "application_process": "Enroll at any bank branch, post office, or via mobile banking app.",
+    "important_dates": "Renewable annually on June 1.",
+    "official_source": "Department of Financial Services, Ministry of Finance",
+    "application_url": "https://financialservices.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 18,
+      "maxAge": 70,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "All"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "national-old-age-pension",
+    "name": "Indira Gandhi National Old Age Pension Scheme (IGNOAPS)",
+    "short_description": "Non-contributory monthly welfare pension providing subsistence support to elderly citizens living below the poverty line.",
+    "category": "Social Security & Pension",
+    "state": "All India",
+    "benefits": "Monthly pension (₹500 to ₹2,500/month depending on state top-up) directly credited into senior citizen's bank or post office account for life.",
+    "required_documents": [
+      "aadhaar",
+      "age_proof",
+      "bpl_card",
+      "bank_account"
+    ],
+    "application_process": "Apply via Social Welfare Office, Gram Panchayat, or state pension portal (e.g. SSPY UP, SSP Maharashtra, Samagra MP).",
+    "important_dates": "Continuous enrollment for citizens turning 60 years.",
+    "official_source": "Ministry of Rural Development & National Social Assistance Programme (NSAP)",
+    "application_url": "https://nsap.nic.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 60,
+      "maxAge": 100,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Senior Citizen",
+        "Retired Person",
+        "All"
+      ],
+      "maxIncome": 150000,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pm-kaushal-vikas",
+    "name": "Pradhan Mantri Kaushal Vikas Yojana (PMKVY 4.0)",
+    "short_description": "Flagship skill certification scheme enabling Indian youth to take up industry-relevant skill training for better livelihood opportunities.",
+    "category": "Skills & Employment",
+    "state": "All India",
+    "benefits": "100% free government-certified skill training, free assessment and certification, transport allowance, placement assistance, and ₹8,000 cash reward upon successful certification.",
+    "required_documents": [
+      "aadhaar",
+      "educational_marksheet",
+      "bank_account"
+    ],
+    "application_process": "Register on Skill India Digital portal (skillindiadigital.gov.in) or visit nearest PMKK (Pradhan Mantri Kaushal Kendra).",
+    "important_dates": "New batches enroll every month across 300+ job roles.",
+    "official_source": "Ministry of Skill Development and Entrepreneurship (MSDE)",
+    "application_url": "https://www.skillindiadigital.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 15,
+      "maxAge": 45,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "Worker",
+        "Unemployed",
+        "Self-Employed",
+        "All"
+      ],
+      "maxIncome": 0,
+      "minMarks": 0,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS"
+      ],
+      "educationLevels": [
+        "All"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pm-usp-central-sector",
+    "name": "PM-USP Central Sector Scheme of Scholarship for College and University Students",
+    "short_description": "Financial assistance to meritorious students from low-income families to meet day-to-day expenses while pursuing higher education.",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "₹12,000/- per annum at Graduation level for first 3 years, ₹20,000/- per annum at Post-Graduation level.",
+    "required_documents": [
+      "aadhaar",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Apply online through National Scholarship Portal (scholarships.gov.in). Submit Aadhaar, income certificate, Class 12 board marksheet, and college bonafide. Institute nodal officer verifies application online.",
+    "important_dates": "Applications typically open July-August; Last date usually October-November annually.",
+    "official_source": "Department of Higher Education, Ministry of Education, Govt. of India",
+    "application_url": "https://scholarships.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 17,
+      "maxAge": 26,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 450000,
+      "minMarks": 80,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma",
+        "Postgraduate"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pm-usp-special-jk-ladakh",
+    "name": "PM-USP Special Scholarship Scheme for Jammu & Kashmir and Ladakh (PMSSS)",
+    "short_description": "Empowers youth of J&K and Ladakh to pursue undergraduate studies in premier colleges outside the UTs, covering tuition and maintenance.",
+    "category": "Scholarships",
+    "state": "Jammu and Kashmir, Ladakh",
+    "benefits": "Full tuition fee reimbursement (up to ₹1.25 Lakh for General, ₹3 Lakh for Engineering, ₹4 Lakh for Medical) plus ₹1 Lakh per year maintenance allowance.",
+    "required_documents": [
+      "aadhaar",
+      "domicile_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Register on the AICTE-JK-PMSSS portal. Attend online document verification at designated facilitation centers, participate in merit-based online counseling, and get allotted college.",
+    "important_dates": "Portal registration opens around May-June; Counseling starts July.",
+    "official_source": "All India Council for Technical Education (AICTE) & Ministry of Education",
+    "application_url": "https://www.aicte-jk-scholarship-gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 17,
+      "maxAge": 27,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 800000,
+      "minMarks": 60,
+      "states": [
+        "Jammu and Kashmir",
+        "Ladakh"
+      ],
+      "domicileRequired": true,
+      "domicileStates": [
+        "Jammu and Kashmir",
+        "Ladakh"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma"
+      ],
+      "courses": [
+        "Engineering / Technology",
+        "Medical / Pharmacy / Nursing",
+        "General Sciences / Arts / Commerce",
+        "Hotel Management / Catering"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "aicte-pragati",
+    "name": "AICTE Pragati Scholarship Scheme for Girl Students",
+    "short_description": "Encourages and supports female learners admitted to AICTE-approved technical degree and diploma institutions across India.",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "₹50,000/- per annum lump sum for college fees, purchase of laptop/books/study material.",
+    "required_documents": [
+      "aadhaar",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Apply online through NSP (scholarships.gov.in) under AICTE schemes. Upload admission proof, 10+2 marksheet, family income certificate, and tuition fee receipt.",
+    "important_dates": "NSP cycle opens August-September; verification by November.",
+    "official_source": "All India Council for Technical Education (AICTE)",
+    "application_url": "https://www.aicte-india.org/schemes/students-development-schemes/Pragati",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 16,
+      "maxAge": 28,
+      "genders": [
+        "Female"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 800000,
+      "minMarks": 50,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma"
+      ],
+      "courses": [
+        "Engineering / Technology",
+        "IT / Computer Applications",
+        "Medical / Pharmacy / Nursing"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "aicte-saksham",
+    "name": "AICTE Saksham Scholarship Scheme for Specially-Abled Students",
+    "short_description": "Provides financial backing to students with benchmark disabilities pursuing technical diploma and degree programs.",
+    "category": "Special Support",
+    "state": "All India",
+    "benefits": "₹50,000/- per year for every year of technical study as lump sum allowance.",
+    "required_documents": [
+      "aadhaar",
+      "disability_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Register on NSP portal, select AICTE Saksham, provide valid UDID/disability certificate (minimum 40% disability), family income certificate, and institute bonafide.",
+    "important_dates": "Annual NSP window: August to December.",
+    "official_source": "AICTE, Ministry of Education",
+    "application_url": "https://www.aicte-india.org/schemes/students-development-schemes/Saksham",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 16,
+      "maxAge": 30,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 800000,
+      "minMarks": 50,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma"
+      ],
+      "courses": [
+        "Engineering / Technology",
+        "IT / Computer Applications",
+        "Medical / Pharmacy / Nursing"
+      ],
+      "disabilityOnly": true,
+      "minDisabilityPercentage": 40,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "aicte-swanath",
+    "name": "AICTE Swanath Scholarship Scheme",
+    "short_description": "Provides financial aid and encouragement to orphaned students, wards of armed forces/CAPFs martyred in action, or whose both parents died due to Covid-19.",
+    "category": "Special Support",
+    "state": "All India",
+    "benefits": "₹50,000/- per annum for every year of study towards academic and living expenses.",
+    "required_documents": [
+      "aadhaar",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet",
+      "other_doc"
+    ],
+    "application_process": "Apply online via National Scholarship Portal under AICTE section. Attach proof of being an orphan or martyr's ward certificate issued by competent armed/police authority.",
+    "important_dates": "NSP timeline August-December.",
+    "official_source": "AICTE, Ministry of Education",
+    "application_url": "https://www.aicte-india.org/schemes/students-development-schemes/Swanath",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 16,
+      "maxAge": 28,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 800000,
+      "minMarks": 45,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma"
+      ],
+      "courses": [
+        "Engineering / Technology",
+        "IT / Computer Applications",
+        "Medical / Pharmacy / Nursing"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "ishan-uday-ugc",
+    "name": "Ishan Uday Special Scholarship Scheme for North Eastern Region",
+    "short_description": "Dedicated scholarship by UGC to promote higher education among students of the North Eastern States (Assam, Arunachal, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim, Tripura).",
+    "category": "Scholarships",
+    "state": "Assam, Arunachal Pradesh, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim, Tripura",
+    "benefits": "₹5,400/- per month for general degree courses; ₹7,800/- per month for technical/medical/professional courses through DBT.",
+    "required_documents": [
+      "aadhaar",
+      "domicile_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Register on scholarships.gov.in under UGC/AICTE section. Upload NER domicile certificate, annual income certificate issued by competent authority, and Class 12 marksheet.",
+    "important_dates": "Annual application period: August to November.",
+    "official_source": "University Grants Commission (UGC), Ministry of Education",
+    "application_url": "https://www.ugc.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 17,
+      "maxAge": 26,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 450000,
+      "minMarks": 60,
+      "states": [
+        "Assam",
+        "Arunachal Pradesh",
+        "Manipur",
+        "Meghalaya",
+        "Mizoram",
+        "Nagaland",
+        "Sikkim",
+        "Tripura"
+      ],
+      "domicileRequired": true,
+      "domicileStates": [
+        "Assam",
+        "Arunachal Pradesh",
+        "Manipur",
+        "Meghalaya",
+        "Mizoram",
+        "Nagaland",
+        "Sikkim",
+        "Tripura",
+        "North-Eastern States Resident"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "nmmss-scholarship",
+    "name": "National Means-cum-Merit Scholarship Scheme (NMMSS)",
+    "short_description": "Awards scholarships to meritorious students of economically weaker sections to arrest drop-out at Class 8 and encourage secondary stage education.",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "₹12,000/- per annum (₹1,000 per month) from Class 9 to Class 12.",
+    "required_documents": [
+      "aadhaar",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Appear in State-level NMMS selection test in Class 8. Qualified candidates apply on National Scholarship Portal with exam roll number and school verification.",
+    "important_dates": "Exam conducted October-December; Portal entry starts following academic session.",
+    "official_source": "Department of School Education & Literacy, Ministry of Education",
+    "application_url": "https://scholarships.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 13,
+      "maxAge": 18,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 350000,
+      "minMarks": 55,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "School / 10th",
+        "12th / Intermediate"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pmss-warb-capf",
+    "name": "Prime Minister's Scholarship Scheme for Wards of CAPFs and Assam Rifles (WARB)",
+    "short_description": "Encourages higher technical and professional education for dependent wards and widows of Central Armed Police Forces & Assam Rifles personnel.",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "₹3,000/- per month for girls (₹36,000 per year) and ₹2,500/- per month for boys (₹30,000 per year).",
+    "required_documents": [
+      "aadhaar",
+      "bank_account",
+      "student_id",
+      "marksheet",
+      "other_doc"
+    ],
+    "application_process": "Apply via National Scholarship Portal under Ministry of Home Affairs. Provide discharge book/service certificate, MEA/WARB recommendation letter, and 10+2 marksheet.",
+    "important_dates": "NSP cycle opens August to November annually.",
+    "official_source": "Welfare and Rehabilitation Board (WARB), Ministry of Home Affairs",
+    "application_url": "https://scholarships.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 17,
+      "maxAge": 27,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 1000000,
+      "minMarks": 60,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma"
+      ],
+      "courses": [
+        "Engineering / Technology",
+        "Medical / Pharmacy / Nursing",
+        "Management / Business Administration",
+        "Law / Legal Studies"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pmss-rpf-rpsf",
+    "name": "Prime Minister's Scholarship Scheme for RPF/RPSF",
+    "short_description": "Scholarship support for dependent wards and widows of Railway Protection Force and Railway Protection Special Force personnel.",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "₹2,500/- per month for male wards and ₹3,000/- per month for female wards directly transferred to student bank account.",
+    "required_documents": [
+      "aadhaar",
+      "bank_account",
+      "student_id",
+      "marksheet",
+      "other_doc"
+    ],
+    "application_process": "Apply on National Scholarship Portal under Ministry of Railways section. Verified by respective Zonal Security Commissioner/Chief Security Commissioner.",
+    "important_dates": "Opens August-September; Closes November.",
+    "official_source": "Railway Board, Ministry of Railways, Govt. of India",
+    "application_url": "https://scholarships.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 17,
+      "maxAge": 27,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 1000000,
+      "minMarks": 60,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma"
+      ],
+      "courses": [
+        "Engineering / Technology",
+        "Medical / Pharmacy / Nursing",
+        "Architecture / Planning"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "central-sector-post-matric-nsp",
+    "name": "NSP Central Sector Post-Matric Scholarship Records (NSP-Linked)",
+    "short_description": "Central framework scholarships connecting college and university degree learners across India with direct DBT benefit transfers on the NSP portal.",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "Full or partial college tuition subsidy plus maintenance allowance ranging from ₹5,000 to ₹25,000 per academic year.",
+    "required_documents": [
+      "aadhaar",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Complete One Time Registration (OTR) on scholarships.gov.in, select active post-matric department scheme, submit college verification form.\n\n⚠️ Note: This represents a category of state-level schemes. Check your state government portal for the exact scheme applicable to your state.",
+    "important_dates": "Active annual cycle July to December.",
+    "official_source": "National Scholarship Portal (NSP), Ministry of Electronics & IT",
+    "application_url": "https://scholarships.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 16,
+      "maxAge": 28,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 600000,
+      "minMarks": 50,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma",
+        "Postgraduate"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "top-class-education-sc",
+    "name": "Top Class Education Scheme for SC Students",
+    "short_description": "Promotes qualitative education among Scheduled Caste students by providing full financial support in notified premier institutions (IITs, IIMs, NITs, AIIMS, NLUs).",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "Full tuition fee & non-refundable charges, living expenses of ₹3,000/month, books/stationery ₹5,000/year, and latest computer/laptop ₹45,000 one-time.",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Apply on National Scholarship Portal after securing admission in a notified Top Class institution. Institutional nodal officer validates admission.",
+    "important_dates": "July to November on NSP.",
+    "official_source": "Ministry of Social Justice and Empowerment, Govt. of India",
+    "application_url": "https://socialjustice.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 17,
+      "maxAge": 30,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 800000,
+      "minMarks": 50,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "SC"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma",
+        "Postgraduate"
+      ],
+      "courses": [
+        "Engineering / Technology",
+        "Medical / Pharmacy / Nursing",
+        "Management / Business Administration",
+        "Law / Legal Studies"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "nfsc-national-fellowship-sc",
+    "name": "National Fellowship for Scheduled Caste Students (NFSC)",
+    "short_description": "Provides financial assistance to Scheduled Caste candidates pursuing regular and full-time M.Phil. and Ph.D. degrees in Sciences, Humanities, and Social Sciences.",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "Junior Research Fellowship (JRF) ₹37,000/month for first 2 years; Senior Research Fellowship (SRF) ₹42,000/month for remaining period + contingency allowance.",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Administered through UGC-NET selection score. Eligible SC scholars register via National Fellowship portal upon UGC qualification.",
+    "important_dates": "Aligned with UGC-NET cycle (June & December sessions).",
+    "official_source": "Ministry of Social Justice and Empowerment & UGC",
+    "application_url": "https://www.ugcnetonline.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 21,
+      "maxAge": 36,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 800000,
+      "minMarks": 55,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "SC"
+      ],
+      "educationLevels": [
+        "PhD / Research"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "post-matric-scholarship-sc",
+    "name": "Post-Matric Scholarship for SC Students",
+    "short_description": "Centrally sponsored flagship scheme providing financial assistance to Scheduled Caste students studying at post-matriculation or post-secondary stage.",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "Full compulsory non-refundable fees reimbursed + academic maintenance allowance up to ₹13,500/year for hostellers and ₹7,000/year for day scholars.",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Apply online through respective State Scholarship Portal or NSP. Direct Benefit Transfer directly into Aadhaar-seeded bank account.",
+    "important_dates": "Annual window August to December.",
+    "official_source": "Department of Social Justice and Empowerment, Govt. of India",
+    "application_url": "https://socialjustice.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 15,
+      "maxAge": 30,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 250000,
+      "minMarks": 40,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "SC"
+      ],
+      "educationLevels": [
+        "12th / Intermediate",
+        "Undergraduate / Diploma",
+        "Postgraduate",
+        "PhD / Research"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pre-matric-scholarship-sc",
+    "name": "Pre-Matric Scholarship for SC Students (Classes 9 & 10)",
+    "short_description": "Financial assistance to Scheduled Caste students studying in Class 9 and 10 in government recognized schools to support transition to secondary stage.",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "Day scholars: ₹3,500/- per annum; Hostellers: ₹7,000/- per annum + book grant.",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id"
+    ],
+    "application_process": "Apply through state education / social welfare portal or NSP. School headmaster forwards verified student records.",
+    "important_dates": "July to October annually.",
+    "official_source": "Ministry of Social Justice and Empowerment",
+    "application_url": "https://socialjustice.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 13,
+      "maxAge": 17,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 250000,
+      "minMarks": 40,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "SC"
+      ],
+      "educationLevels": [
+        "School / 10th"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "top-class-education-st",
+    "name": "Top Class Education for ST Students",
+    "short_description": "Centrally funded scheme providing full tuition and maintenance to meritorious Scheduled Tribe students in notified premier institutions (IITs, IIMs, NITs, Medical).",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "Full tuition fee reimbursement, living allowance ₹3,000/month, books grant ₹5,000/year, and latest laptop allowance of ₹45,000.",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Apply via National Scholarship Portal under Ministry of Tribal Affairs. Institution verifies admission and fee structure.",
+    "important_dates": "NSP timeline August to November.",
+    "official_source": "Ministry of Tribal Affairs, Govt. of India",
+    "application_url": "https://tribal.nic.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 17,
+      "maxAge": 30,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 600000,
+      "minMarks": 50,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "ST"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma",
+        "Postgraduate"
+      ],
+      "courses": [
+        "Engineering / Technology",
+        "Medical / Pharmacy / Nursing",
+        "Management / Business Administration",
+        "Law / Legal Studies"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "nfst-national-fellowship-st",
+    "name": "National Fellowship for ST Students (NFST)",
+    "short_description": "Encourages Scheduled Tribe candidates to acquire higher degrees (M.Phil. & Ph.D.) through dedicated research fellowships.",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "JRF fellowship ₹37,000/month for initial 2 years; SRF fellowship ₹42,000/month for remaining term plus contingency grants.",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Online application through Tribal Affairs Fellowship portal / UGC-NET matching database.",
+    "important_dates": "Twice a year matching UGC NET schedule.",
+    "official_source": "Ministry of Tribal Affairs",
+    "application_url": "https://tribal.nic.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 21,
+      "maxAge": 36,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 600000,
+      "minMarks": 55,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "ST"
+      ],
+      "educationLevels": [
+        "PhD / Research"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "post-matric-scholarship-st",
+    "name": "Post-Matric Scholarship for ST Students",
+    "short_description": "Provides financial support to Scheduled Tribe learners studying at recognized post-matriculation courses across India.",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "Full compulsory course fee waiver/reimbursement + maintenance allowance up to ₹13,500/year for hostellers and ₹7,000/year for day scholars.",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Online via state scholarship portals or NSP. Requires valid ST caste certificate and family income verification.",
+    "important_dates": "August to December annually.",
+    "official_source": "Ministry of Tribal Affairs, Govt. of India",
+    "application_url": "https://tribal.nic.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 15,
+      "maxAge": 30,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 250000,
+      "minMarks": 40,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "ST"
+      ],
+      "educationLevels": [
+        "12th / Intermediate",
+        "Undergraduate / Diploma",
+        "Postgraduate",
+        "PhD / Research"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pre-matric-scholarship-st",
+    "name": "Pre-Matric Scholarship for ST Students (Classes 9 & 10)",
+    "short_description": "Aims to support parents of ST children for education of their wards studying in classes 9 and 10, minimizing drop-out rates.",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "Day Scholars: ₹3,500/- per year; Hostellers: ₹7,000/- per year disbursed via Direct Benefit Transfer.",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id"
+    ],
+    "application_process": "Apply through state portal or NSP. School headmaster validates student enrollment.",
+    "important_dates": "July to October annually.",
+    "official_source": "Ministry of Tribal Affairs",
+    "application_url": "https://tribal.nic.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 13,
+      "maxAge": 17,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 250000,
+      "minMarks": 40,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "ST"
+      ],
+      "educationLevels": [
+        "School / 10th"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pm-yasasvi-obc-ebc-dnt",
+    "name": "PM YASASVI Scholarship Scheme for OBC, EBC and DNT Students",
+    "short_description": "Top-class school and higher education scholarship scheme by the Ministry of Social Justice for OBC, Economically Backward Classes (EBC) and De-Notified Nomadic Tribes (DNT).",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "₹75,000/- per year for Class 9/10; ₹1,25,000/- per year for Class 11/12; Full tuition in top college segment.",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Apply on National Scholarship Portal under PM YASASVI vertical. Provide valid OBC/EBC/DNT certificate and school/college bonafide.",
+    "important_dates": "August to November annually.",
+    "official_source": "Department of Social Justice and Empowerment, Govt. of India",
+    "application_url": "https://socialjustice.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 14,
+      "maxAge": 26,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 250000,
+      "minMarks": 60,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "OBC",
+        "EBC",
+        "DNT"
+      ],
+      "educationLevels": [
+        "School / 10th",
+        "12th / Intermediate",
+        "Undergraduate / Diploma"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "top-class-education-obc-ebc-dnt",
+    "name": "Top Class Education Scheme for OBC/EBC/DNT Students",
+    "short_description": "Recognizes and financially supports OBC, EBC, and DNT students admitted to designated premier institutions (IITs, IIMs, NITs, Central Universities).",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "Full tuition fee & non-refundable charges, living expenses ₹3,000/month, books grant ₹5,000/year, and one-time laptop allowance ₹45,000.",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Apply on National Scholarship Portal after securing admission in notified institution list.",
+    "important_dates": "August to December.",
+    "official_source": "Ministry of Social Justice and Empowerment",
+    "application_url": "https://socialjustice.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 17,
+      "maxAge": 28,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 250000,
+      "minMarks": 60,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "OBC",
+        "EBC",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma",
+        "Postgraduate"
+      ],
+      "courses": [
+        "Engineering / Technology",
+        "Medical / Pharmacy / Nursing",
+        "Management / Business Administration",
+        "Law / Legal Studies"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "post-matric-scholarship-minorities",
+    "name": "Post-Matric Scholarship Scheme for Minorities",
+    "short_description": "Financial assistance to meritorious students belonging to notified minority communities (Muslim, Christian, Sikh, Buddhist, Jain, Parsi) for higher education.",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "Full admission and tuition fee reimbursement up to ₹10,000/year + maintenance allowance up to ₹1,200/month.",
+    "required_documents": [
+      "aadhaar",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet",
+      "caste_cert"
+    ],
+    "application_process": "Apply online through National Scholarship Portal under Ministry of Minority Affairs. Self-declaration of minority community and parental income certificate required.",
+    "important_dates": "NSP cycle July to November annually.",
+    "official_source": "Ministry of Minority Affairs, Govt. of India",
+    "application_url": "https://minorityaffairs.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 16,
+      "maxAge": 28,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 200000,
+      "minMarks": 50,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "12th / Intermediate",
+        "Undergraduate / Diploma",
+        "Postgraduate",
+        "PhD / Research"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": true,
+      "minorityCommunities": [
+        "Muslim",
+        "Christian",
+        "Sikh",
+        "Buddhist",
+        "Jain",
+        "Parsi"
+      ]
+    }
+  },
+  {
+    "id": "pre-matric-scholarship-minorities",
+    "name": "Pre-Matric Scholarship Scheme for Minorities (Classes 9 & 10)",
+    "short_description": "Assistance to school-going children belonging to notified minority communities studying in Class 9 and 10 to encourage continued schooling.",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "Admission & tuition fee reimbursement up to ₹4,000/year plus maintenance allowance ₹500/month.",
+    "required_documents": [
+      "aadhaar",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Apply on NSP portal. School institution verifies enrollment and previous class marksheet.",
+    "important_dates": "July to October annually.",
+    "official_source": "Ministry of Minority Affairs",
+    "application_url": "https://scholarships.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 13,
+      "maxAge": 17,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 100000,
+      "minMarks": 50,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "School / 10th"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": true,
+      "minorityCommunities": [
+        "Muslim",
+        "Christian",
+        "Sikh",
+        "Buddhist",
+        "Jain",
+        "Parsi"
+      ]
+    }
+  },
+  {
+    "id": "merit-cum-means-minorities",
+    "name": "Merit-cum-Means Scholarship for Professional and Technical Courses (Minorities)",
+    "short_description": "Financial assistance to poor and meritorious students belonging to minority communities to pursue professional and technical courses.",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "Full course fee up to ₹20,000/year (or full actual fee in listed premier institutions) + ₹1,000/month maintenance allowance for hostellers.",
+    "required_documents": [
+      "aadhaar",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Apply on National Scholarship Portal. Valid admission in approved technical/professional college required.",
+    "important_dates": "August to November on NSP.",
+    "official_source": "Ministry of Minority Affairs",
+    "application_url": "https://minorityaffairs.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 17,
+      "maxAge": 28,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 250000,
+      "minMarks": 50,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma",
+        "Postgraduate"
+      ],
+      "courses": [
+        "Engineering / Technology",
+        "IT / Computer Applications",
+        "Medical / Pharmacy / Nursing",
+        "Management / Business Administration",
+        "Law / Legal Studies"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": true,
+      "minorityCommunities": [
+        "Muslim",
+        "Christian",
+        "Sikh",
+        "Buddhist",
+        "Jain",
+        "Parsi"
+      ]
+    }
+  },
+  {
+    "id": "scholarship-students-disabilities",
+    "name": "Post-Matric Scholarship for Students with Disabilities",
+    "short_description": "Dedicated central scholarship providing fees and special allowances to students with benchmark disabilities (40%+ disability) in higher education.",
+    "category": "Special Support",
+    "state": "All India",
+    "benefits": "Tuition fee reimbursement + maintenance allowance up to ₹1,600/month + disability conveyance allowance & escort allowance.",
+    "required_documents": [
+      "aadhaar",
+      "disability_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Apply on National Scholarship Portal under Department of Empowerment of Persons with Disabilities (DEPwD). Submit valid UDID card.",
+    "important_dates": "July to November annually.",
+    "official_source": "Department of Empowerment of Persons with Disabilities, Govt. of India",
+    "application_url": "https://disabilityaffairs.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 15,
+      "maxAge": 32,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 250000,
+      "minMarks": 40,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "12th / Intermediate",
+        "Undergraduate / Diploma",
+        "Postgraduate"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": true,
+      "minDisabilityPercentage": 40,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "nfpwd-national-fellowship-pwd",
+    "name": "National Fellowship for Persons with Disabilities (NFPwD)",
+    "short_description": "Provides financial aid to research scholars with benchmark disabilities pursuing regular M.Phil. and Ph.D. degrees in Indian Universities.",
+    "category": "Special Support",
+    "state": "All India",
+    "benefits": "Fellowship of ₹37,000/month (JRF) and ₹42,000/month (SRF) + escort/reader allowance of ₹2,000/month and annual contingency grant.",
+    "required_documents": [
+      "aadhaar",
+      "disability_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Selection made through UGC-NET score or DEPwD portal merit ranking for registered research scholars.",
+    "important_dates": "Matches UGC-NET academic cycles.",
+    "official_source": "DEPwD & University Grants Commission",
+    "application_url": "https://www.ugc.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 21,
+      "maxAge": 38,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 800000,
+      "minMarks": 50,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "PhD / Research"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": true,
+      "minDisabilityPercentage": 40,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "beedi-cine-mine-workers-scholarship",
+    "name": "Financial Assistance for Education of the Children of Beedi/Cine/IOMC/LSDM Workers",
+    "short_description": "Provides educational stipends to dependent children of Beedi workers, Iron/Manganese/Chrome ore mine workers, and Cine workers.",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "Annual grant ranging from ₹1,000 (primary) to ₹15,000 (professional degree courses) per student.",
+    "required_documents": [
+      "aadhaar",
+      "bank_account",
+      "student_id",
+      "marksheet",
+      "other_doc"
+    ],
+    "application_process": "Apply on NSP under Ministry of Labour & Employment. Submit copy of parent's worker identity card issued by Labour Welfare Commissioner.",
+    "important_dates": "August to November annually.",
+    "official_source": "Ministry of Labour & Employment, Govt. of India",
+    "application_url": "https://labour.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 10,
+      "maxAge": 25,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 120000,
+      "minMarks": 40,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "School / 10th",
+        "12th / Intermediate",
+        "Undergraduate / Diploma"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "central-sector-scholarship-pwd-higher",
+    "name": "Central Sector Top Class Scholarship for College/University Students with Disabilities",
+    "short_description": "Covers full tuition fees and technology aids for students with disabilities admitted to notified premier higher educational institutions.",
+    "category": "Special Support",
+    "state": "All India",
+    "benefits": "Tuition fee up to ₹2.00 Lakh per annum + books allowance ₹5,000/year + assistive devices allowance up to ₹30,000 one-time.",
+    "required_documents": [
+      "aadhaar",
+      "disability_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Apply via NSP under DEPwD vertical. Upload valid UDID card and college admission verification.",
+    "important_dates": "July to November on NSP.",
+    "official_source": "Department of Empowerment of Persons with Disabilities",
+    "application_url": "https://disabilityaffairs.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 17,
+      "maxAge": 32,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 600000,
+      "minMarks": 50,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma",
+        "Postgraduate"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": true,
+      "minDisabilityPercentage": 40,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "free-coaching-scheme-sc-obc",
+    "name": "Free Coaching Scheme for SC and OBC Students",
+    "short_description": "Quality coaching for competitive examinations (UPSC, State PSC, SSC, Banking, JEE, NEET, CLAT) for economically disadvantaged SC and OBC learners.",
+    "category": "Education & Digital Support",
+    "state": "All India",
+    "benefits": "Full coaching course fee paid directly to empanelled coaching institutes + monthly stipend of ₹4,000 (outstation) or ₹2,500 (local).",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Apply online through coaching.dosje.gov.in portal. Selected on the basis of academic merit in 12th/Degree.",
+    "important_dates": "Portal notifications released May-June.",
+    "official_source": "Ministry of Social Justice and Empowerment, Govt. of India",
+    "application_url": "https://socialjustice.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 17,
+      "maxAge": 30,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 800000,
+      "minMarks": 50,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "SC",
+        "OBC"
+      ],
+      "educationLevels": [
+        "12th / Intermediate",
+        "Undergraduate / Diploma"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "pm-usp-csis-interest-subsidy",
+    "name": "PM-USP Central Sector Interest Subsidy Scheme (CSIS) on Education Loans",
+    "short_description": "Provides full interest subsidy during the moratorium period (course period + 1 year) on educational loans availed from scheduled banks for professional degrees.",
+    "category": "Financial Support",
+    "state": "All India",
+    "benefits": "100% interest subsidy paid by Govt. of India during course duration plus 1 year on education loans up to ₹10 Lakhs.",
+    "required_documents": [
+      "aadhaar",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Apply for educational loan through Vidya Lakshmi Portal (vidyalakshmi.co.in). Bank uploads claim on Canara Bank CSIS web portal.",
+    "important_dates": "Continuous submission through lending banks.",
+    "official_source": "Department of Higher Education, Ministry of Education",
+    "application_url": "https://www.vidyalakshmi.co.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 17,
+      "maxAge": 32,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 450000,
+      "minMarks": 50,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma",
+        "Postgraduate"
+      ],
+      "courses": [
+        "Engineering / Technology",
+        "IT / Computer Applications",
+        "Medical / Pharmacy / Nursing",
+        "Management / Business Administration",
+        "Law / Legal Studies"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "cgfsel-education-loan-guarantee",
+    "name": "Credit Guarantee Fund Scheme for Education Loans (CGFSEL)",
+    "short_description": "Provides credit guarantee to member banks for education loans up to ₹7.5 Lakh without third-party guarantee or collateral security.",
+    "category": "Financial Support",
+    "state": "All India",
+    "benefits": "Collateral-free educational loan approval up to ₹7.5 Lakh with NCGTC sovereign credit guarantee backing.",
+    "required_documents": [
+      "aadhaar",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Apply online via Vidya Lakshmi portal. Scheduled commercial banks process under IBA Model Educational Loan Scheme.",
+    "important_dates": "Available year-round.",
+    "official_source": "National Credit Guarantee Trustee Company (NCGTC) & Ministry of Education",
+    "application_url": "https://www.ncgtc.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 17,
+      "maxAge": 35,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 800000,
+      "minMarks": 50,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma",
+        "Postgraduate"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "dr-ambedkar-interest-subsidy-obc-ebc",
+    "name": "Dr. Ambedkar Central Sector Scheme of Interest Subsidy for OBC/EBC Education Loans",
+    "short_description": "Provides interest subsidy to OBC and EBC students on educational loans for overseas studies at Masters, M.Phil., and Ph.D. level.",
+    "category": "Financial Support",
+    "state": "All India",
+    "benefits": "100% interest subsidy on foreign education loan during moratorium period (course duration + 1 year).",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Avail overseas education loan through scheduled bank on Vidya Lakshmi portal. Bank claims subsidy on Ministry portal.",
+    "important_dates": "Continuous banking cycle.",
+    "official_source": "Ministry of Social Justice and Empowerment, Govt. of India",
+    "application_url": "https://socialjustice.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 20,
+      "maxAge": 35,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 800000,
+      "minMarks": 55,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "OBC",
+        "EBC"
+      ],
+      "educationLevels": [
+        "Postgraduate",
+        "PhD / Research"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "padho-pardesh-interest-subsidy-minority",
+    "name": "Padho Pardesh Overseas Education Loan Interest Subsidy for Minorities",
+    "short_description": "Discontinued by the Ministry of Minority Affairs from FY 2022-23. Previously provided interest subsidy on educational loans for overseas studies to students from notified minority communities.",
+    "category": "Financial Support",
+    "state": "All India",
+    "benefits": "Full interest payment reimbursed for course duration + 1 year on sanctioned foreign education loans.",
+    "required_documents": [
+      "aadhaar",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Sanctioned education loan details uploaded by lending bank to IBA/Ministry portal.",
+    "important_dates": "Scheme discontinued by Ministry of Minority Affairs from 2022-23. Existing sanctioned beneficiaries continue to receive subsidy.",
+    "official_source": "Ministry of Minority Affairs",
+    "application_url": "https://minorityaffairs.gov.in",
+    "status": "DISCONTINUED",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 20,
+      "maxAge": 35,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 600000,
+      "minMarks": 55,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Postgraduate",
+        "PhD / Research"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": true,
+      "minorityCommunities": [
+        "Muslim",
+        "Christian",
+        "Sikh",
+        "Buddhist",
+        "Jain",
+        "Parsi"
+      ]
+    }
+  },
+  {
+    "id": "national-overseas-scholarship-sc-st",
+    "name": "National Overseas Scholarship (NOS) for SC/ST/De-notified Nomadic Tribes",
+    "short_description": "Prestigious central scholarship facilitating low-income students belonging to SC, DNT, and traditional artisans to pursue Master/Ph.D. in top 500 QS world ranked universities.",
+    "category": "Scholarships",
+    "state": "All India",
+    "benefits": "Full international tuition fee paid directly to university + annual maintenance allowance (USD 15,400 or GBP 9,900) + contingency allowance and air passage.",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Apply online through nosmsje.gov.in portal. Unconditional offer letter from top 500 QS ranked foreign university required.",
+    "important_dates": "Application portal opens February to March annually.",
+    "official_source": "Ministry of Social Justice and Empowerment, Govt. of India",
+    "application_url": "https://nosmsje.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 21,
+      "maxAge": 35,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 800000,
+      "minMarks": 60,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "SC",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Postgraduate",
+        "PhD / Research"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "central-interest-subsidy-ews-loans",
+    "name": "Central Sector Education Loan Support Scheme for Economically Weaker Students",
+    "short_description": "Provides targeted financial relief and interest rate concessions for students from EWS households taking education loans under Indian Banks Association guidelines.",
+    "category": "Financial Support",
+    "state": "All India",
+    "benefits": "Subsidized interest rates and moratorium payment support on education loans up to ₹7.5 Lakhs.",
+    "required_documents": [
+      "aadhaar",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "marksheet"
+    ],
+    "application_process": "Apply through Vidya Lakshmi unified loan portal. Income certificate issued by Revenue Officer / Tehsildar mandatory.",
+    "important_dates": "Rolling throughout the academic session.",
+    "official_source": "Department of Financial Services & Department of Higher Education",
+    "application_url": "https://www.vidyalakshmi.co.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 17,
+      "maxAge": 32,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 450000,
+      "minMarks": 50,
+      "states": [
+        "All India"
+      ],
+      "domicileRequired": false,
+      "domicileStates": [
+        "All India"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma",
+        "Postgraduate"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "mp-post-matric-sc-st",
+    "name": "Madhya Pradesh Post-Matric Scholarship for SC/ST Students (MPTAAS)",
+    "short_description": "Comprehensive scholarship by MP Tribal Affairs & SC Welfare department covering tuition and maintenance allowance for SC/ST college students.",
+    "category": "Scholarships",
+    "state": "Madhya Pradesh",
+    "benefits": "100% tuition fee reimbursement directly to institute + maintenance allowance up to ₹1,500 per month into student bank account.",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "domicile_cert",
+      "marksheet"
+    ],
+    "application_process": "Register on MP Tribal Affairs Automation System (MPTAAS) portal (tribal.mp.gov.in/mptaas) using Samagra ID and Aadhaar e-KYC. Submit college admission details.",
+    "important_dates": "August to January annually.",
+    "official_source": "Tribal Affairs & Scheduled Caste Welfare Department, Govt. of Madhya Pradesh",
+    "application_url": "https://www.tribal.mp.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 16,
+      "maxAge": 30,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 600000,
+      "minMarks": 40,
+      "states": [
+        "Madhya Pradesh"
+      ],
+      "domicileRequired": true,
+      "domicileStates": [
+        "Madhya Pradesh"
+      ],
+      "categories": [
+        "SC",
+        "ST"
+      ],
+      "educationLevels": [
+        "12th / Intermediate",
+        "Undergraduate / Diploma",
+        "Postgraduate"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "mp-post-matric-obc",
+    "name": "Madhya Pradesh Post-Matric Scholarship for OBC Students",
+    "short_description": "State-funded educational grant for Other Backward Classes students enrolled in post-matric courses in recognized colleges in Madhya Pradesh.",
+    "category": "Scholarships",
+    "state": "Madhya Pradesh",
+    "benefits": "Full tuition fee reimbursement for government colleges / capped fee for private colleges + monthly maintenance allowance.",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "domicile_cert",
+      "marksheet"
+    ],
+    "application_process": "Apply via Madhya Pradesh Scholarship Portal with MP Samagra ID and digital caste certificate.",
+    "important_dates": "August to December.",
+    "official_source": "Backward Classes & Minorities Welfare Department, Govt. of Madhya Pradesh",
+    "application_url": "http://scholarshipportal.mp.nic.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 16,
+      "maxAge": 28,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 300000,
+      "minMarks": 45,
+      "states": [
+        "Madhya Pradesh"
+      ],
+      "domicileRequired": true,
+      "domicileStates": [
+        "Madhya Pradesh"
+      ],
+      "categories": [
+        "OBC"
+      ],
+      "educationLevels": [
+        "12th / Intermediate",
+        "Undergraduate / Diploma",
+        "Postgraduate"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "mp-minority-post-matric",
+    "name": "Madhya Pradesh State Minority Post-Matric Scholarship",
+    "short_description": "State welfare initiative providing scholarships to minority community students pursuing technical, medical, and general higher education in MP.",
+    "category": "Scholarships",
+    "state": "Madhya Pradesh",
+    "benefits": "Financial assistance towards admission fee, tuition fee, and maintenance allowance up to ₹10,000/- per annum.",
+    "required_documents": [
+      "aadhaar",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "domicile_cert",
+      "marksheet"
+    ],
+    "application_process": "Apply online on MP State Scholarship Portal. Requires MP Domicile and community declaration.",
+    "important_dates": "September to December annually.",
+    "official_source": "Minority Welfare Directorate, Govt. of Madhya Pradesh",
+    "application_url": "http://scholarshipportal.mp.nic.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 16,
+      "maxAge": 28,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 250000,
+      "minMarks": 50,
+      "states": [
+        "Madhya Pradesh"
+      ],
+      "domicileRequired": true,
+      "domicileStates": [
+        "Madhya Pradesh"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma",
+        "Postgraduate"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": true,
+      "minorityCommunities": [
+        "Muslim",
+        "Christian",
+        "Sikh",
+        "Buddhist",
+        "Jain",
+        "Parsi"
+      ]
+    }
+  },
+  {
+    "id": "maha-vjnt-post-matric",
+    "name": "Maharashtra Post-Matric Scholarship for VJNT Students (MahaDBT)",
+    "short_description": "Full tuition fee waiver and examination fee support for Vimukta Jati and Nomadic Tribes students pursuing college and professional education in Maharashtra.",
+    "category": "Scholarships",
+    "state": "Maharashtra",
+    "benefits": "100% tuition and exam fees paid to college + maintenance allowance of ₹425 to ₹1,200 per month depending on stream and hosteller status.",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "domicile_cert",
+      "marksheet"
+    ],
+    "application_process": "Register on MahaDBT portal (mahadbt.maharashtra.gov.in) with Aadhaar authentication. Select VJNT Post-Matric scheme and submit college admission receipt.",
+    "important_dates": "MahaDBT cycle July to December annually.",
+    "official_source": "VJNT, OBC & SBC Welfare Department, Govt. of Maharashtra",
+    "application_url": "https://mahadbt.maharashtra.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 16,
+      "maxAge": 30,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 150000,
+      "minMarks": 40,
+      "states": [
+        "Maharashtra"
+      ],
+      "domicileRequired": true,
+      "domicileStates": [
+        "Maharashtra"
+      ],
+      "categories": [
+        "DNT",
+        "OBC",
+        "SC",
+        "ST"
+      ],
+      "educationLevels": [
+        "12th / Intermediate",
+        "Undergraduate / Diploma",
+        "Postgraduate"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "maha-sc-post-matric",
+    "name": "Maharashtra Post-Matric Scholarship for SC Students (MahaDBT)",
+    "short_description": "Social Justice & Special Assistance Department scholarship providing full fee waiver and maintenance to Scheduled Caste students in Maharashtra.",
+    "category": "Scholarships",
+    "state": "Maharashtra",
+    "benefits": "100% tuition, development, and examination fees reimbursed + maintenance allowance up to ₹13,500/year.",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "domicile_cert",
+      "marksheet"
+    ],
+    "application_process": "Submit online form on MahaDBT portal (mahadbt.maharashtra.gov.in) with caste certificate issued by Maharashtra competent authority.",
+    "important_dates": "August to January on MahaDBT.",
+    "official_source": "Social Justice and Special Assistance Department, Govt. of Maharashtra",
+    "application_url": "https://mahadbt.maharashtra.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 16,
+      "maxAge": 30,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 250000,
+      "minMarks": 40,
+      "states": [
+        "Maharashtra"
+      ],
+      "domicileRequired": true,
+      "domicileStates": [
+        "Maharashtra"
+      ],
+      "categories": [
+        "SC"
+      ],
+      "educationLevels": [
+        "12th / Intermediate",
+        "Undergraduate / Diploma",
+        "Postgraduate",
+        "PhD / Research"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "maha-st-post-matric",
+    "name": "Maharashtra Post-Matric Scholarship for ST Students (Tribal Development)",
+    "short_description": "Tribal Development Department, Maharashtra scholarship for Scheduled Tribe students studying in higher education institutions.",
+    "category": "Scholarships",
+    "state": "Maharashtra",
+    "benefits": "Full college tuition & non-refundable fees reimbursed directly to college + living expense allowance up to ₹13,500/year for hostellers.",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "domicile_cert",
+      "marksheet"
+    ],
+    "application_process": "Apply online via MahaDBT portal under Tribal Development Department vertical. Requires valid ST Caste Validity Certificate.",
+    "important_dates": "August to December annually.",
+    "official_source": "Tribal Development Department, Govt. of Maharashtra",
+    "application_url": "https://mahadbt.maharashtra.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 16,
+      "maxAge": 30,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 250000,
+      "minMarks": 40,
+      "states": [
+        "Maharashtra"
+      ],
+      "domicileRequired": true,
+      "domicileStates": [
+        "Maharashtra"
+      ],
+      "categories": [
+        "ST"
+      ],
+      "educationLevels": [
+        "12th / Intermediate",
+        "Undergraduate / Diploma",
+        "Postgraduate",
+        "PhD / Research"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "maha-minority-scholarship-higher",
+    "name": "Maharashtra State Minority Scholarship (Higher & Professional Courses)",
+    "short_description": "Government of Maharashtra scholarship supporting minority community students pursuing undergraduate and postgraduate professional courses.",
+    "category": "Scholarships",
+    "state": "Maharashtra",
+    "benefits": "Financial grant of ₹50,000/- per year or actual tuition fee (whichever is lower) disbursed via DBT.",
+    "required_documents": [
+      "aadhaar",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "domicile_cert",
+      "marksheet"
+    ],
+    "application_process": "Apply on MahaDBT portal under Directorate of Technical Education / Medical Education vertical.",
+    "important_dates": "September to December annually.",
+    "official_source": "Minority Development Department, Govt. of Maharashtra",
+    "application_url": "https://mahadbt.maharashtra.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 17,
+      "maxAge": 28,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 800000,
+      "minMarks": 50,
+      "states": [
+        "Maharashtra"
+      ],
+      "domicileRequired": true,
+      "domicileStates": [
+        "Maharashtra"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma",
+        "Postgraduate"
+      ],
+      "courses": [
+        "Engineering / Technology",
+        "IT / Computer Applications",
+        "Medical / Pharmacy / Nursing",
+        "Management / Business Administration",
+        "Law / Legal Studies"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": true,
+      "minorityCommunities": [
+        "Muslim",
+        "Christian",
+        "Sikh",
+        "Buddhist",
+        "Jain",
+        "Parsi"
+      ]
+    }
+  },
+  {
+    "id": "delhi-higher-technical-support",
+    "name": "Delhi Higher & Technical Education Support / Merit-cum-Means Scheme",
+    "short_description": "Government of NCT of Delhi scheme providing financial assistance to meritorious economically weaker students in Delhi State Universities (DTU, NSUT, IPU, IIITD).",
+    "category": "Scholarships",
+    "state": "Delhi",
+    "benefits": "100% fee waiver for family income under ₹2.5 Lakh; 50% fee waiver for income ₹2.5-6.0 Lakh.",
+    "required_documents": [
+      "aadhaar",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "domicile_cert",
+      "marksheet"
+    ],
+    "application_process": "Apply online on Delhi Higher Education e-District portal (edistrict.delhigovt.nic.in). Nodal university officer verifies admissions.",
+    "important_dates": "Annual application window October to January.",
+    "official_source": "Directorate of Higher Education, Govt. of NCT of Delhi",
+    "application_url": "https://edistrict.delhigovt.nic.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 17,
+      "maxAge": 26,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 600000,
+      "minMarks": 60,
+      "states": [
+        "Delhi"
+      ],
+      "domicileRequired": true,
+      "domicileStates": [
+        "Delhi"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "Undergraduate / Diploma"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "rajasthan-post-matric-sje",
+    "name": "Rajasthan Post-Matric Scholarship Scheme (SJE Portal)",
+    "short_description": "Direct fee reimbursement and maintenance allowance for SC, ST, and Special Backward Category students studying in colleges and universities in Rajasthan.",
+    "category": "Scholarships",
+    "state": "Rajasthan",
+    "benefits": "100% compulsory tuition and examination fee reimbursed directly to students + monthly maintenance stipend.",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "domicile_cert",
+      "marksheet"
+    ],
+    "application_process": "Apply via Rajasthan SSO Portal (sso.rajasthan.gov.in) under SJMS (Social Justice Management System) using Jan Aadhaar card.",
+    "important_dates": "Portal active July to December annually.",
+    "official_source": "Social Justice and Empowerment Department, Govt. of Rajasthan",
+    "application_url": "https://sje.rajasthan.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 16,
+      "maxAge": 30,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 250000,
+      "minMarks": 40,
+      "states": [
+        "Rajasthan"
+      ],
+      "domicileRequired": true,
+      "domicileStates": [
+        "Rajasthan"
+      ],
+      "categories": [
+        "SC",
+        "ST",
+        "OBC"
+      ],
+      "educationLevels": [
+        "12th / Intermediate",
+        "Undergraduate / Diploma",
+        "Postgraduate"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  },
+  {
+    "id": "up-post-matric-scholarship",
+    "name": "Uttar Pradesh Post-Matric Scholarship & Fee Reimbursement Scheme",
+    "short_description": "Flagship scholarship and full fee reimbursement scheme for General, OBC, SC, ST, and Minority students studying in higher education institutions in Uttar Pradesh.",
+    "category": "Scholarships",
+    "state": "Uttar Pradesh",
+    "benefits": "100% non-refundable tuition fee reimbursement (up to government limits) + monthly maintenance allowance up to ₹1,200/month.",
+    "required_documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_account",
+      "student_id",
+      "domicile_cert",
+      "marksheet"
+    ],
+    "application_process": "Register on UP Scholarship Portal (scholarship.up.gov.in) with Aadhaar authentication, submit application to college, college verifies and forwards to District Welfare Officer.",
+    "important_dates": "July to December annually.",
+    "official_source": "Social Welfare Department, Govt. of Uttar Pradesh",
+    "application_url": "https://scholarship.up.gov.in",
+    "status": "ACTIVE",
+    "last_verified": "2026-03-01",
+    "eligibilityRules": {
+      "minAge": 16,
+      "maxAge": 30,
+      "genders": [
+        "All",
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "occupations": [
+        "Student",
+        "College Student"
+      ],
+      "maxIncome": 250000,
+      "minMarks": 45,
+      "states": [
+        "Uttar Pradesh"
+      ],
+      "domicileRequired": true,
+      "domicileStates": [
+        "Uttar Pradesh"
+      ],
+      "categories": [
+        "All",
+        "General",
+        "OBC",
+        "SC",
+        "ST",
+        "EWS",
+        "DNT"
+      ],
+      "educationLevels": [
+        "12th / Intermediate",
+        "Undergraduate / Diploma",
+        "Postgraduate",
+        "PhD / Research"
+      ],
+      "courses": [
+        "All"
+      ],
+      "disabilityOnly": false,
+      "minDisabilityPercentage": 0,
+      "minorityOnly": false,
+      "minorityCommunities": [
+        "All"
+      ]
+    }
+  }
+]

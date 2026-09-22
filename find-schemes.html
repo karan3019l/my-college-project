@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find Government Schemes & Scholarships – SchemeMatch. 6-step intelligent eligibility wizard with document OCR, camera capture, and rule-based matching.">
+  <title>Find Matching Schemes – SchemeMatch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Tricolor Accent Line -->
+  <div class="top-strip"></div>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-notice">
+        <span class="tag" data-i18n="tag_portal">GOVT CITIZEN PORTAL</span>
+        <span data-i18n="top_bar_initiative">National Scheme Finder & Student Benefit Discovery Service</span>
+      </div>
+      <div class="top-bar-right">
+        <div class="lang-selector-wrap">
+          <label for="site-lang-select" class="lang-label">🌐 <span data-i18n="lang_label">Language:</span></label>
+          <select id="site-lang-select" class="lang-dropdown" aria-label="Select Portal Language">
+            <option value="en-IN">English</option>
+            <option value="hi-IN">हिन्दी</option>
+            <option value="mr-IN">मराठी</option>
+            <option value="bn-IN">বাংলা</option>
+            <option value="ta-IN">தமிழ்</option>
+            <option value="te-IN">తెలుగు</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accessibility Toolbar Drawer (Collapsible) -->
+  <div id="accessibility-bar" class="accessibility-bar">
+    <div class="container accessibility-bar-content">
+      <div class="access-tools-title">
+        <span>♿</span>
+        <strong data-i18n="access_title">Accessibility Tools:</strong>
+        <span class="access-desc" data-i18n="access_desc">Adjust text size, contrast, and voice assistance for effortless reading</span>
+      </div>
+      <div class="access-buttons-row">
+        <button type="button" id="font-decrease-btn" class="btn btn-outline btn-sm" title="Decrease font size">A-</button>
+        <button type="button" id="font-reset-btn" class="btn btn-outline btn-sm" title="Reset font size">A Default</button>
+        <button type="button" id="font-increase-btn" class="btn btn-outline btn-sm" title="Increase font size">A+</button>
+        <button type="button" id="high-contrast-btn" class="btn btn-outline btn-sm" title="Toggle High Contrast">🌓 High Contrast</button>
+        <button type="button" id="read-page-global-btn" class="btn btn-cyan btn-sm" title="Read page aloud">🔊 Read Page</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modern Sticky Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link">
+        <div class="brand-emblem">🏛️</div>
+        <div class="brand-text">
+          <h1 class="brand-title">Scheme<span>Match</span></h1>
+          <p class="brand-subtitle" data-i18n="brand_subtitle">Government Scheme Finder</p>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="find-schemes.html" class="nav-link active" data-i18n="nav_find">Find Schemes</a></li>
+          <li><a href="results.html" class="nav-link" data-i18n="nav_results">Results</a></li>
+          <li><a href="index.html#about" class="nav-link" data-i18n="nav_about">About</a></li>
+          <li><a href="index.html#how-it-works" class="nav-link" data-i18n="nav_help">Help</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" id="voice-assistant-trigger" class="btn btn-voice btn-sm" title="Open Voice Assistant">
+          🎙️ <span class="nav-btn-text">SevaVaani Voice Co-Pilot</span>
+        </button>
+        <button type="button" id="accessibility-toggle-btn" class="btn btn-outline btn-sm" title="Toggle Accessibility Tools">
+          ♿ <span class="nav-btn-text" data-i18n="btn_accessibility">Accessibility</span>
+        </button>
+        <button type="button" class="nav-hamburger" id="nav-hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Multi-Step Wizard Layout -->
+  <main class="container" style="padding-top: 2rem; padding-bottom: 4rem;">
+
+    <!-- Wizard Header Banner -->
+    <div style="margin-bottom: 2rem; text-align: center;">
+      <span class="section-tag">Intelligent Eligibility Wizard</span>
+      <h2 style="font-size: 2.2rem; color: #ffffff; margin: 0.4rem 0 0.5rem;">Find Schemes You May Be Eligible For</h2>
+      <p style="color: var(--text-muted); max-width: 680px; margin: 0 auto; font-size: 1rem; line-height: 1.55;">
+        Complete the 6-step guided profile, upload your documents or capture them via camera, and let our deterministic engine discover your best matching government schemes across <span class="dynamic-schemes-count">69</span> verified welfare programs.
+      </p>
+    </div>
+
+    <!-- Presentation Mode / Demo Profiles Panel -->
+    <div class="demo-profile-panel" style="margin-bottom: 2rem;">
+      <div class="panel-title" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.6rem; margin-bottom: 0.8rem;">
+        <span style="font-weight: 700; color: #ffffff; display: flex; align-items: center; gap: 0.5rem;">
+          <span>🎯</span> Instant Sample Profiles (Quick Auto-Fill)
+        </span>
+        <span class="badge badge-cyan">One-Click Auto-Fill</span>
+      </div>
+      <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.8rem;">
+        Click any verified demo student scenario below to instantly populate all wizard steps and test deterministic matching:
+      </p>
+      <div id="demo-profile-list" class="demo-profile-list" style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+        <button type="button" class="demo-profile-btn" data-demo="profile-a">
+          👨‍🎓 Profile A: College Student (OBC, ₹2L, Engineering)
+        </button>
+        <button type="button" class="demo-profile-btn" data-demo="profile-b">
+          👩‍🎓 Profile B: Girl Student (General, ₹3.5L, Pragati Eligible)
+        </button>
+        <button type="button" class="demo-profile-btn" data-demo="profile-c">
+          🏛️ Profile C: MP State Post-Matric (OBC, ₹1.8L, Pharmacy)
+        </button>
+        <button type="button" class="demo-profile-btn" data-demo="profile-d">
+          ♿ Profile D: Student with Disability (SC, PwD 40%+, Saksham Eligible)
+        </button>
+      </div>
+    </div>
+
+    <!-- 6-Step Horizontal Progress Stepper -->
+    <div class="stepper-container" aria-label="Progress Stepper">
+      <div class="stepper-track"></div>
+      <div class="stepper-item step-nav-item active" data-step="1">
+        <div class="stepper-circle">1</div>
+        <div class="stepper-label">Personal</div>
+      </div>
+      <div class="stepper-item step-nav-item" data-step="2">
+        <div class="stepper-circle">2</div>
+        <div class="stepper-label">Education</div>
+      </div>
+      <div class="stepper-item step-nav-item" data-step="3">
+        <div class="stepper-circle">3</div>
+        <div class="stepper-label">Financial</div>
+      </div>
+      <div class="stepper-item step-nav-item" data-step="4">
+        <div class="stepper-circle">4</div>
+        <div class="stepper-label">Other Details</div>
+      </div>
+      <div class="stepper-item step-nav-item" data-step="5">
+        <div class="stepper-circle">5</div>
+        <div class="stepper-label">Documents & OCR</div>
+      </div>
+      <div class="stepper-item step-nav-item" data-step="6">
+        <div class="stepper-circle">6</div>
+        <div class="stepper-label">Results</div>
+      </div>
+    </div>
+
+    <!-- Main Wizard Form -->
+    <form id="citizen-form" novalidate>
+
+      <!-- ========================================== -->
+      <!-- STEP 1: PERSONAL INFORMATION -->
+      <!-- ========================================== -->
+      <div id="step-personal" class="form-panel-card wizard-step-panel">
+        <div class="panel-title">
+          <span>1. Personal Information</span>
+          <span class="badge badge-cyan">Step 1 of 6</span>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.5rem;">
+          Provide your demographic details for accurate statutory eligibility calculation.
+        </p>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Enter your full name" value="">
+            <small class="form-helper-text">As printed on your Aadhaar card or marksheet.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="age" class="form-label">Age (Years)</label>
+            <input type="number" id="age" class="form-control" placeholder="Enter your age" min="1" max="120" value="">
+            <small class="form-helper-text">Enter your current age in years (1 to 120).</small>
+          </div>
+
+          <div class="form-group">
+            <label for="gender" class="form-label">Gender</label>
+            <select id="gender" class="form-control">
+              <option value="" selected>Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female (Eligible for Pragati & Girl-specific schemes)</option>
+              <option value="Other">Other / Transgender</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="social-category" class="form-label">Social Category</label>
+            <select id="social-category" class="form-control">
+              <option value="" selected>Select Category</option>
+              <option value="General">General / Open</option>
+              <option value="OBC">OBC (Other Backward Classes)</option>
+              <option value="SC">SC (Scheduled Caste)</option>
+              <option value="ST">ST (Scheduled Tribe)</option>
+              <option value="EWS">EWS (Economically Weaker Section)</option>
+              <option value="DNT">DNT / VJNT (De-Notified Nomadic Tribes)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+          <label for="occupation" class="form-label">Current Occupation / Livelihood</label>
+          <select id="occupation" class="form-control" name="occupation">
+            <option value="" selected>Select Occupation</option>
+            <option value="Farmer">🌾 Farmer / Agricultural Worker</option>
+            <option value="Dairy Farmer">🐄 Dairy Farmer / Fisherman</option>
+            <option value="Artisan">🔨 Artisan / Traditional Craftsman (Carpenter, Potter, Weaver...)</option>
+            <option value="Business Owner">💼 Business Owner / MSME Entrepreneur</option>
+            <option value="Self-Employed">🛒 Self-Employed / Street Vendor / Hawker</option>
+            <option value="Worker">🏗️ Unorganized / Daily Wage Worker / Labourer</option>
+            <option value="Driver">🚗 Driver (Taxi / Auto / Truck)</option>
+            <option value="Salaried Employee">👔 Salaried Employee (Private Sector)</option>
+            <option value="Government Employee">🏛️ Government Employee</option>
+            <option value="Woman">👩 Homemaker / SHG Member / Rural Woman</option>
+            <option value="Senior Citizen">👴 Senior Citizen (60 years and above)</option>
+            <option value="Retired Person">📋 Retired (Pensioner)</option>
+            <option value="Student">🎓 Student (School / College / University)</option>
+            <option value="Unemployed">🔍 Unemployed / Job Seeker</option>
+            <option value="Other">📝 Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+            <label for="state" class="form-label">Current State of Residence</label>
+            <select id="state" class="form-control">
+              <option value="" selected>Select State</option>
+              <option value="All India">All India (Central Eligibility)</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="West Bengal">West Bengal</option>
+              <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+              <option value="Ladakh">Ladakh</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="district" class="form-label">District</label>
+            <input type="text" id="district" class="form-control" placeholder="Enter your district" value="">
+          </div>
+
+          <div class="form-group">
+            <label for="disability-status" class="form-label">Person with Benchmark Disability (PwD)?</label>
+            <select id="disability-status" class="form-control">
+              <option value="" selected>Select Disability Status</option>
+              <option value="No">No</option>
+              <option value="Yes">Yes (Eligible for Saksham & DEPwD scholarships)</option>
+            </select>
+          </div>
+
+          <div class="form-group" id="disability-pct-group" style="display: none;">
+            <label for="disability-pct" class="form-label">Disability Percentage</label>
+            <select id="disability-pct" class="form-control">
+              <option value="" selected>Select Disability Percentage</option>
+              <option value="40% or more (Benchmark Disability)">40% or more (Benchmark Disability - Meets statutory criteria)</option>
+              <option value="Less than 40%">Less than 40%</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="minority-status" class="form-label">Belong to Notified Minority Community?</label>
+            <select id="minority-status" class="form-control">
+              <option value="" selected>Select Minority Status</option>
+              <option value="No">No</option>
+              <option value="Yes">Yes (Eligible for Ministry of Minority Affairs schemes)</option>
+            </select>
+          </div>
+
+          <div class="form-group" id="minority-comm-group" style="display: none;">
+            <label for="minority-community" class="form-label">Minority Community</label>
+            <select id="minority-community" class="form-control">
+              <option value="" selected>Select Minority Community</option>
+              <option value="Muslim">Muslim</option>
+              <option value="Christian">Christian</option>
+              <option value="Sikh">Sikh</option>
+              <option value="Buddhist">Buddhist</option>
+              <option value="Jain">Jain</option>
+              <option value="Parsi">Parsi</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="wizard-buttons-row">
+          <div></div>
+          <button type="button" id="btn-personal-next" class="btn btn-cyan btn-md btn-next-step">
+            Education Information →
+          </button>
+        </div>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- STEP 2: EDUCATION INFORMATION -->
+      <!-- ========================================== -->
+      <div id="step-education" class="form-panel-card wizard-step-panel" style="display: none;">
+        <div class="panel-title">
+          <span>2. Education Information</span>
+          <span class="badge badge-cyan">Step 2 of 6</span>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.5rem;">
+          Enter your ongoing academic stream, university details, and scores for scholarship matching.
+        </p>
+
+        <div class="form-grid-2">
+          <div class="form-group full-width" style="grid-column: 1 / -1;">
+            <label for="education-level" class="form-label">Current Education Level</label>
+            <select id="education-level" class="form-control">
+              <option value="" selected>Select Education Level</option>
+              <option value="School / 10th">School (Class 9 - 10)</option>
+              <option value="12th / Intermediate">Higher Secondary (Class 11 - 12)</option>
+              <option value="Undergraduate / Diploma">Undergraduate / Diploma / Polytechnic</option>
+              <option value="Postgraduate">Postgraduate (Masters / PG Diploma)</option>
+              <option value="PhD / Research">PhD / Research Fellowship</option>
+            </select>
+          </div>
+
+          <!-- Conditional Higher Education Fields (Hidden for School/None, visible empty for College/Degree) -->
+          <div id="course-group" class="form-group higher-edu-field" style="display: none;">
+            <label for="course" class="form-label">Course / Program Stream</label>
+            <select id="course" class="form-control">
+              <option value="" selected>Select Course / Program Stream</option>
+              <option value="Engineering / Technology">Engineering & Technology (B.Tech / B.E. / Diploma)</option>
+              <option value="IT / Computer Applications">IT & Computer Applications (BCA / MCA / B.Sc IT)</option>
+              <option value="Medical / Pharmacy / Nursing">Medical, Dental, Pharmacy & Nursing (MBBS / BDS / B.Pharm)</option>
+              <option value="Science">Pure / Applied Sciences (B.Sc / M.Sc)</option>
+              <option value="Commerce / Management">Commerce & Management (B.Com / BBA / MBA)</option>
+              <option value="Arts / Humanities">Arts & Humanities (B.A. / M.A. / Social Work)</option>
+              <option value="Law">Law (LLB / BA-LLB / LLM)</option>
+              <option value="Vocational / ITI">Vocational, ITI & Polytechnic</option>
+            </select>
+          </div>
+
+          <div id="branch-group" class="form-group higher-edu-field" style="display: none;">
+            <label for="branch" class="form-label">Specialization / Branch</label>
+            <input type="text" id="branch" class="form-control" placeholder="Enter branch or specialization" value="">
+          </div>
+
+          <div id="year-semester-group" class="form-group higher-edu-field" style="display: none;">
+            <label for="year-semester" class="form-label">Year of Study / Semester</label>
+            <select id="year-semester" class="form-control">
+              <option value="" selected>Select Year of Study / Semester</option>
+              <option value="1st Year">1st Year (Fresh Admission)</option>
+              <option value="2nd Year">2nd Year (Lateral Entry / Renewal)</option>
+              <option value="3rd Year">3rd Year</option>
+              <option value="4th Year">4th Year</option>
+              <option value="Final Year">Final Year</option>
+            </select>
+          </div>
+
+          <div id="college-type-group" class="form-group higher-edu-field" style="display: none;">
+            <label for="college-type" class="form-label">College / Institution Type</label>
+            <select id="college-type" class="form-control">
+              <option value="" selected>Select College / Institution Type</option>
+              <option value="Government">Government College / University</option>
+              <option value="Govt-Aided">Government-Aided College</option>
+              <option value="Private">Private / Self-Financed Institution (AICTE/UGC Approved)</option>
+              <option value="Autonomous">Autonomous / Institute of National Importance (IIT/NIT/Central)</option>
+            </select>
+          </div>
+
+          <div id="college-state-group" class="form-group higher-edu-field" style="display: none;">
+            <label for="college-state" class="form-label">College State</label>
+            <select id="college-state" class="form-control">
+              <option value="" selected>Select College State</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="All India">Other State / Outside State</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="academic-marks" class="form-label">Current Academic Marks / CGPA Percentage</label>
+            <input type="number" id="academic-marks" class="form-control" placeholder="Enter percentage" min="0" max="100" value="">
+            <small class="form-helper-text">Overall percentage in current course or latest semester exam.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="prev-marks" class="form-label">Previous Qualification Marks (Class 10th / 12th %)</label>
+            <input type="number" id="prev-marks" class="form-control" placeholder="Enter percentage" min="0" max="100" value="">
+            <small class="form-helper-text">Central Sector schemes require above 80th percentile in Class 12.</small>
+          </div>
+        </div>
+
+        <div class="wizard-buttons-row">
+          <button type="button" class="btn btn-outline btn-md btn-prev-step">
+            ← Personal Details
+          </button>
+          <button type="button" class="btn btn-cyan btn-md btn-next-step">
+            Financial Information →
+          </button>
+        </div>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- STEP 3: FINANCIAL INFORMATION -->
+      <!-- ========================================== -->
+      <div id="step-financial" class="form-panel-card wizard-step-panel" style="display: none;">
+        <div class="panel-title">
+          <span>3. Financial Information</span>
+          <span class="badge badge-cyan">Step 3 of 6</span>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.5rem;">
+          Income information determines income-ceiling eligibility for means-based scholarships and interest subsidies.
+        </p>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="income" class="form-label">Annual Family Income (₹ INR)</label>
+            <input type="number" id="income" class="form-control" placeholder="Enter annual family income" min="0" max="10000000" step="5000" value="">
+            <small class="form-helper-text">Total combined gross annual income of parents/guardians from all sources.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="income-cert-status" class="form-label">Competent Income Certificate Available?</label>
+            <select id="income-cert-status" class="form-control">
+              <option value="" selected>Select Certificate Status</option>
+              <option value="Yes">Yes (Issued by Tehsildar / Revenue Officer / SDO)</option>
+              <option value="In-Process">In-Process / Applied at e-District Portal</option>
+              <option value="No">No / Not yet applied</option>
+            </select>
+          </div>
+
+          <!-- Student Specific Financial & Parent Information (Visible only for Students) -->
+          <div id="student-financial-group" class="form-group full-width" style="grid-column: 1 / -1; margin-top: 0.5rem;">
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="scholarship-received" class="form-label">Currently Receiving Another Government Scholarship?</label>
+                <select id="scholarship-received" class="form-control">
+                  <option value="" selected>Select Status</option>
+                  <option value="No">No (Eligible for fresh central/state scholarship)</option>
+                  <option value="Yes - Central">Yes - Receiving Central Govt Scholarship</option>
+                  <option value="Yes - State">Yes - Receiving State Govt Scholarship</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="fee-reimbursement" class="form-label">Receiving Tuition Fee Reimbursement?</label>
+                <select id="fee-reimbursement" class="form-control">
+                  <option value="" selected>Select Fee Reimbursement Status</option>
+                  <option value="No">No</option>
+                  <option value="Yes">Yes (Full / Partial)</option>
+                </select>
+              </div>
+
+              <div class="form-group full-width" style="grid-column: 1 / -1;">
+                <label for="education-loan" class="form-label">Education Loan Status</label>
+                <select id="education-loan" class="form-control">
+                  <option value="" selected>Select Education Loan Status</option>
+                  <option value="No">No education loan taken</option>
+                  <option value="Planning to take">Planning to apply for educational loan (CSIS / CGFSEL eligible)</option>
+                  <option value="Active loan from scheduled bank">Active education loan sanctioned by scheduled bank (Eligible for 100% interest subsidy)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Parents Information Container (Only for Student Occupation) -->
+            <div id="parents-info-container" style="margin-top: 1.25rem; padding: 1.25rem; background: rgba(255, 255, 255, 0.02); border: 1px dashed rgba(56, 189, 248, 0.3); border-radius: 10px;">
+              <h4 style="color: #38bdf8; margin-top: 0; margin-bottom: 1rem; font-size: 0.95rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem;">
+                <span>👨‍👩‍👧</span> Parent / Guardian Information (Student Applicants Only)
+              </h4>
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label for="parent-occupation" class="form-label">Parent / Guardian Occupation</label>
+                  <select id="parent-occupation" class="form-control">
+                    <option value="" selected>Select Parent / Guardian Occupation</option>
+                    <option value="Farmer">Farmer / Cultivator</option>
+                    <option value="Laborer / Daily Wage">Laborer / Daily Wage / Unorganized Sector</option>
+                    <option value="Artisan / Craftsperson">Traditional Artisan / Craftsperson</option>
+                    <option value="Small Business / Vendor">Small Business / Trader / Vendor</option>
+                    <option value="Private Sector">Private Sector Employee</option>
+                    <option value="Govt Employee">Government / Public Sector Employee</option>
+                    <option value="Armed Forces / Police">Armed Forces / Police / Paramilitary</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="govt-employee" class="form-label">Either Parent Class-I / Gazetted Govt Employee?</label>
+                  <select id="govt-employee" class="form-control">
+                    <option value="" selected>Select Status</option>
+                    <option value="No">No (Eligible for income-tested welfare schemes)</option>
+                    <option value="Yes">Yes (Gazetted / Income-tax assessee)</option>
+                  </select>
+                </div>
+
+                <div class="form-group full-width" style="grid-column: 1 / -1;">
+                  <label for="defence-relation" class="form-label">Relation with Central Armed Police Forces (CAPF) or RPF</label>
+                  <select id="defence-relation" class="form-control">
+                    <option value="" selected>Select Defence / CAPF Relation</option>
+                    <option value="None">None</option>
+                    <option value="Ward of CAPF / Assam Rifles">Dependent Ward of CAPF / Assam Rifles Personnel (PMSS WARB)</option>
+                    <option value="Ward of RPF / RPSF">Dependent Ward of RPF / RPSF Personnel (PMSS Railways)</option>
+                    <option value="Ward of Martyr">Ward of Personnel Martyred in Action / Gallantry Awardee</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wizard-buttons-row">
+          <button type="button" id="btn-financial-prev" class="btn btn-outline btn-md btn-prev-step">
+            ← Education Information
+          </button>
+          <button type="button" class="btn btn-cyan btn-md btn-next-step">
+            Other Qualifications →
+          </button>
+        </div>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- STEP 4: OTHER USEFUL INFORMATION -->
+      <!-- ========================================== -->
+      <div id="step-other" class="form-panel-card wizard-step-panel" style="display: none;">
+        <div class="panel-title">
+          <span>4. Special Category & Background Criteria</span>
+          <span class="badge badge-cyan">Step 4 of 6</span>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.5rem;">
+          Special criteria unlock targeted quotas such as CAPF wards, Northeast residents, orphans, and single girl child schemes.
+        </p>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="domicile-state" class="form-label">State of Permanent Domicile</label>
+            <select id="domicile-state" class="form-control">
+              <option value="" selected>Select State of Permanent Domicile</option>
+              <option value="Madhya Pradesh">Madhya Pradesh (MPTAAS Eligible)</option>
+              <option value="Maharashtra">Maharashtra (MahaDBT Eligible)</option>
+              <option value="Delhi">Delhi (e-District Eligible)</option>
+              <option value="Rajasthan">Rajasthan (SJE Eligible)</option>
+              <option value="Uttar Pradesh">Uttar Pradesh (UP Scholarship Eligible)</option>
+              <option value="Andhra Pradesh">Andhra Pradesh (JVD Eligible)</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Jammu and Kashmir">Jammu and Kashmir (PMSSS Eligible)</option>
+              <option value="Ladakh">Ladakh (PMSSS Eligible)</option>
+              <option value="Assam">Assam / North Eastern State (Ishan Uday Eligible)</option>
+              <option value="All India">Other State / General</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="special-category" class="form-label">Special Category / Quota</label>
+            <select id="special-category" class="form-control">
+              <option value="" selected>Select Special Category</option>
+              <option value="None">None / General Category</option>
+              <option value="Single Girl Child">Single Girl Child (AICTE Pragati / UGC)</option>
+              <option value="Orphan">Orphan Student (AICTE Swanath Eligible)</option>
+              <option value="Ward of Armed Forces / CAPF / Police">Ward of Armed Forces / CAPF / RPF Personnel (PMSS Eligible)</option>
+              <option value="Child of Beedi / Cine / Mine Worker">Child of Beedi / Cine / Mine Worker (Labour Welfare Eligible)</option>
+              <option value="J&K / Ladakh Resident">Permanent Resident of J&K / Ladakh (PMSSS)</option>
+              <option value="North-Eastern States Resident">North-Eastern State Domicile (Ishan Uday)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="wizard-buttons-row">
+          <button type="button" class="btn btn-outline btn-md btn-prev-step">
+            ← Financial Information
+          </button>
+          <button type="button" class="btn btn-cyan btn-md btn-next-step">
+            Documents & Camera OCR →
+          </button>
+        </div>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- STEP 5: DOCUMENT UPLOAD & VERIFICATION -->
+      <!-- ========================================== -->
+      <div id="step-documents" class="form-panel-card wizard-step-panel" style="display: none;">
+        <div class="panel-title">
+          <span>5. Document Upload &amp; Verification</span>
+          <span class="badge badge-cyan">Step 5 of 6</span>
+        </div>
+
+        <!-- Prominent Document Upload Header Banner -->
+        <div class="doc-upload-header-banner">
+          <div class="doc-upload-icon-circle">📁</div>
+          <div class="doc-upload-header-text">
+            <h3 class="doc-upload-main-title">Upload Verification Documents</h3>
+            <p class="doc-upload-main-desc">
+              Attach your identity, income, and category documents to verify eligibility and automatically calculate your <strong>Paperwork Readiness</strong> score.
+            </p>
+            <div class="doc-upload-badges">
+              <span class="doc-badge">📄 Formats: PDF, JPG, PNG</span>
+              <span class="doc-badge">⚡ Max 5 MB each</span>
+              <span class="doc-badge doc-badge-green">🔒 100% In-Browser Privacy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modern Paperwork Readiness Card -->
+        <div class="readiness-meter-card">
+          <div class="readiness-meter-header">
+            <div class="readiness-title-group">
+              <span class="readiness-icon">📊</span>
+              <div>
+                <span class="readiness-title">Document Paperwork Readiness</span>
+                <span class="readiness-count" id="readiness-count-display">0 Documents Attached</span>
+              </div>
+            </div>
+            <div class="readiness-score-badge" id="readiness-pct-display">0%</div>
+          </div>
+          <div class="progress-track-wrapper">
+            <div class="progress-track">
+              <div id="readiness-progress-fill" class="progress-fill" style="width: 0%;"></div>
+            </div>
+          </div>
+          <p class="readiness-subtext">
+            ℹ️ <em>Attaching valid documents verifies your credentials and accelerates application sanction.</em>
+          </p>
+        </div>
+
+        <!-- Clean Camera Scanner Toggle (Compact & Non-Intrusive) -->
+        <div class="camera-toggle-banner">
+          <div class="camera-banner-info">
+            <span class="cam-icon">📷</span>
+            <div>
+              <strong>Don't have scanned files handy?</strong>
+              <p>Take a quick photo of your physical certificate using your device camera.</p>
+            </div>
+          </div>
+          <div class="camera-actions-btns">
+            <button type="button" id="btn-start-camera" class="btn btn-voice btn-sm">
+              📷 Open Camera Scanner
+            </button>
+            <button type="button" id="btn-capture-photo" class="btn btn-cyan btn-sm" style="display: none;">
+              ⚡ Capture Document
+            </button>
+            <button type="button" id="btn-stop-camera" class="btn btn-outline btn-sm" style="display: none;">
+              ✕ Close Camera
+            </button>
+          </div>
+        </div>
+
+        <!-- Video Stream Container (Collapsible) -->
+        <div id="camera-video-wrapper" class="camera-scanner-container" style="display: none;">
+          <video id="camera-video" autoplay playsinline muted></video>
+          <div class="camera-focus-reticle"></div>
+          <canvas id="camera-canvas" style="display: none;"></canvas>
+          <div style="margin-top: 0.75rem; text-align: center;">
+            <img id="camera-capture-thumb" class="camera-thumb-preview" alt="Document snapshot preview" style="display: none;" />
+          </div>
+        </div>
+
+        <!-- AI Extracted Information Card (Simulated Demonstration Mode) -->
+        <div id="ai-ocr-extracted-card" class="ai-extracted-box" style="display: none;">
+          <div class="ai-extracted-header">
+            <div style="display: flex; align-items: center; gap: 0.6rem;">
+              <span style="font-size: 1.4rem;">🤖</span>
+              <div>
+                <strong style="color: #00f0ff; font-size: 0.98rem;">AI/OCR Information Extraction (Simulation Mode)</strong>
+                <p style="margin: 0.15rem 0 0; font-size: 0.78rem; color: #ffffff;">
+                  Client-side simulated extraction for demonstration. Please verify and edit all extracted details before proceeding.
+                </p>
+              </div>
+            </div>
+            <span class="badge badge-warning" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.4);">
+              Simulated Extraction
+            </span>
+          </div>
+
+          <div class="extracted-fields-grid">
+            <div class="extracted-field-item">
+              <label>Name (Aadhaar / ID)</label>
+              <div class="input-edit-row">
+                <input type="text" id="ocr-extracted-name" class="form-control" placeholder="Extracted name" value="">
+                <span class="edit-badge">Edit</span>
+              </div>
+            </div>
+
+            <div class="extracted-field-item">
+              <label>Social Category</label>
+              <div class="input-edit-row">
+                <input type="text" id="ocr-extracted-category" class="form-control" placeholder="Extracted category" value="">
+                <span class="edit-badge">Edit</span>
+              </div>
+            </div>
+
+            <div class="extracted-field-item">
+              <label>Annual Family Income</label>
+              <div class="input-edit-row">
+                <input type="text" id="ocr-extracted-income" class="form-control" placeholder="Extracted income" value="">
+                <span class="edit-badge">Edit</span>
+              </div>
+            </div>
+
+            <div class="extracted-field-item">
+              <label>Academic Marks / %</label>
+              <div class="input-edit-row">
+                <input type="text" id="ocr-extracted-marks" class="form-control" placeholder="Extracted marks %" value="">
+                <span class="edit-badge">Edit</span>
+              </div>
+            </div>
+
+            <div class="extracted-field-item">
+              <label>Institution / University</label>
+              <div class="input-edit-row">
+                <input type="text" id="ocr-extracted-inst" class="form-control" placeholder="Enter institution name" value="">
+                <span class="edit-badge">Edit</span>
+              </div>
+            </div>
+
+            <div class="extracted-field-item">
+              <label>Certificate / Roll Number</label>
+              <div class="input-edit-row">
+                <input type="text" id="ocr-extracted-cert" class="form-control" placeholder="Extracted certificate number" value="">
+                <span class="edit-badge">Edit</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 1rem; text-align: right;">
+            <button type="button" id="btn-apply-ocr-data" class="btn btn-cyan btn-sm">
+              ✓ Apply Extracted Data to Form
+            </button>
+          </div>
+        </div>
+
+        <!-- Section 1: Core / Identity & Financial Documents (Always Visible) -->
+        <div class="doc-section-heading">
+          <span>🗂️ Identity &amp; Financial Documents</span>
+        </div>
+
+        <div class="upload-grid">
+          <!-- 1. Aadhaar Card -->
+          <div class="upload-card" data-doc-key="aadhaar">
+            <div class="upload-card-top">
+              <div class="upload-icon-badge">🪪</div>
+              <div class="upload-card-info">
+                <h4 class="upload-card-title">Aadhaar Card</h4>
+                <p class="upload-card-subtitle">Identity &amp; DBT Direct Benefit Transfer</p>
+              </div>
+            </div>
+            <div class="upload-dropzone">
+              <div class="upload-btn-wrap">
+                <button type="button" class="upload-browse-btn">
+                  <span>📁</span> Choose File
+                </button>
+                <input type="file" class="doc-file-input" data-doc-key="aadhaar" accept=".pdf,.jpg,.jpeg,.png">
+              </div>
+              <span class="upload-hint-text">or drag &amp; drop PDF / image</span>
+            </div>
+            <div class="file-status-row" style="display: none;">
+              <span class="file-status-name"></span>
+              <button type="button" class="btn-remove-file" data-doc-key="aadhaar">✕ Remove</button>
+            </div>
+          </div>
+
+          <!-- 2. Income Certificate -->
+          <div class="upload-card" data-doc-key="income_cert">
+            <div class="upload-card-top">
+              <div class="upload-icon-badge">💰</div>
+              <div class="upload-card-info">
+                <h4 class="upload-card-title">Income Certificate</h4>
+                <p class="upload-card-subtitle">Tehsildar / SDO Revenue Proof</p>
+              </div>
+            </div>
+            <div class="upload-dropzone">
+              <div class="upload-btn-wrap">
+                <button type="button" class="upload-browse-btn">
+                  <span>📁</span> Choose File
+                </button>
+                <input type="file" class="doc-file-input" data-doc-key="income_cert" accept=".pdf,.jpg,.jpeg,.png">
+              </div>
+              <span class="upload-hint-text">or drag &amp; drop PDF / image</span>
+            </div>
+            <div class="file-status-row" style="display: none;">
+              <span class="file-status-name"></span>
+              <button type="button" class="btn-remove-file" data-doc-key="income_cert">✕ Remove</button>
+            </div>
+          </div>
+
+          <!-- 3. Domicile Certificate -->
+          <div class="upload-card" data-doc-key="domicile_cert">
+            <div class="upload-card-top">
+              <div class="upload-icon-badge">🏠</div>
+              <div class="upload-card-info">
+                <h4 class="upload-card-title">Domicile Certificate</h4>
+                <p class="upload-card-subtitle">State Permanent Residence Proof</p>
+              </div>
+            </div>
+            <div class="upload-dropzone">
+              <div class="upload-btn-wrap">
+                <button type="button" class="upload-browse-btn">
+                  <span>📁</span> Choose File
+                </button>
+                <input type="file" class="doc-file-input" data-doc-key="domicile_cert" accept=".pdf,.jpg,.jpeg,.png">
+              </div>
+              <span class="upload-hint-text">or drag &amp; drop PDF / image</span>
+            </div>
+            <div class="file-status-row" style="display: none;">
+              <span class="file-status-name"></span>
+              <button type="button" class="btn-remove-file" data-doc-key="domicile_cert">✕ Remove</button>
+            </div>
+          </div>
+
+          <!-- 4. Bank Passbook -->
+          <div class="upload-card" data-doc-key="bank_account">
+            <div class="upload-card-top">
+              <div class="upload-icon-badge">🏦</div>
+              <div class="upload-card-info">
+                <h4 class="upload-card-title">Bank Passbook / Cheque</h4>
+                <p class="upload-card-subtitle">Aadhaar-Seeded Active Bank Account</p>
+              </div>
+            </div>
+            <div class="upload-dropzone">
+              <div class="upload-btn-wrap">
+                <button type="button" class="upload-browse-btn">
+                  <span>📁</span> Choose File
+                </button>
+                <input type="file" class="doc-file-input" data-doc-key="bank_account" accept=".pdf,.jpg,.jpeg,.png">
+              </div>
+              <span class="upload-hint-text">or drag &amp; drop PDF / image</span>
+            </div>
+            <div class="file-status-row" style="display: none;">
+              <span class="file-status-name"></span>
+              <button type="button" class="btn-remove-file" data-doc-key="bank_account">✕ Remove</button>
+            </div>
+          </div>
+
+          <!-- 5. Caste / Category Certificate -->
+          <div class="upload-card" data-doc-key="caste_cert">
+            <div class="upload-card-top">
+              <div class="upload-icon-badge">📜</div>
+              <div class="upload-card-info">
+                <h4 class="upload-card-title">Caste / Category Proof</h4>
+                <p class="upload-card-subtitle">SC / ST / OBC / EWS Digital Proof (If Applicable)</p>
+              </div>
+            </div>
+            <div class="upload-dropzone">
+              <div class="upload-btn-wrap">
+                <button type="button" class="upload-browse-btn">
+                  <span>📁</span> Choose File
+                </button>
+                <input type="file" class="doc-file-input" data-doc-key="caste_cert" accept=".pdf,.jpg,.jpeg,.png">
+              </div>
+              <span class="upload-hint-text">or drag &amp; drop PDF / image</span>
+            </div>
+            <div class="file-status-row" style="display: none;">
+              <span class="file-status-name"></span>
+              <button type="button" class="btn-remove-file" data-doc-key="caste_cert">✕ Remove</button>
+            </div>
+          </div>
+
+          <!-- 6. Disability Certificate (UDID) -->
+          <div class="upload-card" data-doc-key="disability_cert">
+            <div class="upload-card-top">
+              <div class="upload-icon-badge">♿</div>
+              <div class="upload-card-info">
+                <h4 class="upload-card-title">Disability Certificate (UDID)</h4>
+                <p class="upload-card-subtitle">UDID Card / Medical Board Proof (For PwD Applicants)</p>
+              </div>
+            </div>
+            <div class="upload-dropzone">
+              <div class="upload-btn-wrap">
+                <button type="button" class="upload-browse-btn">
+                  <span>📁</span> Choose File
+                </button>
+                <input type="file" class="doc-file-input" data-doc-key="disability_cert" accept=".pdf,.jpg,.jpeg,.png">
+              </div>
+              <span class="upload-hint-text">or drag &amp; drop PDF / image</span>
+            </div>
+            <div class="file-status-row" style="display: none;">
+              <span class="file-status-name"></span>
+              <button type="button" class="btn-remove-file" data-doc-key="disability_cert">✕ Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: Student Academic Documents (Visible only for Students) -->
+        <div id="student-docs-container" class="student-doc-field" style="margin-top: 1.5rem;">
+          <div class="doc-section-heading">
+            <span>🎓 Academic Documents (Student Applicants)</span>
+          </div>
+          <div class="upload-grid">
+            <!-- 7. Academic Marksheet -->
+            <div class="upload-card" data-doc-key="marksheet">
+              <div class="upload-card-top">
+                <div class="upload-icon-badge">🎓</div>
+                <div class="upload-card-info">
+                  <h4 class="upload-card-title">Academic Marksheet</h4>
+                  <p class="upload-card-subtitle">Class 10th / 12th / Previous Semester Marks</p>
+                </div>
+              </div>
+              <div class="upload-dropzone">
+                <div class="upload-btn-wrap">
+                  <button type="button" class="upload-browse-btn">
+                    <span>📁</span> Choose File
+                  </button>
+                  <input type="file" class="doc-file-input" data-doc-key="marksheet" accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+                <span class="upload-hint-text">or drag &amp; drop PDF / image</span>
+              </div>
+              <div class="file-status-row" style="display: none;">
+                <span class="file-status-name"></span>
+                <button type="button" class="btn-remove-file" data-doc-key="marksheet">✕ Remove</button>
+              </div>
+            </div>
+
+            <!-- 8. College Bonafide / Student ID -->
+            <div class="upload-card" data-doc-key="student_id">
+              <div class="upload-card-top">
+                <div class="upload-icon-badge">🏛️</div>
+                <div class="upload-card-info">
+                  <h4 class="upload-card-title">College Bonafide / ID</h4>
+                  <p class="upload-card-subtitle">Current Fee Receipt / College Bonafide ID</p>
+                </div>
+              </div>
+              <div class="upload-dropzone">
+                <div class="upload-btn-wrap">
+                  <button type="button" class="upload-browse-btn">
+                    <span>📁</span> Choose File
+                  </button>
+                  <input type="file" class="doc-file-input" data-doc-key="student_id" accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+                <span class="upload-hint-text">or drag &amp; drop PDF / image</span>
+              </div>
+              <div class="file-status-row" style="display: none;">
+                <span class="file-status-name"></span>
+                <button type="button" class="btn-remove-file" data-doc-key="student_id">✕ Remove</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Privacy & Security Notice -->
+        <div class="doc-privacy-box" style="margin-top: 2rem;">
+          <div class="privacy-icon">🛡️</div>
+          <div class="privacy-text">
+            <strong>100% Client-Side Privacy Guarantee:</strong>
+            <p>
+              Uploaded and camera-captured documents are processed exclusively inside your web browser. Confidential certificates and files are never sent to or stored on external servers.
+            </p>
+          </div>
+        </div>
+
+        <div class="wizard-buttons-row">
+          <button type="button" class="btn btn-outline btn-md btn-prev-step">
+            ← Background Details
+          </button>
+          <button type="button" class="btn btn-cyan btn-md btn-next-step">
+            Review &amp; Calculate Matches →
+          </button>
+        </div>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- STEP 6: REVIEW & SUBMIT (PROFILE ANALYSIS) -->
+      <!-- ========================================== -->
+      <div id="step-submit" class="form-panel-card wizard-step-panel text-center" style="display: none; background: rgba(10, 22, 51, 0.9);">
+        <div class="panel-title text-center" style="justify-content: center;">
+          <span>6. Review Profile & Calculate Matches</span>
+        </div>
+
+        <p style="font-size: 1rem; max-width: 640px; margin: 0.5rem auto 1.75rem; color: var(--text-muted); line-height: 1.6;">
+          Your profile will now be evaluated across <strong><span class="dynamic-schemes-count">69</span> verified Central and State government schemes</strong> using our deterministic, explainable scoring engine.
+        </p>
+
+        <div style="margin-bottom: 2rem; display: flex; justify-content: center;">
+          <button type="submit" class="btn btn-cyan btn-lg" style="min-width: 320px; font-size: 1.1rem; padding: 1.1rem 2.2rem;">
+            🔍 Calculate SchemeMatch Scores →
+          </button>
+        </div>
+
+        <div class="wizard-buttons-row" style="justify-content: center;">
+          <button type="button" class="btn btn-outline btn-sm btn-prev-step">
+            ← Back to Documents
+          </button>
+        </div>
+      </div>
+
+    </form>
+  </main>
+
+  <!-- Animated Profile Analyzing Overlay -->
+  <div id="matching-loader-overlay" class="matching-loader-overlay">
+    <div class="loader-content-card">
+      <div class="loader-spinner-circle"></div>
+      <h3 style="color: #ffffff; margin-bottom: 0.5rem; font-size: 1.35rem;">Analyzing Your Profile...</h3>
+      <p style="color: var(--cyan-bright); font-size: 0.88rem; margin-bottom: 1.5rem;">
+        Matching your credentials across <span class="dynamic-schemes-count">69</span> verified welfare records
+      </p>
+
+      <ul class="loader-steps-list">
+        <li class="loader-step-item">
+          <span class="step-check">✓</span> Checking education level and stream criteria
+        </li>
+        <li class="loader-step-item">
+          <span class="step-check">✓</span> Checking annual family income ceiling
+        </li>
+        <li class="loader-step-item">
+          <span class="step-check">✓</span> Checking social category and reservation quotas
+        </li>
+        <li class="loader-step-item">
+          <span class="step-check">✓</span> Checking state domicile and regional guidelines
+        </li>
+        <li class="loader-step-item">
+          <span class="step-check">✓</span> Checking special eligibility (Girls, PwD, Minorities)
+        </li>
+        <li class="loader-step-item">
+          <span class="step-check">✓</span> Finalizing transparent match scores
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem;">
+            <span style="font-size: 1.6rem;">🏛️</span>
+            <h3 style="margin: 0; color: #ffffff;">SchemeMatch</h3>
+          </div>
+          <p>
+            An AI-powered student-focused platform concept designed to help learners discover government scholarships, interest subsidies, and benefits matching their credentials.
+          </p>
+          <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 1rem;">
+            <strong>Educational / Student Project:</strong> Eligibility scores are indicative. Final sanction is determined by the respective government department.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="find-schemes.html">Find Schemes</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Official Portals</h4>
+          <ul class="footer-links">
+            <li><a href="https://scholarships.gov.in" target="_blank" rel="noopener noreferrer">National Scholarship Portal (NSP)</a></li>
+            <li><a href="https://www.aicte-india.org" target="_blank" rel="noopener noreferrer">AICTE Student Portal</a></li>
+            <li><a href="https://www.vidyalakshmi.co.in" target="_blank" rel="noopener noreferrer">Vidya Lakshmi Education Loans</a></li>
+            <li><a href="https://socialjustice.gov.in" target="_blank" rel="noopener noreferrer">Ministry of Social Justice</a></li>
+            <li><a href="https://tribal.nic.in" target="_blank" rel="noopener noreferrer">Ministry of Tribal Affairs</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SchemeMatch – Government Scheme Finder &amp; Eligibility System. National Government Scheme Discovery Portal.</p>
+      </div>
+    </div>
+  </footer>
+
+    <!-- ========================================================================= -->
+  <!-- UNIVERSAL CONVERSATIONAL VOICE & CHAT CO-PILOT (SevaVaani) -->
+  <!-- ========================================================================= -->
+  <div id="sevavaani-widget" class="sevavaani-widget" aria-label="SevaVaani Voice &amp; Chat Assistant">
+    
+    <!-- Floating Launcher Trigger Button -->
+    <button type="button" id="sevavaani-trigger" class="sevavaani-launcher" aria-label="Open SevaVaani Assistant" title="SevaVaani Voice Co-Pilot">
+      <span class="launcher-pulse"></span>
+      <span class="launcher-icon">🎙️</span>
+      <span class="launcher-label">SevaVaani Co-Pilot</span>
+      <span class="launcher-status-dot"></span>
+    </button>
+
+    <!-- Sliding Assistant Drawer -->
+    <div id="sevavaani-drawer" class="sevavaani-drawer" aria-hidden="true">
+      
+      <!-- Drawer Header -->
+      <div class="sevavaani-header">
+        <div class="sevavaani-brand">
+          <div class="brand-avatar">🏛️</div>
+          <div>
+            <h3 class="sevavaani-title">SevaVaani <span>Co-Pilot</span></h3>
+            <p class="sevavaani-sub">National Scheme &amp; Form Guide</p>
+          </div>
+        </div>
+        <div class="sevavaani-header-actions">
+          <button type="button" id="sevavaani-lang-btn" class="btn-icon" title="Switch Language">🌐 <span id="sevavaani-lang-text">HI</span></button>
+          <button type="button" id="sevavaani-sound-btn" class="btn-icon" title="Voice Mute/Unmute">🔊</button>
+          <button type="button" id="sevavaani-close-btn" class="btn-icon close-btn" title="Close Assistant" aria-label="Close Assistant">✕</button>
+        </div>
+      </div>
+
+      <!-- Live Audio Waveform & Status Banner -->
+      <div id="sevavaani-wave-bar" class="sevavaani-wave-bar">
+        <div class="wave-bars">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span id="sevavaani-live-status" class="live-status-text">Ready to help. Speak or type below.</span>
+      </div>
+
+      <!-- Scrollable Message Conversation Stream -->
+      <div id="sevavaani-messages" class="sevavaani-messages">
+        <!-- Messages injected dynamically by script.js -->
+      </div>
+
+      <!-- Quick Suggestion Chips -->
+      <div id="sevavaani-chips" class="sevavaani-chips">
+        <button type="button" class="chip-btn" data-query="Form kaise bhare?">📝 Form kaise bhare?</button>
+        <button type="button" class="chip-btn" data-query="Pragati scheme ke documents kya hai?">📄 Pragati Scheme Documents</button>
+        <button type="button" class="chip-btn" data-query="Scholarship ke liye kaha apply kare?">🔗 Kaha Apply Kare?</button>
+        <button type="button" class="chip-btn" data-query="Engineering ke liye kaunsi schemes hai?">🎓 Engineering Schemes</button>
+        <button type="button" class="chip-btn" data-query="Income criteria kya hai?">💰 Income Limit Rules</button>
+      </div>
+
+      <!-- Footer Input Controls (Mic + Text Input + Send) -->
+      <div class="sevavaani-input-row">
+        <button type="button" id="sevavaani-mic-btn" class="sevavaani-mic-btn" title="Click to speak in Hindi or English">
+          <span class="mic-inner-icon">🎙️</span>
+        </button>
+        <input type="text" id="sevavaani-text-input" class="sevavaani-text-input" placeholder="Poochiye: Form kaise bhare, documents..." autocomplete="off">
+        <button type="button" id="sevavaani-send-btn" class="sevavaani-send-btn" title="Send message">→</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Legacy Compatibility Elements for older scripts -->
+  <div style="display:none;" aria-hidden="true">
+    <div id="voice-orb"></div>
+    <div id="voice-transcript-display"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+        <!-- Save occupation to profile -->
+        <script>
+          (function() {
+            var occSel = document.getElementById('occupation');
+            if (occSel) {
+              // Load saved value
+              try {
+                var saved = JSON.parse(localStorage.getItem('schemematch_user_profile') || '{}');
+                if (saved.occupation) occSel.value = saved.occupation;
+              } catch(e) {}
+              // Save on change
+              occSel.addEventListener('change', function() {
+                try {
+                  var prof = JSON.parse(localStorage.getItem('schemematch_user_profile') || '{}');
+                  prof.occupation = occSel.value;
+                  localStorage.setItem('schemematch_user_profile', JSON.stringify(prof));
+                } catch(e) {}
+              });
+            }
+          })();
+        </script>
+</body>
+</html>

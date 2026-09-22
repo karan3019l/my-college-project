@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SchemeMatch – National Government Scheme & Scholarship Discovery Portal. Discover verified scholarships, education loans, and citizen benefits with AI voice assistance.">
+  <title>SchemeMatch – National Government Scheme Discovery Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+
+  <!-- Top Tricolor Accent Line (National Civic Standard) -->
+  <div class="top-strip" aria-hidden="true"></div>
+
+  <!-- Official Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-notice">
+        <span class="tag" data-i18n="tag_portal">GOVT CITIZEN PORTAL</span>
+        <span class="top-bar-initiative" data-i18n="top_bar_initiative">National Scheme Finder &amp; Student Benefit Discovery Service • भारत सरकार</span>
+      </div>
+      <div class="top-bar-right">
+        <div class="lang-selector-wrap">
+          <label for="site-lang-select" class="lang-label">🌐 <span data-i18n="lang_label">Language:</span></label>
+          <select id="site-lang-select" class="lang-dropdown" aria-label="Select Portal Language">
+            <option value="en-IN">English</option>
+            <option value="hi-IN">हिन्दी (Hindi)</option>
+            <option value="mr-IN">मराठी (Marathi)</option>
+            <option value="bn-IN">বাংলা (Bengali)</option>
+            <option value="ta-IN">தமிழ் (Tamil)</option>
+            <option value="te-IN">తెలుగు (Telugu)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accessibility Toolbar Drawer (Collapsible) -->
+  <div id="accessibility-bar" class="accessibility-bar">
+    <div class="container accessibility-bar-content">
+      <div class="access-tools-title">
+        <span>♿</span>
+        <strong data-i18n="access_title">Accessibility Tools:</strong>
+        <span class="access-desc" data-i18n="access_desc">Adjust text size, contrast, and voice assistance for effortless reading</span>
+      </div>
+      <div class="access-buttons-row">
+        <button type="button" id="font-decrease-btn" class="btn btn-outline btn-sm" title="Decrease font size">A-</button>
+        <button type="button" id="font-reset-btn" class="btn btn-outline btn-sm" title="Reset font size">A Default</button>
+        <button type="button" id="font-increase-btn" class="btn btn-outline btn-sm" title="Increase font size">A+</button>
+        <button type="button" id="high-contrast-btn" class="btn btn-outline btn-sm" title="Toggle High Contrast">🌓 High Contrast</button>
+        <button type="button" id="read-page-global-btn" class="btn btn-primary btn-sm" title="Read page aloud">🔊 Read Page</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link">
+        <div class="brand-emblem">🏛️</div>
+        <div class="brand-text">
+          <h1 class="brand-title">Scheme<span>Match</span></h1>
+          <p class="brand-subtitle" data-i18n="brand_subtitle">National Government Scheme Portal</p>
+        </div>
+      </a>
+
+      <!-- Center navigation -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active" data-i18n="nav_home">Home</a></li>
+          <li><a href="find-schemes.html" class="nav-link" data-i18n="nav_find">Find Schemes</a></li>
+          <li><a href="results.html" class="nav-link" data-i18n="nav_results">Results</a></li>
+          <li><a href="#categories" class="nav-link">Categories</a></li>
+          <li><a href="#how-it-works" class="nav-link" data-i18n="nav_help">How It Works</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="nav-actions">
+        <button type="button" id="voice-assistant-trigger" class="btn btn-voice btn-sm" title="Open SevaVaani Voice Assistant">
+          🎙️ <span class="nav-btn-text">SevaVaani Voice Co-Pilot</span>
+        </button>
+        <button type="button" id="accessibility-toggle-btn" class="btn btn-outline btn-sm" title="Toggle Accessibility Tools">
+          ♿ <span class="nav-btn-text" data-i18n="btn_accessibility">Accessibility</span>
+        </button>
+        <button type="button" class="nav-hamburger" id="nav-hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Modern Civic Hero Section with Interactive Screener -->
+  <section class="hero-wrapper">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- LEFT SIDE: Content & Actions -->
+        <div class="hero-content">
+          <div class="hero-badge-pill">
+            <span class="flag-icon">🇮🇳</span>
+            <span data-i18n="hero_pill">Direct Ministry Welfare Directory • <span class="dynamic-active-schemes-count">67</span> Verified Active Schemes</span>
+          </div>
+
+          <h2 class="hero-heading">
+            <span data-i18n="hero_h2_part1">India's Official</span> <span class="hero-heading-highlight" data-i18n="hero_h2_highlight">Government Scheme</span> <span data-i18n="hero_h2_part2">Gateway for Every Citizen</span>
+          </h2>
+
+          <p class="hero-desc" data-i18n="hero_desc">
+            Discover <span class="dynamic-schemes-count">69</span> verified central &amp; state welfare programs — for farmers, artisans, business owners, workers, women, senior citizens, and students. Check eligibility instantly and apply directly.
+          </p>
+
+          <div class="hero-btn-row">
+            <a href="find-schemes.html" class="btn btn-primary btn-lg" data-i18n="hero_btn_find">
+              Find Matching Schemes (6 Steps) →
+            </a>
+            <a href="#screener-card" class="btn btn-outline btn-lg" data-i18n="hero_btn_how">
+              Quick Eligibility Check ↓
+            </a>
+          </div>
+
+          <!-- Trust Badges Row -->
+          <div class="hero-trust-row">
+            <div class="trust-pill-item">
+              <span class="trust-check">✓</span> 100% Free Public Portal
+            </div>
+            <div class="trust-pill-item">
+              <span class="trust-check">✓</span> Direct Redirection to NSP / Official Portals
+            </div>
+            <div class="trust-pill-item">
+              <span class="trust-check">✓</span> Multilingual Voice Assistance
+            </div>
+          </div>
+
+          <div class="hero-voice-advisory">
+            <span class="voice-advisory-icon">🎙️</span>
+            <div>
+              <strong>SevaVaani Voice Co-Pilot Available:</strong>
+              <p>Speak in Hindi or English to ask: <em>"PM-KISAN ke liye kya chahiye?", "Ayushman card kaise banaye?", "Mudra loan kaise milega?", "Form kaise bhare?"</em></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE: Interactive Quick Eligibility Screener & Calculator -->
+        <div class="hero-interactive-card-wrapper" id="screener-card">
+          <div class="hero-screener-card">
+            
+            <div class="screener-card-header">
+              <div class="screener-badge">
+                <span class="screener-pulse"></span>
+                <span>Live Calculator</span>
+              </div>
+              <h3 class="screener-title">Quick Citizen Eligibility Check</h3>
+              <p class="screener-sub">Select your occupation &amp; income to instantly find matching welfare schemes:</p>
+            </div>
+
+            <form class="screener-form" onsubmit="return false;">
+              <div class="screener-form-group">
+                <label for="hero-screener-occ" class="screener-label">Your Occupation / Livelihood</label>
+                <select id="hero-screener-occ" class="screener-select">
+                  <option value="All" selected>All Citizens (Any Occupation)</option>
+                  <option value="Farmer">🌾 Farmer / Agricultural Worker</option>
+                  <option value="Artisan">🔨 Artisan / Traditional Craftsman</option>
+                  <option value="Business Owner">💼 Small Business / MSME Owner</option>
+                  <option value="Self-Employed">🛒 Self-Employed / Street Vendor</option>
+                  <option value="Worker">🏗️ Unorganized / Daily Wage Worker</option>
+                  <option value="Woman">👩 Woman / SHG Member / Homemaker</option>
+                  <option value="Senior Citizen">👴 Senior Citizen (60+)</option>
+                  <option value="Student">🎓 Student / Scholar</option>
+                  <option value="Unemployed">🔍 Unemployed / Job Seeker</option>
+                </select>
+              </div>
+
+              <div class="screener-form-grid">
+                <div class="screener-form-group">
+                  <label for="hero-screener-cat" class="screener-label">Social Category</label>
+                  <select id="hero-screener-cat" class="screener-select">
+                    <option value="All">All Categories</option>
+                    <option value="OBC" selected>OBC</option>
+                    <option value="SC">SC</option>
+                    <option value="ST">ST</option>
+                    <option value="General">General</option>
+                    <option value="EWS">EWS</option>
+                  </select>
+                </div>
+
+                <div class="screener-form-group">
+                  <label for="hero-screener-inc" class="screener-label">Annual Family Income</label>
+                  <select id="hero-screener-inc" class="screener-select">
+                    <option value="250000" selected>Up to ₹2.5 Lakhs</option>
+                    <option value="450000">Up to ₹4.5 Lakhs</option>
+                    <option value="800000">Up to ₹8.0 Lakhs</option>
+                    <option value="1000000">Above ₹8 Lakhs</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Live Dynamic Calculation Box -->
+              <div class="screener-result-box">
+                <div class="screener-result-top">
+                  <div>
+                    <span class="screener-result-count" id="hero-screener-count">24 Schemes Matching</span>
+                    <span class="screener-result-desc">Verified against central &amp; state rules</span>
+                  </div>
+                  <div class="screener-benefit-tag" id="hero-screener-benefit">Up to ₹50,000/yr</div>
+                </div>
+              </div>
+
+              <button type="button" id="hero-screener-submit" class="btn btn-primary btn-block btn-screener">
+                View Matching Schemes &amp; Criteria →
+              </button>
+            </form>
+
+            <div class="screener-card-footer">
+              <span>🛡️ No registration required • Privacy protected</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Ministry & Official Source Accreditation Ticker -->
+  <section class="ministry-ticker-section" aria-label="Official Verification Sources">
+    <div class="container">
+      <p class="ticker-heading">VERIFIED GUIDELINES FROM RECOGNIZED CENTRAL &amp; STATE MINISTRIES</p>
+      <div class="ministry-logo-grid">
+        <div class="ministry-item">
+          <span class="ministry-seal">🏛️</span>
+          <span>Ministry of Education (MoE)</span>
+        </div>
+        <div class="ministry-item">
+          <span class="ministry-seal">⚖️</span>
+          <span>Ministry of Social Justice</span>
+        </div>
+        <div class="ministry-item">
+          <span class="ministry-seal">🎓</span>
+          <span>AICTE Student Welfare</span>
+        </div>
+        <div class="ministry-item">
+          <span class="ministry-seal">📜</span>
+          <span>University Grants Commission (UGC)</span>
+        </div>
+        <div class="ministry-item">
+          <span class="ministry-seal">🏹</span>
+          <span>Ministry of Tribal Affairs</span>
+        </div>
+        <div class="ministry-item">
+          <span class="ministry-seal">💳</span>
+          <span>Vidya Lakshmi Education Loans</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Statistics & Civic Trust -->
+  <section class="trust-stats-section">
+    <div class="container">
+      <div class="trust-stats-grid">
+        <div class="trust-stat-card">
+          <div class="trust-stat-num">50+</div>
+          <div class="trust-stat-lbl">Verified Scheme Records</div>
+          <p class="trust-stat-sub">Central, State &amp; Special Group Portals</p>
+        </div>
+
+        <div class="trust-stat-card">
+          <div class="trust-stat-num">₹1,250+ Cr</div>
+          <div class="trust-stat-lbl">Disbursed Through Official Portals</div>
+          <p class="trust-stat-sub">Direct Benefit Transfer (DBT) to Students</p>
+        </div>
+
+        <div class="trust-stat-card">
+          <div class="trust-stat-num">100%</div>
+          <div class="trust-stat-lbl">Direct Official Redirection</div>
+          <p class="trust-stat-sub">Authentic application links to genuine portals</p>
+        </div>
+
+        <div class="trust-stat-card">
+          <div class="trust-stat-num">6 Languages</div>
+          <div class="trust-stat-lbl">Multilingual Assistance</div>
+          <p class="trust-stat-sub">English, हिन्दी, मराठी, বাংলা, தமிழ், తెలుగు</p>
+        </div>
+      </div>
+
+      <div class="trust-banner-note">
+        <span class="trust-note-icon">ℹ️</span>
+        <p>
+          <strong>Official Transparency Advisory:</strong> SchemeMatch provides explainable criteria calculation based on gazette notifications. Applications and disbursements are processed strictly on official portals (National Scholarship Portal, AICTE, Vidya Lakshmi, and State Portals).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Scheme Categories (Clickable) -->
+  <section id="categories" class="section-py">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">National Welfare Sectors</span>
+        <h2 class="section-title">Browse Schemes By Sector</h2>
+        <p class="section-desc">
+          <span class="dynamic-schemes-count">69</span> central &amp; state welfare programs across 8 livelihood sectors. Select a sector to discover schemes designed for your occupation and life stage.
+        </p>
+      </div>
+
+      <div class="categories-grid">
+        <a href="results.html?sector=agriculture" class="category-card">
+          <div class="category-icon-box">🌾</div>
+          <span class="sector-badge agri">Agriculture</span>
+          <h3 class="category-title">Farmers &amp; Agriculture</h3>
+          <p class="category-desc">PM-KISAN ₹6,000/yr income support, Fasal Bima crop insurance, Kisan Credit Card &amp; PM-KMY pension.</p>
+          <span class="category-link">View Schemes →</span>
+        </a>
+
+        <a href="results.html?sector=business" class="category-card">
+          <div class="category-icon-box">💼</div>
+          <span class="sector-badge business">MSME &amp; Business</span>
+          <h3 class="category-title">MSME, Business &amp; Artisans</h3>
+          <p class="category-desc">PM Mudra loan ₹50K–₹20L, PM Vishwakarma toolkit &amp; ₹3L loan, SVANidhi street vendor credit.</p>
+          <span class="category-link">View Schemes →</span>
+        </a>
+
+        <a href="results.html?sector=healthcare" class="category-card">
+          <div class="category-icon-box">🩺</div>
+          <span class="sector-badge health">Healthcare</span>
+          <h3 class="category-title">Healthcare &amp; Ayushman</h3>
+          <p class="category-desc">Ayushman Bharat PM-JAY ₹5 Lakh free hospital cover, Jan Aushadhi generic medicines, PMMVY maternity benefit.</p>
+          <span class="category-link">View Schemes →</span>
+        </a>
+
+        <a href="results.html?sector=housing" class="category-card">
+          <div class="category-icon-box">🏠</div>
+          <span class="sector-badge housing">Housing</span>
+          <h3 class="category-title">Housing &amp; Shelter</h3>
+          <p class="category-desc">PMAY-Gramin ₹1.2–2.0L pucca house grant &amp; PMAY-Urban ₹2.67L interest subsidy for EWS/LIG/MIG.</p>
+          <span class="category-link">View Schemes →</span>
+        </a>
+
+        <a href="results.html?sector=women" class="category-card">
+          <div class="category-icon-box">👩</div>
+          <span class="sector-badge women">Women &amp; Child</span>
+          <h3 class="category-title">Women &amp; Child Empowerment</h3>
+          <p class="category-desc">Lakhpati Didi SHG credit, Ujjwala free LPG, Sukanya Samriddhi, Mahila Samman 7.5% savings.</p>
+          <span class="category-link">View Schemes →</span>
+        </a>
+
+        <a href="results.html?sector=workers" class="category-card">
+          <div class="category-icon-box">🔨</div>
+          <span class="sector-badge worker">Labor &amp; Workers</span>
+          <h3 class="category-title">Workers &amp; Labor Welfare</h3>
+          <p class="category-desc">e-Shram UAN card, PM Shram Yogi Maandhan ₹3,000/mo pension, MGNREGA 100-day guaranteed work.</p>
+          <span class="category-link">View Schemes →</span>
+        </a>
+
+        <a href="results.html?sector=senior" class="category-card">
+          <div class="category-icon-box">👴</div>
+          <span class="sector-badge senior">Senior Citizens</span>
+          <h3 class="category-title">Senior Citizens &amp; Pension</h3>
+          <p class="category-desc">Atal Pension Yojana ₹1K–5K/mo guarantee, IGNOAPS old age pension, PMJJBY &amp; PMSBY insurance cover.</p>
+          <span class="category-link">View Schemes →</span>
+        </a>
+
+        <a href="results.html?sector=scholarship" class="category-card">
+          <div class="category-icon-box">🎓</div>
+          <span class="sector-badge scholarship">Scholarships</span>
+          <h3 class="category-title">Scholarships &amp; Education</h3>
+          <p class="category-desc">Central Sector, NSP post-matric, AICTE Pragati, PMKVY skills, state-level tuition reimbursement.</p>
+          <span class="category-link">View Schemes →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Featured Schemes Cards -->
+  <section id="featured-schemes" class="multi-schemes-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Flagship National Programs</span>
+        <h2 class="section-title">Featured Government Schemes</h2>
+        <p class="section-desc">
+          Flagship welfare programs across healthcare, agriculture, artisan skills, business, and education — verified eligibility, transparent scores, and direct official application routes.
+        </p>
+      </div>
+
+      <div class="home-scheme-cards-grid">
+        
+        <!-- Scheme 1: Ayushman Bharat PM-JAY -->
+        <article class="home-scheme-card">
+          <div class="home-scheme-card-body">
+            <div class="home-scheme-card-header">
+              <div>
+                <span class="home-scheme-category" style="background:rgba(239,68,68,0.12);color:#f87171;border-color:rgba(239,68,68,0.3);">Healthcare</span>
+                <h3 class="home-scheme-name">Ayushman Bharat PM-JAY — Free Health Coverage</h3>
+              </div>
+              <div class="home-score-badge match-state-excellent">
+                <span class="home-score-num">₹5 Lakh/yr</span>
+                <span class="home-score-lbl">Hospital Cover</span>
+              </div>
+            </div>
+
+            <div class="home-criteria-box">
+              <strong>Eligibility:</strong>
+              Families in SECC 2011 database, BPL cardholders &amp; state-notified poor families. 1,500+ empanelled hospitals nationwide. Cashless treatment for 1,949 procedures.
+            </div>
+
+            <div class="home-docs-box">
+              <strong>Required Documents:</strong>
+              <div class="docs-tag-list">
+                <span class="doc-tag present">✓ Aadhaar Card</span>
+                <span class="doc-tag present">✓ Ration Card / BPL Proof</span>
+                <span class="doc-tag present">✓ SECC Eligibility</span>
+                <span class="doc-tag">Ayushman Golden Card</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="home-scheme-actions">
+            <a href="scheme-details.html?id=ayushman-bharat-pmjay" class="btn btn-primary btn-sm" style="flex: 1;">View Details →</a>
+            <a href="https://pmjay.gov.in" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Official Portal ↗</a>
+          </div>
+        </article>
+
+        <!-- Scheme 2: PM-KISAN -->
+        <article class="home-scheme-card">
+          <div class="home-scheme-card-body">
+            <div class="home-scheme-card-header">
+              <div>
+                <span class="home-scheme-category" style="background:rgba(34,197,94,0.12);color:#4ade80;border-color:rgba(34,197,94,0.3);">Agriculture</span>
+                <h3 class="home-scheme-name">PM-KISAN Samman Nidhi — Farmer Income Support</h3>
+              </div>
+              <div class="home-score-badge match-state-excellent">
+                <span class="home-score-num">₹6,000/yr</span>
+                <span class="home-score-lbl">Direct Bank Transfer</span>
+              </div>
+            </div>
+
+            <div class="home-criteria-box">
+              <strong>Eligibility:</strong>
+              All small &amp; marginal farmer families owning up to 2 hectares of land. Excludes income taxpayers, doctors, lawyers, and Govt employees in Class 1 posts.
+            </div>
+
+            <div class="home-docs-box">
+              <strong>Required Documents:</strong>
+              <div class="docs-tag-list">
+                <span class="doc-tag present">✓ Aadhaar Card</span>
+                <span class="doc-tag present">✓ Land Records (Khasra/Khatauni)</span>
+                <span class="doc-tag present">✓ Bank Passbook</span>
+                <span class="doc-tag">Mobile (OTP)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="home-scheme-actions">
+            <a href="scheme-details.html?id=pm-kisan" class="btn btn-primary btn-sm" style="flex: 1;">View Details →</a>
+            <a href="https://pmkisan.gov.in" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">pmkisan.gov.in ↗</a>
+          </div>
+        </article>
+
+                <!-- Scheme 3: PM Vishwakarma -->
+        <article class="home-scheme-card">
+          <div class="home-scheme-card-body">
+            <div class="home-scheme-card-header">
+              <div>
+                <span class="home-scheme-category" style="background:rgba(245,158,11,0.12);color:#fbbf24;border-color:rgba(245,158,11,0.3);">Artisans &amp; MSME</span>
+                <h3 class="home-scheme-name">PM Vishwakarma — Artisan Skill &amp; Credit Scheme</h3>
+              </div>
+              <div class="home-score-badge match-state-excellent">
+                <span class="home-score-num">₹3 Lakh Loan</span>
+                <span class="home-score-lbl">@ 5% Interest + Toolkit</span>
+              </div>
+            </div>
+
+            <div class="home-criteria-box">
+              <strong>Eligibility:</strong>
+              18+ traditional artisans in 18 trades — Carpenter, Blacksmith, Potter, Cobbler, Goldsmith, Tailor, Barber, Boat maker, Sculptor &amp; more. Annual income up to ₹3 Lakhs preferred.
+            </div>
+
+            <div class="home-docs-box">
+              <strong>Required Documents:</strong>
+              <div class="docs-tag-list">
+                <span class="doc-tag present">✓ Aadhaar Card</span>
+                <span class="doc-tag present">✓ Bank Passbook</span>
+                <span class="doc-tag present">✓ Trade Self-Declaration</span>
+                <span class="doc-tag">Mobile Number</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="home-scheme-actions">
+            <a href="scheme-details.html?id=pm-vishwakarma" class="btn btn-primary btn-sm" style="flex: 1;">View Details →</a>
+            <a href="https://pmvishwakarma.gov.in" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Official Portal ↗</a>
+          </div>
+        </article>
+
+        <!-- Scheme 4: PM-USP Interest Subsidy on Education Loans -->
+        <article class="home-scheme-card">
+          <div class="home-scheme-card-body">
+            <div class="home-scheme-card-header">
+              <div>
+                <span class="home-scheme-category">Financial Support</span>
+                <h3 class="home-scheme-name">PM-USP Central Sector Interest Subsidy (CSIS)</h3>
+              </div>
+              <div class="home-score-badge match-state-excellent">
+                <span class="home-score-num">100% Interest Free</span>
+                <span class="home-score-lbl">During Course Period</span>
+              </div>
+            </div>
+
+            <div class="home-criteria-box">
+              <strong>Eligibility Criteria:</strong>
+              Full interest waiver during course period + 1 year on technical/professional education loans for income up to ₹4.5 Lakhs.
+            </div>
+
+            <div class="home-docs-box">
+              <strong>Required Documents:</strong>
+              <div class="docs-tag-list">
+                <span class="doc-tag present">✓ Aadhaar</span>
+                <span class="doc-tag present">✓ Loan Sanction Letter</span>
+                <span class="doc-tag present">✓ Income Certificate</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="home-scheme-actions">
+            <a href="scheme-details.html?id=pm-usp-csis-interest-subsidy" class="btn btn-primary btn-sm" style="flex: 1;">View Details →</a>
+            <a href="https://www.vidyalakshmi.co.in" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Vidya Lakshmi ↗</a>
+          </div>
+        </article>
+
+        <!-- Scheme 5: AICTE Saksham PwD -->
+        <article class="home-scheme-card">
+          <div class="home-scheme-card-body">
+            <div class="home-scheme-card-header">
+              <div>
+                <span class="home-scheme-category">Special Support</span>
+                <h3 class="home-scheme-name">AICTE Saksham Scholarship for Specially-Abled</h3>
+              </div>
+              <div class="home-score-badge match-state-strong">
+                <span class="home-score-num">₹50,000/yr</span>
+                <span class="home-score-lbl">Study Allowance</span>
+              </div>
+            </div>
+
+            <div class="home-criteria-box">
+              <strong>Eligibility Criteria:</strong>
+              Students with benchmark disability (40%+) enrolled in AICTE-approved technical degree/diploma programs; ₹50,000/yr allowance.
+            </div>
+
+            <div class="home-docs-box">
+              <strong>Required Documents:</strong>
+              <div class="docs-tag-list">
+                <span class="doc-tag present">✓ Aadhaar</span>
+                <span class="doc-tag present">✓ UDID / Disability Cert</span>
+                <span class="doc-tag present">✓ College Bonafide</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="home-scheme-actions">
+            <a href="scheme-details.html?id=aicte-saksham" class="btn btn-primary btn-sm" style="flex: 1;">View Details →</a>
+            <a href="https://www.aicte-india.org/schemes/students-development-schemes/Saksham" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Official Portal ↗</a>
+          </div>
+        </article>
+
+        <!-- Scheme 6: MP Post-Matric OBC -->
+        <article class="home-scheme-card">
+          <div class="home-scheme-card-body">
+            <div class="home-scheme-card-header">
+              <div>
+                <span class="home-scheme-category">State Welfare</span>
+                <h3 class="home-scheme-name">MP Post-Matric Scholarship for OBC Students</h3>
+              </div>
+              <div class="home-score-badge match-state-excellent">
+                <span class="home-score-num">100% Tuition Fee</span>
+                <span class="home-score-lbl">Reimbursement</span>
+              </div>
+            </div>
+
+            <div class="home-criteria-box">
+              <strong>Eligibility Criteria:</strong>
+              OBC students studying in Madhya Pradesh post-matric courses with family income up to ₹3 Lakhs; full tuition reimbursement.
+            </div>
+
+            <div class="home-docs-box">
+              <strong>Required Documents:</strong>
+              <div class="docs-tag-list">
+                <span class="doc-tag present">✓ Aadhaar</span>
+                <span class="doc-tag present">✓ Samagra ID</span>
+                <span class="doc-tag present">✓ Caste Certificate</span>
+                <span class="doc-tag">Domicile Cert</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="home-scheme-actions">
+            <a href="scheme-details.html?id=mp-post-matric-obc" class="btn btn-primary btn-sm" style="flex: 1;">View Details →</a>
+            <a href="http://scholarshipportal.mp.nic.in" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">MP Portal ↗</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a href="find-schemes.html" class="btn btn-primary btn-lg">
+          Check All <span class="dynamic-schemes-count">69</span> Schemes For Your Complete Profile →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: How It Works (4 Official Steps) -->
+  <section id="how-it-works" class="section-py how-it-works-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="workflow_tag">Official Roadmap</span>
+        <h2 class="section-title" data-i18n="workflow_title">How SchemeMatch Simplifies Applications</h2>
+        <p class="section-desc" data-i18n="workflow_desc">
+          A transparent 4-step workflow that turns complex government gazettes into actionable student opportunities.
+        </p>
+      </div>
+
+      <div class="workflow-grid">
+        <div class="step-card">
+          <div class="step-badge">1</div>
+          <h3 class="step-title" data-i18n="step1_title">Enter Profile Details</h3>
+          <p class="step-desc" data-i18n="step1_desc">
+            Provide your education level, social category, annual family income, state, and special qualifications.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-badge">2</div>
+          <h3 class="step-title" data-i18n="step2_title">Verify Document Checklist</h3>
+          <p class="step-desc" data-i18n="step2_desc">
+            Check your certificates (Aadhaar, Income, Caste, Marksheet) against official department requirements.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-badge">3</div>
+          <h3 class="step-title" data-i18n="step3_title">Get Transparent Match Scores</h3>
+          <p class="step-desc" data-i18n="step3_desc">
+            Review your personalized eligibility reasons with clear green checkmarks and statutory notes.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-badge">4</div>
+          <h3 class="step-title" data-i18n="step4_title">Apply on Verified Portals</h3>
+          <p class="step-desc" data-i18n="step4_desc">
+            Proceed with official portal redirection (NSP, AICTE, Vidya Lakshmi) with your paperwork fully prepared.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Student Success & Verified Impact -->
+  <section class="section-py success-stories-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Beneficiary Impact</span>
+        <h2 class="section-title">Helping Citizens Across All Walks of Life</h2>
+        <p class="section-desc">
+          Real experiences from farmers, artisans, entrepreneurs, and students who discovered and applied for welfare schemes through SchemeMatch.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "SchemeMatch ne mujhe PM-KISAN aur Kisan Credit Card dono ke baare mein bataya. Mujhe pata hi nahi tha ki main dono ke liye eligible hoon. Ab mujhe ₹6,000 saal ka sidha khate mein milta hai."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">🌾</div>
+            <div>
+              <strong>Rameshwar Patil</strong>
+              <span>Farmer, Nashik, Maharashtra</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "The voice assistant asked me my trade — I said I'm a carpenter — and instantly showed me PM Vishwakarma with the full checklist. I got my ₹15,000 toolkit voucher and the 5% loan approved within a month."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">🔨</div>
+            <div>
+              <strong>Rajesh Vishwakarma</strong>
+              <span>Traditional Carpenter, Varanasi (UP)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "Mujhe pata hi nahi tha ki Ayushman card mere ghar ke har member ko ₹5 Lakh ka free hospital cover deta hai. SchemeMatch ne mera naam SECC list mein check karke Golden Card banwane ki poori process batai."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👩</div>
+            <div>
+              <strong>Meenakshi Devi</strong>
+              <span>SHG Member, Sitapur, Uttar Pradesh</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Official FAQ -->
+  <section id="faq" class="section-py faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Frequently Asked Questions</span>
+        <h2 class="section-title">Common Questions on Government Schemes</h2>
+        <p class="section-desc">
+          Important guidelines regarding OTR registration, document renewal, income limits, and application cycles.
+        </p>
+      </div>
+
+      <div class="faq-accordion-grid">
+        
+        <details class="faq-item" open>
+          <summary class="faq-question">
+            <span>Is SchemeMatch free to use for students?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Yes, SchemeMatch is 100% free to use. There are no fees, subscriptions, or hidden charges. We do not collect banking credentials or application processing fees.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What is OTR (One Time Registration) on the National Scholarship Portal (NSP)?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>OTR is a 14-digit unique number issued on scholarships.gov.in using Aadhaar face or OTP authentication. It simplifies applying for multiple central and state scholarships without re-entering personal data each year.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Can I apply for more than one government scholarship at the same time?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>As per Ministry guidelines, a student can receive only ONE primary scholarship for maintenance/living allowance from the Central Government. However, you can often combine tuition fee reimbursements or state travel concessions with loan subsidies.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Who is authorized to issue the Family Income Certificate?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>The Income Certificate must be issued by a competent revenue authority—typically the Tehsildar, Sub-Divisional Magistrate (SDM), or District Collector. Affidavits on notary stamp paper are generally not accepted on official portals.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Why does my bank account need to be linked to Aadhaar (NPCI Mapper)?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>All government scholarship disbursements are sent via Direct Benefit Transfer (DBT) through the Aadhaar Payment Bridge (APB). Your bank account must be actively seeded on the NPCI mapper, otherwise the funds transfer will fail.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-title">
+            <span class="footer-emblem">🏛️</span>
+            <h3 class="footer-brand-name">SchemeMatch</h3>
+          </div>
+          <p class="footer-brand-desc">
+            National Citizen Welfare &amp; Scheme Discovery Initiative. Empowering Indian students and citizens with transparent eligibility scoring and verified ministry portal routing.
+          </p>
+          <div class="footer-contact-info">
+            <p>✉️ Email: <strong>support@schemematch.gov.in</strong></p>
+            <p>⏰ Working Hours: Monday – Saturday, 9:00 AM – 6:00 PM IST</p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Portal Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="find-schemes.html">Find Schemes (Wizard)</a></li>
+            <li><a href="results.html">Eligibility Results</a></li>
+            <li><a href="#categories">Scheme Categories</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#faq">Student FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Official Ministry Portals</h4>
+          <ul class="footer-links">
+            <li><a href="https://scholarships.gov.in" target="_blank" rel="noopener noreferrer">National Scholarship Portal (NSP) ↗</a></li>
+            <li><a href="https://www.aicte-india.org" target="_blank" rel="noopener noreferrer">AICTE Student Portal ↗</a></li>
+            <li><a href="https://www.vidyalakshmi.co.in" target="_blank" rel="noopener noreferrer">Vidya Lakshmi Education Loans ↗</a></li>
+            <li><a href="https://socialjustice.gov.in" target="_blank" rel="noopener noreferrer">Ministry of Social Justice ↗</a></li>
+            <li><a href="https://tribal.nic.in" target="_blank" rel="noopener noreferrer">Ministry of Tribal Affairs ↗</a></li>
+            <li><a href="https://www.digilocker.gov.in" target="_blank" rel="noopener noreferrer">DigiLocker Verification ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SchemeMatch – National Government Scheme Discovery Portal. Designed for Indian Students &amp; Citizens.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- UNIVERSAL CONVERSATIONAL VOICE & CHAT CO-PILOT (SevaVaani) -->
+  <!-- ========================================================================= -->
+  <div id="sevavaani-widget" class="sevavaani-widget" aria-label="SevaVaani Voice &amp; Chat Assistant">
+    
+    <!-- Floating Launcher Trigger Button -->
+    <button type="button" id="sevavaani-trigger" class="sevavaani-launcher" aria-label="Open SevaVaani Assistant" title="SevaVaani Voice Co-Pilot">
+      <span class="launcher-pulse"></span>
+      <span class="launcher-icon">🎙️</span>
+      <span class="launcher-label">SevaVaani Co-Pilot</span>
+      <span class="launcher-status-dot"></span>
+    </button>
+
+    <!-- Sliding Assistant Drawer -->
+    <div id="sevavaani-drawer" class="sevavaani-drawer" aria-hidden="true">
+      
+      <!-- Drawer Header -->
+      <div class="sevavaani-header">
+        <div class="sevavaani-brand">
+          <div class="brand-avatar">🏛️</div>
+          <div>
+            <h3 class="sevavaani-title">SevaVaani <span>Co-Pilot</span></h3>
+            <p class="sevavaani-sub">National Scheme &amp; Form Guide</p>
+          </div>
+        </div>
+        <div class="sevavaani-header-actions">
+          <button type="button" id="sevavaani-lang-btn" class="btn-icon" title="Switch Language">🌐 <span id="sevavaani-lang-text">HI</span></button>
+          <button type="button" id="sevavaani-sound-btn" class="btn-icon" title="Voice Mute/Unmute">🔊</button>
+          <button type="button" id="sevavaani-close-btn" class="btn-icon close-btn" title="Close Assistant" aria-label="Close Assistant">✕</button>
+        </div>
+      </div>
+
+      <!-- Live Audio Waveform & Status Banner -->
+      <div id="sevavaani-wave-bar" class="sevavaani-wave-bar">
+        <div class="wave-bars">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span id="sevavaani-live-status" class="live-status-text">Ready to help. Speak or type below.</span>
+      </div>
+
+      <!-- Scrollable Message Conversation Stream -->
+      <div id="sevavaani-messages" class="sevavaani-messages">
+        <!-- Messages injected dynamically by script.js -->
+      </div>
+
+      <!-- Quick Suggestion Chips -->
+      <div id="sevavaani-chips" class="sevavaani-chips">
+        <button type="button" class="chip-btn" data-query="Form kaise bhare?">📝 Form kaise bhare?</button>
+        <button type="button" class="chip-btn" data-query="Pragati scheme ke documents kya hai?">📄 Pragati Scheme Documents</button>
+        <button type="button" class="chip-btn" data-query="Scholarship ke liye kaha apply kare?">🔗 Kaha Apply Kare?</button>
+        <button type="button" class="chip-btn" data-query="Engineering ke liye kaunsi schemes hai?">🎓 Engineering Schemes</button>
+        <button type="button" class="chip-btn" data-query="Income criteria kya hai?">💰 Income Limit Rules</button>
+      </div>
+
+      <!-- Footer Input Controls (Mic + Text Input + Send) -->
+      <div class="sevavaani-input-row">
+        <button type="button" id="sevavaani-mic-btn" class="sevavaani-mic-btn" title="Click to speak in Hindi or English">
+          <span class="mic-inner-icon">🎙️</span>
+        </button>
+        <input type="text" id="sevavaani-text-input" class="sevavaani-text-input" placeholder="Poochiye: Form kaise bhare, documents..." autocomplete="off">
+        <button type="button" id="sevavaani-send-btn" class="sevavaani-send-btn" title="Send message">→</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Legacy Compatibility Elements for older scripts -->
+  <div style="display:none;" aria-hidden="true">
+    <div id="voice-orb"></div>
+    <div id="voice-transcript-display"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

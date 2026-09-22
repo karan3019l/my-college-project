@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Comprehensive Government Scheme Information – SchemeMatch. Explore official eligibility, benefits, required documents, application channels, and portals.">
+  <title>Scheme Details – SchemeMatch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Tricolor Accent Line -->
+  <div class="top-strip"></div>
+
+  <!-- Professional Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-notice">
+        <span class="tag" data-i18n="tag_portal">GOVT CITIZEN PORTAL</span>
+        <span data-i18n="details_top_notice">Official Scheme Dossier • Verified Guidelines &amp; Direct Application Channels</span>
+      </div>
+      <div class="top-bar-right">
+        <div class="lang-selector-wrap">
+          <label for="site-lang-select" class="lang-label">🌐 <span data-i18n="lang_label">Language:</span></label>
+          <select id="site-lang-select" class="lang-dropdown" aria-label="Select Portal Language">
+            <option value="en-IN">English</option>
+            <option value="hi-IN">हिन्दी (Hindi)</option>
+            <option value="bn-IN">বাংলা (Bengali)</option>
+            <option value="ta-IN">தமிழ் (Tamil)</option>
+            <option value="te-IN">తెలుగు (Telugu)</option>
+            <option value="mr-IN">मराठी (Marathi)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accessibility Toolbar Drawer (Collapsible) -->
+  <div id="accessibility-bar" class="accessibility-bar">
+    <div class="container accessibility-bar-content">
+      <div class="access-tools-title">
+        <span>👁️</span>
+        <strong data-i18n="access_title">Accessibility Tools:</strong>
+        <span class="access-desc" data-i18n="access_desc">Adjust text size, contrast, and voice assistance for effortless reading</span>
+      </div>
+      <div class="access-buttons-row">
+        <button type="button" id="font-decrease-btn" class="btn btn-outline btn-sm" title="Decrease font size">A-</button>
+        <button type="button" id="font-reset-btn" class="btn btn-outline btn-sm" title="Reset font size">A Default</button>
+        <button type="button" id="font-increase-btn" class="btn btn-outline btn-sm" title="Increase font size">A+</button>
+        <button type="button" id="high-contrast-btn" class="btn btn-outline btn-sm" title="Toggle High Contrast">🌓 High Contrast</button>
+        <button type="button" id="read-page-global-btn" class="btn btn-cyan btn-sm" title="Read page aloud">🔊 Read Page</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modern Sticky Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link">
+        <div class="brand-emblem">🏛️</div>
+        <div class="brand-text">
+          <h1 class="brand-title">Scheme<span>Match</span></h1>
+          <p class="brand-subtitle" data-i18n="brand_subtitle">Government Scheme Finder</p>
+        </div>
+      </a>
+
+      <!-- Center navigation -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="find-schemes.html" class="nav-link" data-i18n="nav_find">Find Schemes</a></li>
+          <li><a href="results.html" class="nav-link" data-i18n="nav_results">Results</a></li>
+          <li><a href="index.html#about" class="nav-link" data-i18n="nav_about">About</a></li>
+          <li><a href="index.html#help" class="nav-link" data-i18n="nav_help">Help</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="nav-actions">
+        <a href="results.html" class="btn btn-outline btn-sm" data-i18n="btn_back_results">← Back to Results</a>
+        <button type="button" id="voice-assistant-trigger" class="btn btn-voice btn-sm" title="Open Voice Assistant">
+          🎙️ <span class="nav-btn-text">SevaVaani Voice Co-Pilot</span>
+        </button>
+        <button type="button" id="accessibility-toggle-btn" class="btn btn-outline btn-sm" title="Toggle Accessibility Tools">
+          👁 <span class="nav-btn-text" data-i18n="btn_accessibility">Accessibility</span>
+        </button>
+        <button type="button" class="nav-hamburger" id="nav-hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Scheme Details Container -->
+  <main class="container details-container">
+    <div id="scheme-details-container">
+      <!-- Populated dynamically by script.js -->
+      <div class="text-center" style="padding: 4rem 0;">
+        <div style="font-size: 2.5rem; margin-bottom: 1rem;">⌛</div>
+        <h3 style="color: #ffffff;">Loading Scheme Details...</h3>
+        <p style="color: var(--text-muted);">Retrieving verified government eligibility, benefits, and application guidelines.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem;">
+            <span style="font-size: 1.6rem;">🏛️</span>
+            <h3 style="margin: 0; color: #ffffff;">SchemeMatch</h3>
+          </div>
+          <p data-i18n="footer_about">
+            Helping citizens discover government schemes. A modern citizen-centric interface with 3D visualizations, conversational voice assistance, and verified portal directory.
+          </p>
+          <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 1rem;" data-i18n="footer_note">
+            Matches are based on user inputs. Final eligibility is decided by the concerned government department.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_nav">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="find-schemes.html" data-i18n="nav_find">Find Schemes</a></li>
+            <li><a href="results.html" data-i18n="nav_results">Results</a></li>
+            <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+            <li><a href="index.html#help" data-i18n="nav_help">Help</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_portals">Official Portals</h4>
+          <ul class="footer-links">
+            <li><a href="https://scholarships.gov.in" target="_blank" rel="noopener noreferrer">National Scholarship Portal</a></li>
+            <li><a href="https://pmkisan.gov.in" target="_blank" rel="noopener noreferrer">PM-KISAN Portal</a></li>
+            <li><a href="https://pmjay.gov.in" target="_blank" rel="noopener noreferrer">Ayushman Bharat PM-JAY</a></li>
+            <li><a href="https://pmaymis.gov.in" target="_blank" rel="noopener noreferrer">PMAY Housing Portal</a></li>
+            <li><a href="https://nrega.nic.in" target="_blank" rel="noopener noreferrer">MGNREGA Portal</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SchemeMatch – Government Scheme Finder. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+    <!-- ========================================================================= -->
+  <!-- UNIVERSAL CONVERSATIONAL VOICE & CHAT CO-PILOT (SevaVaani) -->
+  <!-- ========================================================================= -->
+  <div id="sevavaani-widget" class="sevavaani-widget" aria-label="SevaVaani Voice &amp; Chat Assistant">
+    
+    <!-- Floating Launcher Trigger Button -->
+    <button type="button" id="sevavaani-trigger" class="sevavaani-launcher" aria-label="Open SevaVaani Assistant" title="SevaVaani Voice Co-Pilot">
+      <span class="launcher-pulse"></span>
+      <span class="launcher-icon">🎙️</span>
+      <span class="launcher-label">SevaVaani Co-Pilot</span>
+      <span class="launcher-status-dot"></span>
+    </button>
+
+    <!-- Sliding Assistant Drawer -->
+    <div id="sevavaani-drawer" class="sevavaani-drawer" aria-hidden="true">
+      
+      <!-- Drawer Header -->
+      <div class="sevavaani-header">
+        <div class="sevavaani-brand">
+          <div class="brand-avatar">🏛️</div>
+          <div>
+            <h3 class="sevavaani-title">SevaVaani <span>Co-Pilot</span></h3>
+            <p class="sevavaani-sub">National Scheme &amp; Form Guide</p>
+          </div>
+        </div>
+        <div class="sevavaani-header-actions">
+          <button type="button" id="sevavaani-lang-btn" class="btn-icon" title="Switch Language">🌐 <span id="sevavaani-lang-text">HI</span></button>
+          <button type="button" id="sevavaani-sound-btn" class="btn-icon" title="Voice Mute/Unmute">🔊</button>
+          <button type="button" id="sevavaani-close-btn" class="btn-icon close-btn" title="Close Assistant" aria-label="Close Assistant">✕</button>
+        </div>
+      </div>
+
+      <!-- Live Audio Waveform & Status Banner -->
+      <div id="sevavaani-wave-bar" class="sevavaani-wave-bar">
+        <div class="wave-bars">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span id="sevavaani-live-status" class="live-status-text">Ready to help. Speak or type below.</span>
+      </div>
+
+      <!-- Scrollable Message Conversation Stream -->
+      <div id="sevavaani-messages" class="sevavaani-messages">
+        <!-- Messages injected dynamically by script.js -->
+      </div>
+
+      <!-- Quick Suggestion Chips -->
+      <div id="sevavaani-chips" class="sevavaani-chips">
+        <button type="button" class="chip-btn" data-query="Form kaise bhare?">📝 Form kaise bhare?</button>
+        <button type="button" class="chip-btn" data-query="Pragati scheme ke documents kya hai?">📄 Pragati Scheme Documents</button>
+        <button type="button" class="chip-btn" data-query="Scholarship ke liye kaha apply kare?">🔗 Kaha Apply Kare?</button>
+        <button type="button" class="chip-btn" data-query="Engineering ke liye kaunsi schemes hai?">🎓 Engineering Schemes</button>
+        <button type="button" class="chip-btn" data-query="Income criteria kya hai?">💰 Income Limit Rules</button>
+      </div>
+
+      <!-- Footer Input Controls (Mic + Text Input + Send) -->
+      <div class="sevavaani-input-row">
+        <button type="button" id="sevavaani-mic-btn" class="sevavaani-mic-btn" title="Click to speak in Hindi or English">
+          <span class="mic-inner-icon">🎙️</span>
+        </button>
+        <input type="text" id="sevavaani-text-input" class="sevavaani-text-input" placeholder="Poochiye: Form kaise bhare, documents..." autocomplete="off">
+        <button type="button" id="sevavaani-send-btn" class="sevavaani-send-btn" title="Send message">→</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Legacy Compatibility Elements for older scripts -->
+  <div style="display:none;" aria-hidden="true">
+    <div id="voice-orb"></div>
+    <div id="voice-transcript-display"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

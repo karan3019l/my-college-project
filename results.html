@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your SchemeMatch Results – Discover matching government scholarships and schemes calculated with explainable criteria.">
+  <title>Your SchemeMatch Results – Government Scheme Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Tricolor Accent Line -->
+  <div class="top-strip"></div>
+
+  <!-- Professional Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-notice">
+        <span class="tag" data-i18n="tag_portal">GOVT CITIZEN PORTAL</span>
+        <span data-i18n="top_bar_initiative">National Scheme Finder &amp; Student Benefit Discovery Service</span>
+      </div>
+      <div class="top-bar-right">
+        <div class="lang-selector-wrap">
+          <label for="site-lang-select" class="lang-label">🌐 <span data-i18n="lang_label">Language:</span></label>
+          <select id="site-lang-select" class="lang-dropdown" aria-label="Select Portal Language">
+            <option value="en-IN">English</option>
+            <option value="hi-IN">हिन्दी</option>
+            <option value="mr-IN">मराठी</option>
+            <option value="bn-IN">বাংলা</option>
+            <option value="ta-IN">தமிழ்</option>
+            <option value="te-IN">తెలుగు</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accessibility Toolbar Drawer (Collapsible) -->
+  <div id="accessibility-bar" class="accessibility-bar">
+    <div class="container accessibility-bar-content">
+      <div class="access-tools-title">
+        <span>♿</span>
+        <strong data-i18n="access_title">Accessibility Tools:</strong>
+        <span class="access-desc" data-i18n="access_desc">Adjust text size, contrast, and voice assistance for effortless reading</span>
+      </div>
+      <div class="access-buttons-row">
+        <button type="button" id="font-decrease-btn" class="btn btn-outline btn-sm" title="Decrease font size">A-</button>
+        <button type="button" id="font-reset-btn" class="btn btn-outline btn-sm" title="Reset font size">A Default</button>
+        <button type="button" id="font-increase-btn" class="btn btn-outline btn-sm" title="Increase font size">A+</button>
+        <button type="button" id="high-contrast-btn" class="btn btn-outline btn-sm" title="Toggle High Contrast">🌓 High Contrast</button>
+        <button type="button" id="read-page-global-btn" class="btn btn-cyan btn-sm" title="Read page aloud">🔊 Read Page</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modern Sticky Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link">
+        <div class="brand-emblem">🏛️</div>
+        <div class="brand-text">
+          <h1 class="brand-title">Scheme<span>Match</span></h1>
+          <p class="brand-subtitle" data-i18n="brand_subtitle">Government Scheme Finder</p>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="find-schemes.html" class="nav-link" data-i18n="nav_find">Find Schemes</a></li>
+          <li><a href="results.html" class="nav-link active" data-i18n="nav_results">Results</a></li>
+          <li><a href="index.html#about" class="nav-link" data-i18n="nav_about">About</a></li>
+          <li><a href="index.html#how-it-works" class="nav-link" data-i18n="nav_help">Help</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="find-schemes.html" class="btn btn-outline btn-sm" data-i18n="btn_new_search">
+          🔍 New Search
+        </a>
+        <button type="button" id="voice-assistant-trigger" class="btn btn-voice btn-sm" title="Open Voice Assistant">
+          🎙️ <span class="nav-btn-text">SevaVaani Voice Co-Pilot</span>
+        </button>
+        <button type="button" id="accessibility-toggle-btn" class="btn btn-outline btn-sm" title="Toggle Accessibility Tools">
+          ♿ <span class="nav-btn-text" data-i18n="btn_accessibility">Accessibility</span>
+        </button>
+        <button type="button" class="nav-hamburger" id="nav-hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Results Container -->
+  <main class="container results-shell">
+    <div class="page-heading">
+      <h1>Your Matching Schemes</h1>
+      <p>Based on your profile and document status, we found <strong>8</strong> matching schemes for you.</p>
+    </div>
+
+    <div class="results-layout">
+      <aside class="results-sidebar">
+        <div class="results-filter-controls">
+          <div class="filter-block">
+            <h3>Filter Results</h3>
+          </div>
+
+          <div class="filter-block">
+            <label>Category</label>
+            <div id="category-filters" class="filter-categories">
+              <button type="button" class="filter-btn active" data-category="All">All Schemes</button>
+              <button type="button" class="filter-btn" data-category="Likely Eligible">Likely Eligible</button>
+              <button type="button" class="filter-btn" data-category="Agriculture">Agriculture &amp; Farmers</button>
+              <button type="button" class="filter-btn" data-category="Business">Business</button>
+              <button type="button" class="filter-btn" data-category="Healthcare">Healthcare</button>
+              <button type="button" class="filter-btn" data-category="Housing">Housing</button>
+              <button type="button" class="filter-btn" data-category="Women">Women</button>
+              <button type="button" class="filter-btn" data-category="Workers">Workers</button>
+            </div>
+          </div>
+
+          <div class="filter-block">
+            <label for="state-filter-select">State</label>
+            <select id="state-filter-select" class="form-control form-control-sm" aria-label="Filter by State">
+              <option value="All">All India</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+            </select>
+          </div>
+
+          <div class="filter-block">
+            <label for="audience-filter-select">Audience</label>
+            <select id="audience-filter-select" class="form-control form-control-sm" aria-label="Filter by audience">
+              <option value="All">All Citizens</option>
+              <option value="Student">Students</option>
+              <option value="Farmer">Farmers</option>
+              <option value="Women">Women</option>
+              <option value="Worker">Workers</option>
+              <option value="Senior Citizen">Senior Citizens</option>
+            </select>
+          </div>
+
+          <div class="filter-block">
+            <label>Eligibility Status</label>
+            <div class="check-list">
+              <label><input type="checkbox" checked> Fully Eligible (5)</label>
+              <label><input type="checkbox" checked> Partially Eligible (2)</label>
+              <label><input type="checkbox"> Not Eligible (1)</label>
+            </div>
+          </div>
+
+          <div class="filter-block">
+            <label for="sort-select">Sort By</label>
+            <select id="sort-select" class="form-control form-control-sm" aria-label="Sort schemes">
+              <option value="match_desc">Best Match</option>
+              <option value="name_asc">Name</option>
+              <option value="match_asc">Lowest Match</option>
+            </select>
+          </div>
+        </div>
+      </aside>
+
+      <section class="results-main">
+        <div id="schemes-container" class="schemes-grid">
+          <!-- Populated dynamically by script.js -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem;">
+            <span style="font-size: 1.6rem;">🏛️</span>
+            <h3 style="margin: 0; color: #ffffff;">SchemeMatch</h3>
+          </div>
+          <p>
+            An AI-powered student-focused platform concept designed to help learners discover government scholarships, interest subsidies, and benefits matching their credentials.
+          </p>
+          <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 1rem;">
+            <strong>Educational / Student Project:</strong> Eligibility scores are indicative. Final sanction is determined by the respective government department.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="find-schemes.html">Find Schemes</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Official Portals</h4>
+          <ul class="footer-links">
+            <li><a href="https://scholarships.gov.in" target="_blank" rel="noopener noreferrer">National Scholarship Portal (NSP)</a></li>
+            <li><a href="https://www.aicte-india.org" target="_blank" rel="noopener noreferrer">AICTE Student Schemes</a></li>
+            <li><a href="https://www.vidyalakshmi.co.in" target="_blank" rel="noopener noreferrer">Vidya Lakshmi Portal</a></li>
+            <li><a href="https://socialjustice.gov.in" target="_blank" rel="noopener noreferrer">Ministry of Social Justice</a></li>
+            <li><a href="https://tribal.nic.in" target="_blank" rel="noopener noreferrer">Ministry of Tribal Affairs</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SchemeMatch – Government Scheme Finder &amp; Eligibility System. National Government Scheme Discovery Portal.</p>
+      </div>
+    </div>
+  </footer>
+
+    <!-- ========================================================================= -->
+  <!-- UNIVERSAL CONVERSATIONAL VOICE & CHAT CO-PILOT (SevaVaani) -->
+  <!-- ========================================================================= -->
+  <div id="sevavaani-widget" class="sevavaani-widget" aria-label="SevaVaani Voice &amp; Chat Assistant">
+    
+    <!-- Floating Launcher Trigger Button -->
+    <button type="button" id="sevavaani-trigger" class="sevavaani-launcher" aria-label="Open SevaVaani Assistant" title="SevaVaani Voice Co-Pilot">
+      <span class="launcher-pulse"></span>
+      <span class="launcher-icon">🎙️</span>
+      <span class="launcher-label">SevaVaani Co-Pilot</span>
+      <span class="launcher-status-dot"></span>
+    </button>
+
+    <!-- Sliding Assistant Drawer -->
+    <div id="sevavaani-drawer" class="sevavaani-drawer" aria-hidden="true">
+      
+      <!-- Drawer Header -->
+      <div class="sevavaani-header">
+        <div class="sevavaani-brand">
+          <div class="brand-avatar">🏛️</div>
+          <div>
+            <h3 class="sevavaani-title">SevaVaani <span>Co-Pilot</span></h3>
+            <p class="sevavaani-sub">National Scheme &amp; Form Guide</p>
+          </div>
+        </div>
+        <div class="sevavaani-header-actions">
+          <button type="button" id="sevavaani-lang-btn" class="btn-icon" title="Switch Language">🌐 <span id="sevavaani-lang-text">HI</span></button>
+          <button type="button" id="sevavaani-sound-btn" class="btn-icon" title="Voice Mute/Unmute">🔊</button>
+          <button type="button" id="sevavaani-close-btn" class="btn-icon close-btn" title="Close Assistant" aria-label="Close Assistant">✕</button>
+        </div>
+      </div>
+
+      <!-- Live Audio Waveform & Status Banner -->
+      <div id="sevavaani-wave-bar" class="sevavaani-wave-bar">
+        <div class="wave-bars">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span id="sevavaani-live-status" class="live-status-text">Ready to help. Speak or type below.</span>
+      </div>
+
+      <!-- Scrollable Message Conversation Stream -->
+      <div id="sevavaani-messages" class="sevavaani-messages">
+        <!-- Messages injected dynamically by script.js -->
+      </div>
+
+      <!-- Quick Suggestion Chips -->
+      <div id="sevavaani-chips" class="sevavaani-chips">
+        <button type="button" class="chip-btn" data-query="Form kaise bhare?">📝 Form kaise bhare?</button>
+        <button type="button" class="chip-btn" data-query="Pragati scheme ke documents kya hai?">📄 Pragati Scheme Documents</button>
+        <button type="button" class="chip-btn" data-query="Scholarship ke liye kaha apply kare?">🔗 Kaha Apply Kare?</button>
+        <button type="button" class="chip-btn" data-query="Engineering ke liye kaunsi schemes hai?">🎓 Engineering Schemes</button>
+        <button type="button" class="chip-btn" data-query="Income criteria kya hai?">💰 Income Limit Rules</button>
+      </div>
+
+      <!-- Footer Input Controls (Mic + Text Input + Send) -->
+      <div class="sevavaani-input-row">
+        <button type="button" id="sevavaani-mic-btn" class="sevavaani-mic-btn" title="Click to speak in Hindi or English">
+          <span class="mic-inner-icon">🎙️</span>
+        </button>
+        <input type="text" id="sevavaani-text-input" class="sevavaani-text-input" placeholder="Poochiye: Form kaise bhare, documents..." autocomplete="off">
+        <button type="button" id="sevavaani-send-btn" class="sevavaani-send-btn" title="Send message">→</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Legacy Compatibility Elements for older scripts -->
+  <div style="display:none;" aria-hidden="true">
+    <div id="voice-orb"></div>
+    <div id="voice-transcript-display"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
