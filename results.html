@@ -73,7 +73,7 @@
           <li><a href="find-schemes.html" class="nav-link" data-i18n="nav_find">Find Schemes</a></li>
           <li><a href="results.html" class="nav-link active" data-i18n="nav_results">Results</a></li>
           <li><a href="index.html#how-it-works" class="nav-link" data-i18n="nav_help">Help</a></li>
-          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#about" class="nav-link" data-i18n="nav_about">About</a></li>
         </ul>
       </nav>
 
@@ -82,7 +82,7 @@
           🔍 New Search
         </a>
         <button type="button" id="voice-assistant-trigger" class="btn btn-voice btn-sm" title="Open Voice Assistant">
-          🎙️ <span class="nav-btn-text">SevaVaani Voice Co-Pilot</span>
+          🎙️ <span class="nav-btn-text" data-i18n="btn_voice_copilot">SevaVaani Voice Co-Pilot</span>
         </button>
         <button type="button" id="accessibility-toggle-btn" class="btn btn-outline btn-sm" title="Toggle Accessibility Tools">
           ♿ <span class="nav-btn-text" data-i18n="btn_accessibility">Accessibility</span>
@@ -97,15 +97,15 @@
   <!-- Main Results Container -->
   <main class="container results-shell">
     <div class="page-heading">
-      <h1>Your Matching <span class="hero-heading-highlight">Schemes</span></h1>
-      <p>Based on your profile and document status, we found <strong>8</strong> matching schemes for you.</p>
+      <h1 data-i18n-html="results_heading_html">Your Matching <span class="hero-heading-highlight">Schemes</span></h1>
+      <p id="results-count" data-i18n-html="results_sub_html">Based on your profile and document status, we found <strong>8</strong> matching schemes for you.</p>
     </div>
 
     <div class="results-layout">
       <section class="results-main">
         <div class="results-search-bar">
-          <label for="search-input">Search Schemes</label>
-          <input type="search" id="search-input" class="form-control" placeholder="Search by scheme name, benefit, category or occupation" aria-label="Search schemes">
+          <label for="search-input" data-i18n="search_schemes_label">Search Schemes</label>
+          <input type="search" id="search-input" class="form-control" placeholder="Search by scheme name, benefit, category or occupation" aria-label="Search schemes" data-i18n-placeholder="search_schemes_placeholder" data-i18n-aria-label="search_schemes_label">
         </div>
         <div id="schemes-container" class="schemes-grid">
           <!-- Populated dynamically by script.js -->

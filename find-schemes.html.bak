@@ -73,13 +73,13 @@
           <li><a href="find-schemes.html" class="nav-link active" data-i18n="nav_find">Find Schemes</a></li>
           <li><a href="results.html" class="nav-link" data-i18n="nav_results">Results</a></li>
           <li><a href="index.html#how-it-works" class="nav-link" data-i18n="nav_help">Help</a></li>
-          <li><a href="index.html#about" class="nav-link" data-i18n="nav_about">About</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
         <button type="button" id="voice-assistant-trigger" class="btn btn-voice btn-sm" title="Open Voice Assistant">
-          🎙️ <span class="nav-btn-text" data-i18n="btn_voice_copilot">SevaVaani Voice Co-Pilot</span>
+          🎙️ <span class="nav-btn-text">SevaVaani Voice Co-Pilot</span>
         </button>
         <button type="button" id="accessibility-toggle-btn" class="btn btn-outline btn-sm" title="Toggle Accessibility Tools">
           ♿ <span class="nav-btn-text" data-i18n="btn_accessibility">Accessibility</span>
@@ -96,10 +96,10 @@
 
     <!-- Wizard Header Banner -->
     <div style="margin-bottom: 2rem; text-align: center;">
-      <span class="section-tag" data-i18n="wizard_tag">Intelligent Eligibility Wizard</span>
-      <h2 style="font-size: 2.2rem; color: #ffffff; margin: 0.4rem 0 0.5rem;" data-i18n-html="wizard_title_html">Find <span class="hero-heading-highlight">Schemes</span> You May Be Eligible For</h2>
-      <p style="color: var(--text-muted); max-width: 680px; margin: 0 auto; font-size: 1rem; line-height: 1.55;" data-i18n="wizard_desc">
-        Complete the 6-step guided profile, upload your documents or capture them via camera, and let our deterministic engine discover your best matching government schemes across verified welfare programs.
+      <span class="section-tag">Intelligent Eligibility Wizard</span>
+      <h2 style="font-size: 2.2rem; color: #ffffff; margin: 0.4rem 0 0.5rem;">Find <span class="hero-heading-highlight">Schemes</span> You May Be Eligible For</h2>
+      <p style="color: var(--text-muted); max-width: 680px; margin: 0 auto; font-size: 1rem; line-height: 1.55;">
+        Complete the 6-step guided profile, upload your documents or capture them via camera, and let our deterministic engine discover your best matching government schemes across <span class="dynamic-schemes-count">69</span> verified welfare programs.
       </p>
     </div>
 
@@ -107,25 +107,25 @@
     <div class="demo-profile-panel" style="margin-bottom: 2rem;">
       <div class="panel-title" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.6rem; margin-bottom: 0.8rem;">
         <span style="font-weight: 700; color: #ffffff; display: flex; align-items: center; gap: 0.5rem;">
-          <span>🎯</span> <span data-i18n="demo_panel_title">Instant Sample Profiles (Quick Auto-Fill)</span>
+          <span>🎯</span> Instant Sample Profiles (Quick Auto-Fill)
         </span>
-        <span class="badge badge-cyan" data-i18n="demo_badge">One-Click Auto-Fill</span>
+        <span class="badge badge-cyan">One-Click Auto-Fill</span>
       </div>
       <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.8rem;">
-        <span data-i18n="demo_panel_desc">Click any verified demo student scenario below to instantly populate all wizard steps and test deterministic matching:</span>
+        Click any verified demo student scenario below to instantly populate all wizard steps and test deterministic matching:
       </p>
       <div id="demo-profile-list" class="demo-profile-list" style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
         <button type="button" class="demo-profile-btn" data-demo="profile-a">
-          <span data-i18n="demo_btn_a">👨‍🎓 Profile A: College Student (OBC, ₹2L, Engineering)</span>
+          👨‍🎓 Profile A: College Student (OBC, ₹2L, Engineering)
         </button>
         <button type="button" class="demo-profile-btn" data-demo="profile-b">
-          <span data-i18n="demo_btn_b">👩‍🎓 Profile B: Girl Student (General, ₹3.5L, Pragati Eligible)</span>
+          👩‍🎓 Profile B: Girl Student (General, ₹3.5L, Pragati Eligible)
         </button>
         <button type="button" class="demo-profile-btn" data-demo="profile-c">
-          <span data-i18n="demo_btn_c">🏛️ Profile C: MP State Post-Matric (OBC, ₹1.8L, Pharmacy)</span>
+          🏛️ Profile C: MP State Post-Matric (OBC, ₹1.8L, Pharmacy)
         </button>
         <button type="button" class="demo-profile-btn" data-demo="profile-d">
-          <span data-i18n="demo_btn_d">♿ Profile D: Student with Disability (SC, PwD 40%+, Saksham Eligible)</span>
+          ♿ Profile D: Student with Disability (SC, PwD 40%+, Saksham Eligible)
         </button>
       </div>
     </div>
@@ -135,27 +135,27 @@
       <div class="stepper-track"></div>
       <div class="stepper-item step-nav-item active" data-step="1">
         <div class="stepper-circle">1</div>
-        <div class="stepper-label" data-i18n="step_lbl_personal">Personal</div>
+        <div class="stepper-label">Personal</div>
       </div>
       <div class="stepper-item step-nav-item" data-step="2">
         <div class="stepper-circle">2</div>
-        <div class="stepper-label" data-i18n="step_lbl_education">Education</div>
+        <div class="stepper-label">Income</div>
       </div>
       <div class="stepper-item step-nav-item" data-step="3">
         <div class="stepper-circle">3</div>
-        <div class="stepper-label" data-i18n="step_lbl_financial">Income</div>
+        <div class="stepper-label">Documents</div>
       </div>
       <div class="stepper-item step-nav-item" data-step="4">
         <div class="stepper-circle">4</div>
-        <div class="stepper-label" data-i18n="step_lbl_other">Location</div>
+        <div class="stepper-label">Location</div>
       </div>
       <div class="stepper-item step-nav-item" data-step="5">
         <div class="stepper-circle">5</div>
-        <div class="stepper-label" data-i18n="step_lbl_documents">Documents</div>
+        <div class="stepper-label">Review</div>
       </div>
       <div class="stepper-item step-nav-item" data-step="6">
         <div class="stepper-circle">6</div>
-        <div class="stepper-label" data-i18n="step_lbl_submit">Results</div>
+        <div class="stepper-label">Results</div>
       </div>
     </div>
 
@@ -167,75 +167,75 @@
       <!-- ========================================== -->
       <div id="step-personal" class="form-panel-card wizard-step-panel">
         <div class="panel-title">
-          <span data-i18n="step1_heading">1. Personal Information</span>
-          <span class="badge badge-cyan" data-i18n="step1_badge">Step 1 of 6</span>
+          <span>1. Personal Information</span>
+          <span class="badge badge-cyan">Step 1 of 6</span>
         </div>
         <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.5rem;">
-          <span data-i18n="step1_sub">Provide your demographic details for accurate statutory eligibility calculation.</span>
+          Provide your demographic details for accurate statutory eligibility calculation.
         </p>
 
         <div class="form-grid-2">
           <div class="form-group">
-            <label for="name" class="form-label" data-i18n="lbl_name">Full Name</label>
-            <input type="text" id="name" class="form-control" placeholder="Enter your full name" data-i18n-placeholder="ph_name" value="">
-            <small class="form-helper-text"><span data-i18n="help_name">As printed on your Aadhaar card or marksheet.</span></small>
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Enter your full name" value="">
+            <small class="form-helper-text">As printed on your Aadhaar card or marksheet.</small>
           </div>
 
           <div class="form-group">
-            <label for="age" class="form-label" data-i18n="lbl_age">Age (Years)</label>
-            <input type="number" id="age" class="form-control" placeholder="Enter your age" data-i18n-placeholder="ph_age" min="1" max="120" value="">
-            <small class="form-helper-text"><span data-i18n="help_age">Enter your current age in years (1 to 120).</span></small>
+            <label for="age" class="form-label">Age (Years)</label>
+            <input type="number" id="age" class="form-control" placeholder="Enter your age" min="1" max="120" value="">
+            <small class="form-helper-text">Enter your current age in years (1 to 120).</small>
           </div>
 
           <div class="form-group">
-            <label for="gender" class="form-label" data-i18n="lbl_gender">Gender</label>
+            <label for="gender" class="form-label">Gender</label>
             <select id="gender" class="form-control">
-              <option value="" selected data-i18n="opt_gender_select">Select Gender</option>
-              <option value="Male" data-i18n="opt_gender_male">Male</option>
-              <option value="Female" data-i18n="opt_gender_female">Female (Eligible for Pragati & Girl-specific schemes)</option>
-              <option value="Other" data-i18n="opt_gender_other">Other / Transgender</option>
+              <option value="" selected>Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female (Eligible for Pragati & Girl-specific schemes)</option>
+              <option value="Other">Other / Transgender</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="social-category" class="form-label" data-i18n="lbl_social_category">Social Category</label>
+            <label for="social-category" class="form-label">Social Category</label>
             <select id="social-category" class="form-control">
-              <option value="" selected data-i18n="opt_cat_select">Select Category</option>
-              <option value="General" data-i18n="cat_gen">General / Open</option>
-              <option value="OBC" data-i18n="cat_obc">OBC (Other Backward Classes)</option>
-              <option value="SC" data-i18n="cat_sc">SC (Scheduled Caste)</option>
-              <option value="ST" data-i18n="cat_st">ST (Scheduled Tribe)</option>
-              <option value="EWS" data-i18n="cat_ews">EWS (Economically Weaker Section)</option>
-              <option value="DNT" data-i18n="cat_dnt">DNT / VJNT (De-Notified Nomadic Tribes)</option>
+              <option value="" selected>Select Category</option>
+              <option value="General">General / Open</option>
+              <option value="OBC">OBC (Other Backward Classes)</option>
+              <option value="SC">SC (Scheduled Caste)</option>
+              <option value="ST">ST (Scheduled Tribe)</option>
+              <option value="EWS">EWS (Economically Weaker Section)</option>
+              <option value="DNT">DNT / VJNT (De-Notified Nomadic Tribes)</option>
             </select>
           </div>
 
           <div class="form-group">
-          <label for="occupation" class="form-label" data-i18n="lbl_occ">Current Occupation / Livelihood</label>
+          <label for="occupation" class="form-label">Current Occupation / Livelihood</label>
           <select id="occupation" class="form-control" name="occupation">
-            <option value="" selected data-i18n="opt_occ_select">Select Occupation</option>
-            <option value="Farmer" data-i18n="occ_farmer">🌾 Farmer / Agricultural Worker</option>
-            <option value="Dairy Farmer" data-i18n="occ_dairy">🐄 Dairy Farmer / Fisherman</option>
-            <option value="Artisan" data-i18n="occ_artisan">🔨 Artisan / Traditional Craftsman</option>
-            <option value="Business Owner" data-i18n="occ_business">💼 Business Owner / MSME Entrepreneur</option>
-            <option value="Self-Employed" data-i18n="occ_self_emp">🛒 Self-Employed / Street Vendor / Hawker</option>
-            <option value="Worker" data-i18n="occ_worker">🏗️ Unorganized / Daily Wage Worker / Labourer</option>
-            <option value="Driver" data-i18n="occ_driver">🚗 Driver (Taxi / Auto / Truck)</option>
-            <option value="Salaried Employee" data-i18n="occ_salaried">👔 Salaried Employee (Private Sector)</option>
-            <option value="Government Employee" data-i18n="occ_govt">🏛️ Government Employee</option>
-            <option value="Woman" data-i18n="occ_woman">👩 Homemaker / SHG Member / Rural Woman</option>
-            <option value="Senior Citizen" data-i18n="occ_senior">👴 Senior Citizen (60 years and above)</option>
-            <option value="Retired Person" data-i18n="occ_retired">📋 Retired (Pensioner)</option>
-            <option value="Student" data-i18n="occ_student">🎓 Student (School / College / University)</option>
-            <option value="Unemployed" data-i18n="occ_unemployed">🔍 Unemployed / Job Seeker</option>
-            <option value="Other" data-i18n="occ_other">📝 Other</option>
+            <option value="" selected>Select Occupation</option>
+            <option value="Farmer">🌾 Farmer / Agricultural Worker</option>
+            <option value="Dairy Farmer">🐄 Dairy Farmer / Fisherman</option>
+            <option value="Artisan">🔨 Artisan / Traditional Craftsman (Carpenter, Potter, Weaver...)</option>
+            <option value="Business Owner">💼 Business Owner / MSME Entrepreneur</option>
+            <option value="Self-Employed">🛒 Self-Employed / Street Vendor / Hawker</option>
+            <option value="Worker">🏗️ Unorganized / Daily Wage Worker / Labourer</option>
+            <option value="Driver">🚗 Driver (Taxi / Auto / Truck)</option>
+            <option value="Salaried Employee">👔 Salaried Employee (Private Sector)</option>
+            <option value="Government Employee">🏛️ Government Employee</option>
+            <option value="Woman">👩 Homemaker / SHG Member / Rural Woman</option>
+            <option value="Senior Citizen">👴 Senior Citizen (60 years and above)</option>
+            <option value="Retired Person">📋 Retired (Pensioner)</option>
+            <option value="Student">🎓 Student (School / College / University)</option>
+            <option value="Unemployed">🔍 Unemployed / Job Seeker</option>
+            <option value="Other">📝 Other</option>
           </select>
         </div>
 
         <div class="form-group">
-            <label for="state" class="form-label" data-i18n="lbl_state">Current State of Residence</label>
+            <label for="state" class="form-label">Current State of Residence</label>
             <select id="state" class="form-control">
-              <option value="" selected data-i18n="opt_state_select">Select State</option>
+              <option value="" selected>Select State</option>
               <option value="All India">All India (Central Eligibility)</option>
               <option value="Madhya Pradesh">Madhya Pradesh</option>
               <option value="Maharashtra">Maharashtra</option>
@@ -263,27 +263,27 @@
           </div>
 
           <div class="form-group">
-            <label for="disability-status" class="form-label" data-i18n="lbl_pwd">Person with Benchmark Disability (PwD)?</label>
+            <label for="disability-status" class="form-label">Person with Benchmark Disability (PwD)?</label>
             <select id="disability-status" class="form-control">
-              <option value="" selected data-i18n="opt_pwd_select">Select Disability Status</option>
-              <option value="No" data-i18n="opt_pwd_no">No</option>
-              <option value="Yes" data-i18n="opt_pwd_yes">Yes (Eligible for Saksham & DEPwD scholarships)</option>
+              <option value="" selected>Select Disability Status</option>
+              <option value="No">No</option>
+              <option value="Yes">Yes (Eligible for Saksham & DEPwD scholarships)</option>
             </select>
           </div>
 
           <div class="form-group" id="disability-pct-group" style="display: none;">
-            <label for="disability-pct" class="form-label" data-i18n="lbl_pwd_pct">Disability Percentage</label>
+            <label for="disability-pct" class="form-label">Disability Percentage</label>
             <select id="disability-pct" class="form-control">
-              <option value="" selected data-i18n="opt_pwd_pct_select">Select Disability Percentage</option>
-              <option value="40% or more (Benchmark Disability)" data-i18n="opt_pwd_pct_40">40% or more (Benchmark Disability - Meets statutory criteria)</option>
-              <option value="Less than 40%" data-i18n="opt_pwd_pct_less40">Less than 40%</option>
+              <option value="" selected>Select Disability Percentage</option>
+              <option value="40% or more (Benchmark Disability)">40% or more (Benchmark Disability - Meets statutory criteria)</option>
+              <option value="Less than 40%">Less than 40%</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="minority-status" class="form-label" data-i18n="lbl_minority">Belong to Notified Minority Community?</label>
+            <label for="minority-status" class="form-label">Belong to Notified Minority Community?</label>
             <select id="minority-status" class="form-control">
-              <option value="" selected data-i18n="opt_minority_select">Select Minority Status</option>
+              <option value="" selected>Select Minority Status</option>
               <option value="No">No</option>
               <option value="Yes">Yes (Eligible for Ministry of Minority Affairs schemes)</option>
             </select>
@@ -316,18 +316,18 @@
       <!-- ========================================== -->
       <div id="step-education" class="form-panel-card wizard-step-panel" style="display: none;">
         <div class="panel-title">
-          <span data-i18n="step2_heading">2. Education Information</span>
-          <span class="badge badge-cyan" data-i18n="step2_badge">Step 2 of 6</span>
+          <span>2. Education Information</span>
+          <span class="badge badge-cyan">Step 2 of 6</span>
         </div>
         <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.5rem;">
-          <span data-i18n="step2_sub">Enter your ongoing academic stream, university details, and scores for scholarship matching.</span>
+          Enter your ongoing academic stream, university details, and scores for scholarship matching.
         </p>
 
         <div class="form-grid-2">
           <div class="form-group full-width" style="grid-column: 1 / -1;">
-            <label for="education-level" class="form-label" data-i18n="lbl_edu_level">Current Education Level</label>
+            <label for="education-level" class="form-label">Current Education Level</label>
             <select id="education-level" class="form-control">
-              <option value="" selected data-i18n="opt_edu_select">Select Education Level</option>
+              <option value="" selected>Select Education Level</option>
               <option value="School / 10th">School (Class 9 - 10)</option>
               <option value="12th / Intermediate">Higher Secondary (Class 11 - 12)</option>
               <option value="Undergraduate / Diploma">Undergraduate / Diploma / Polytechnic</option>
@@ -426,17 +426,17 @@
       <!-- ========================================== -->
       <div id="step-financial" class="form-panel-card wizard-step-panel" style="display: none;">
         <div class="panel-title">
-          <span data-i18n="step3_heading">3. Financial Information</span>
-          <span class="badge badge-cyan" data-i18n="step3_badge">Step 3 of 6</span>
+          <span>3. Financial Information</span>
+          <span class="badge badge-cyan">Step 3 of 6</span>
         </div>
         <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.5rem;">
-          <span data-i18n="step3_sub">Income information determines income-ceiling eligibility for means-based scholarships and interest subsidies.</span>
+          Income information determines income-ceiling eligibility for means-based scholarships and interest subsidies.
         </p>
 
         <div class="form-grid-2">
           <div class="form-group">
-            <label for="income" class="form-label" data-i18n="lbl_income">Annual Family Income (₹ INR)</label>
-            <input type="number" id="income" class="form-control" placeholder="Enter annual family income" data-i18n-placeholder="ph_income" min="0" max="10000000" step="5000" value="">
+            <label for="income" class="form-label">Annual Family Income (₹ INR)</label>
+            <input type="number" id="income" class="form-control" placeholder="Enter annual family income" min="0" max="10000000" step="5000" value="">
             <small class="form-helper-text">Total combined gross annual income of parents/guardians from all sources.</small>
           </div>
 
@@ -542,18 +542,18 @@
       <!-- ========================================== -->
       <div id="step-other" class="form-panel-card wizard-step-panel" style="display: none;">
         <div class="panel-title">
-          <span data-i18n="step4_heading">4. Special Category & Background Criteria</span>
-          <span class="badge badge-cyan" data-i18n="step4_badge">Step 4 of 6</span>
+          <span>4. Special Category & Background Criteria</span>
+          <span class="badge badge-cyan">Step 4 of 6</span>
         </div>
         <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.5rem;">
-          <span data-i18n="step4_sub">Special criteria unlock targeted quotas such as CAPF wards, Northeast residents, orphans, and single girl child schemes.</span>
+          Special criteria unlock targeted quotas such as CAPF wards, Northeast residents, orphans, and single girl child schemes.
         </p>
 
         <div class="form-grid-2">
           <div class="form-group">
-            <label for="domicile-state" class="form-label" data-i18n="lbl_domicile">State of Permanent Domicile</label>
+            <label for="domicile-state" class="form-label">State of Permanent Domicile</label>
             <select id="domicile-state" class="form-control">
-              <option value="" selected data-i18n="opt_domicile_select">Select State of Permanent Domicile</option>
+              <option value="" selected>Select State of Permanent Domicile</option>
               <option value="Madhya Pradesh">Madhya Pradesh (MPTAAS Eligible)</option>
               <option value="Maharashtra">Maharashtra (MahaDBT Eligible)</option>
               <option value="Delhi">Delhi (e-District Eligible)</option>
@@ -598,7 +598,7 @@
       <!-- ========================================== -->
       <div id="step-documents" class="form-panel-card wizard-step-panel" style="display: none;">
         <div class="panel-title">
-          <span data-i18n="step5_heading">5. Document Upload &amp; Verification</span>
+          <span>5. Document Upload &amp; Verification</span>
           <span class="badge badge-cyan">Step 5 of 6</span>
         </div>
 
@@ -606,9 +606,9 @@
         <div class="doc-upload-header-banner">
           <div class="doc-upload-icon-circle">📁</div>
           <div class="doc-upload-header-text">
-            <h3 class="doc-upload-main-title" data-i18n="doc_upload_banner_title">Upload Verification Documents</h3>
+            <h3 class="doc-upload-main-title">Upload Verification Documents</h3>
             <p class="doc-upload-main-desc">
-              <span data-i18n="doc_upload_banner_desc">Attach your identity, income, and category documents to verify eligibility and automatically calculate your Paperwork Readiness score.</span>
+              Attach your identity, income, and category documents to verify eligibility and automatically calculate your <strong>Paperwork Readiness</strong> score.
             </p>
             <div class="doc-upload-badges">
               <span class="doc-badge">📄 Formats: PDF, JPG, PNG</span>
@@ -624,7 +624,7 @@
             <div class="readiness-title-group">
               <span class="readiness-icon">📊</span>
               <div>
-                <span class="readiness-title" data-i18n="readiness_title">Document Paperwork Readiness</span>
+                <span class="readiness-title">Document Paperwork Readiness</span>
                 <span class="readiness-count" id="readiness-count-display">0 Documents Attached</span>
               </div>
             </div>
@@ -979,22 +979,22 @@
       <!-- ========================================== -->
       <div id="step-submit" class="form-panel-card wizard-step-panel text-center" style="display: none; background: rgba(10, 22, 51, 0.9);">
         <div class="panel-title text-center" style="justify-content: center;">
-          <span data-i18n="step6_heading">6. Review Profile & Calculate Matches</span>
+          <span>6. Review Profile & Calculate Matches</span>
         </div>
 
         <p style="font-size: 1rem; max-width: 640px; margin: 0.5rem auto 1.75rem; color: var(--text-muted); line-height: 1.6;">
-          <span data-i18n="step6_sub">Your profile will now be evaluated across verified Central and State government schemes using our deterministic, explainable scoring engine.</span>
+          Your profile will now be evaluated across <strong><span class="dynamic-schemes-count">69</span> verified Central and State government schemes</strong> using our deterministic, explainable scoring engine.
         </p>
 
         <div style="margin-bottom: 2rem; display: flex; justify-content: center;">
           <button type="submit" class="btn btn-cyan btn-lg" style="min-width: 320px; font-size: 1.1rem; padding: 1.1rem 2.2rem;">
-            <span data-i18n="btn_calc_matches">🔍 Calculate SchemeMatch Scores →</span>
+            🔍 Calculate SchemeMatch Scores →
           </button>
         </div>
 
         <div class="wizard-buttons-row" style="justify-content: center;">
           <button type="button" class="btn btn-outline btn-sm btn-prev-step">
-            <span data-i18n="btn_back_docs">← Back to Documents</span>
+            ← Back to Documents
           </button>
         </div>
       </div>
@@ -1006,29 +1006,29 @@
   <div id="matching-loader-overlay" class="matching-loader-overlay">
     <div class="loader-content-card">
       <div class="loader-spinner-circle"></div>
-      <h3 style="color: #ffffff; margin-bottom: 0.5rem; font-size: 1.35rem;" data-i18n="loader_heading">Analyzing Your Profile...</h3>
+      <h3 style="color: #ffffff; margin-bottom: 0.5rem; font-size: 1.35rem;">Analyzing Your Profile...</h3>
       <p style="color: var(--cyan-bright); font-size: 0.88rem; margin-bottom: 1.5rem;">
-        <span data-i18n="loader_sub">Matching your credentials across verified welfare records</span>
+        Matching your credentials across <span class="dynamic-schemes-count">69</span> verified welfare records
       </p>
 
       <ul class="loader-steps-list">
         <li class="loader-step-item">
-          <span class="step-check">✓</span> <span data-i18n="loader_step_edu">Checking education level and stream criteria</span>
+          <span class="step-check">✓</span> Checking education level and stream criteria
         </li>
         <li class="loader-step-item">
-          <span class="step-check">✓</span> <span data-i18n="loader_step_income">Checking annual family income ceiling</span>
+          <span class="step-check">✓</span> Checking annual family income ceiling
         </li>
         <li class="loader-step-item">
-          <span class="step-check">✓</span> <span data-i18n="loader_step_category">Checking social category and reservation quotas</span>
+          <span class="step-check">✓</span> Checking social category and reservation quotas
         </li>
         <li class="loader-step-item">
-          <span class="step-check">✓</span> <span data-i18n="loader_step_domicile">Checking state domicile and regional guidelines</span>
+          <span class="step-check">✓</span> Checking state domicile and regional guidelines
         </li>
         <li class="loader-step-item">
-          <span class="step-check">✓</span> <span data-i18n="loader_step_special">Checking special eligibility (Girls, PwD, Minorities)</span>
+          <span class="step-check">✓</span> Checking special eligibility (Girls, PwD, Minorities)
         </li>
         <li class="loader-step-item">
-          <span class="step-check">✓</span> <span data-i18n="loader_step_final">Finalizing transparent match scores</span>
+          <span class="step-check">✓</span> Finalizing transparent match scores
         </li>
       </ul>
     </div>

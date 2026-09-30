@@ -1,4 +1,4 @@
-﻿/**
+/**
  * SchemeMatch – Scheme Eligibility Platform
  * Unified Core JavaScript Engine (script.js)
  * 
@@ -5107,23 +5107,6 @@ function readStoredJson(key, fallback) {
   }
 }
 
-
-// MERGE EXTRA TRANSLATIONS INTO I18N
-const _EXTRA_I18N_DATA = {"en-IN":{"nav_about":"About","btn_voice_copilot":"SevaVaani Voice Co-Pilot","btn_new_search":"🔍 New Search","btn_back_results":"← Back to Results","hero_h2_html":"Find <span class=\"hero-heading-highlight\">Schemes</span> You May Be Eligible For","hero_badge_text":"Direct Ministry Welfare Directory • <span class=\"dynamic-active-schemes-count\">67</span> Verified Active Schemes","trust_badge_free":"100% Free Public Portal","trust_badge_redirect":"Direct Redirection to NSP / Official Portals","trust_badge_voice":"Multilingual Voice Assistance","voice_adv_title":"SevaVaani Voice Co-Pilot Available:","voice_adv_desc":"Speak in Hindi or English to ask: <em>\"PM-KISAN ke liye kya chahiye?\", \"Ayushman card kaise banaye?\", \"Mudra loan kaise milega?\", \"Form kaise bhare?\"</em>","screener_badge":"Live Calculator","screener_title":"Quick Citizen Eligibility Check","screener_sub":"Select your occupation & income to instantly find matching welfare schemes:","lbl_occupation":"Your Occupation / Livelihood","lbl_social_cat":"Social Category","lbl_family_income":"Annual Family Income","screener_schemes_found":"Schemes Found","screener_quote":"The right opportunity starts with the right information.","btn_screener_submit":"View Matching Schemes & Criteria →","screener_footer":"🛡️ No registration required • Privacy protected","occ_all":"All Citizens (Any Occupation)","occ_farmer":"🌾 Farmer / Agricultural Worker","occ_dairy":"🐄 Dairy Farmer / Fisherman","occ_artisan":"🔨 Artisan / Traditional Craftsman","occ_business":"💼 Small Business / MSME Owner","occ_self_emp":"🛒 Self-Employed / Street Vendor","occ_worker":"🏗️ Unorganized / Daily Wage Worker","occ_driver":"🚗 Driver (Taxi / Auto / Truck)","occ_salaried":"👔 Salaried Employee (Private Sector)","occ_govt":"🏛️ Government Employee","occ_woman":"👩 Woman / SHG Member / Homemaker","occ_senior":"👴 Senior Citizen (60+)","occ_retired":"📋 Retired (Pensioner)","occ_student":"🎓 Student / Scholar","occ_unemployed":"🔍 Unemployed / Job Seeker","occ_other":"📝 Other","cat_all":"All Categories","cat_gen":"General / Open","cat_obc":"OBC (Other Backward Classes)","cat_sc":"SC (Scheduled Caste)","cat_st":"ST (Scheduled Tribe)","cat_ews":"EWS (Economically Weaker Section)","cat_dnt":"DNT / VJNT (De-Notified Nomadic Tribes)","inc_250k":"Up to ₹2.5 Lakhs","inc_450k":"Up to ₹4.5 Lakhs","inc_800k":"Up to ₹8.0 Lakhs","inc_above_800k":"Above ₹8 Lakhs","ticker_heading":"VERIFIED GUIDELINES FROM RECOGNIZED CENTRAL & STATE MINISTRIES","wizard_tag":"Intelligent Eligibility Wizard","wizard_title_html":"Find <span class=\"hero-heading-highlight\">Schemes</span> You May Be Eligible For","wizard_desc":"Complete the 6-step guided profile, upload your documents or capture them via camera, and let our deterministic engine discover your best matching government schemes across verified welfare programs.","demo_panel_title":"Instant Sample Profiles (Quick Auto-Fill)","demo_badge":"One-Click Auto-Fill","demo_panel_desc":"Click any verified demo student scenario below to instantly populate all wizard steps and test deterministic matching:","demo_btn_a":"👨‍🎓 Profile A: College Student (OBC, ₹2L, Engineering)","demo_btn_b":"👩‍🎓 Profile B: Girl Student (General, ₹3.5L, Pragati Eligible)","demo_btn_c":"🏛️ Profile C: MP State Post-Matric (OBC, ₹1.8L, Pharmacy)","demo_btn_d":"♿ Profile D: Student with Disability (SC, PwD 40%+, Saksham Eligible)","step_lbl_personal":"Personal","step_lbl_education":"Education","step_lbl_financial":"Income","step_lbl_other":"Location","step_lbl_documents":"Documents","step_lbl_submit":"Results","step1_heading":"1. Personal Information","step1_badge":"Step 1 of 6","step1_sub":"Provide your demographic details for accurate statutory eligibility calculation.","lbl_name":"Full Name","ph_name":"Enter your full name","help_name":"As printed on your Aadhaar card or marksheet.","lbl_age":"Age (Years)","ph_age":"Enter your age","help_age":"Enter your current age in years (1 to 120).","lbl_gender":"Gender","opt_gender_select":"Select Gender","opt_gender_male":"Male","opt_gender_female":"Female (Eligible for Pragati & Girl-specific schemes)","opt_gender_other":"Other / Transgender","lbl_social_category":"Social Category","opt_cat_select":"Select Category","lbl_occ":"Current Occupation / Livelihood","opt_occ_select":"Select Occupation","lbl_state":"Current State of Residence","opt_state_select":"Select State","lbl_district":"District","ph_district":"Enter your district","lbl_pwd":"Person with Benchmark Disability (PwD 40%+)?","opt_pwd_select":"Select Disability Status","opt_pwd_no":"No","opt_pwd_yes":"Yes (Eligible for Saksham & DEPwD scholarships)","lbl_pwd_pct":"Disability Percentage","opt_pwd_pct_select":"Select Disability Percentage","opt_pwd_pct_40":"40% or more (Benchmark Disability - Meets statutory criteria)","opt_pwd_pct_less40":"Less than 40%","lbl_minority":"Belong to Notified Minority Community?","opt_minority_select":"Select Minority Status","opt_minority_no":"No","opt_minority_yes":"Yes (Eligible for Ministry of Minority Affairs schemes)","lbl_minority_comm":"Minority Community","opt_minority_comm_select":"Select Minority Community","btn_next_edu":"Education Information →","btn_next_fin":"Financial Information →","btn_prev":"← Previous Step","btn_prev_edu":"← Education Information","btn_prev_personal":"← Personal Details","step2_heading":"2. Education Information","step2_badge":"Step 2 of 6","step2_sub":"Enter your ongoing academic stream, university details, and scores for scholarship matching.","lbl_edu_level":"Current Education Level","opt_edu_select":"Select Education Level","lbl_course":"Course / Program Stream","opt_course_select":"Select Course / Program Stream","lbl_branch":"Specialization / Branch","ph_branch":"Enter branch or specialization","lbl_year":"Year of Study / Semester","opt_year_select":"Select Year of Study / Semester","lbl_college_type":"College / Institution Type","opt_college_type_select":"Select College / Institution Type","lbl_college_state":"College State","opt_college_state_select":"Select College State","lbl_score_type":"Current Academic Score Type","lbl_academic_marks":"Current Academic Marks / CGPA","ph_academic_marks":"Enter percentage or CGPA","help_academic_marks":"Overall percentage in current course or latest semester exam.","lbl_prev_marks":"Previous Qualification Marks (Class 10th / 12th %)","ph_prev_marks":"Enter percentage","help_prev_marks":"Central Sector schemes require above 80th percentile in Class 12.","step3_heading":"3. Financial Information","step3_badge":"Step 3 of 6","step3_sub":"Income information determines income-ceiling eligibility for means-based scholarships and interest subsidies.","lbl_income":"Annual Family Income (₹ INR)","ph_income":"Enter annual family income","help_income":"Total combined gross annual income of parents/guardians from all sources.","lbl_income_cert_status":"Competent Income Certificate Available?","opt_income_cert_select":"Select Certificate Status","opt_income_cert_yes":"Yes (Issued by Tehsildar / Revenue Officer / SDO)","opt_income_cert_in_process":"In-Process / Applied at e-District Portal","opt_income_cert_no":"No / Not yet applied","lbl_other_scholarship":"Currently Receiving Another Government Scholarship?","lbl_fee_reimbursement":"Receiving Tuition Fee Reimbursement?","lbl_loan_status":"Education Loan Status","parent_info_heading":"👨‍👩‍👧 Parent / Guardian Information (Student Applicants Only)","lbl_parent_occ":"Parent / Guardian Occupation","lbl_govt_employee":"Either Parent Class-I / Gazetted Govt Employee?","lbl_defence_relation":"Relation with Central Armed Police Forces (CAPF) or RPF","step4_heading":"4. Special Category & Background Criteria","step4_badge":"Step 4 of 6","step4_sub":"Special criteria unlock targeted quotas such as CAPF wards, Northeast residents, orphans, and single girl child schemes.","lbl_domicile":"State of Permanent Domicile","opt_domicile_select":"Select State of Permanent Domicile","lbl_special_quota":"Special Category / Quota","opt_special_quota_select":"Select Special Category","step5_heading":"5. Document Upload & Verification","step5_badge":"Step 5 of 6","doc_upload_banner_title":"Upload Verification Documents","doc_upload_banner_desc":"Attach your identity, income, and category documents to verify eligibility and automatically calculate your Paperwork Readiness score.","readiness_title":"Document Paperwork Readiness","camera_banner_title":"Don't have scanned files handy?","camera_banner_desc":"Take a quick photo of your physical certificate using your device camera.","btn_choose_file":"📁 Choose File","hint_drag_drop":"or drag & drop PDF / image","privacy_banner_title":"100% Client-Side Privacy Guarantee:","privacy_banner_desc":"Uploaded and camera-captured documents are processed exclusively inside your web browser. Confidential certificates and files are never sent to or stored on external servers.","step6_heading":"6. Review Profile & Calculate Matches","step6_sub":"Your profile will now be evaluated across verified Central and State government schemes using our deterministic, explainable scoring engine.","btn_calc_matches":"🔍 Calculate SchemeMatch Scores →","btn_back_docs":"← Back to Documents","loader_heading":"Analyzing Your Profile...","loader_sub":"Matching your credentials across verified welfare records","loader_step_edu":"Checking education level and stream criteria","loader_step_income":"Checking annual family income ceiling","loader_step_category":"Checking social category and reservation quotas","loader_step_domicile":"Checking state domicile and regional guidelines","loader_step_special":"Checking special eligibility (Girls, PwD, Minorities)","loader_step_final":"Finalizing transparent match scores","results_heading_html":"Your Matching <span class=\"hero-heading-highlight\">Schemes</span>","results_sub_prefix":"Based on your profile and document status, we found","results_sub_suffix":"matching schemes for you.","search_schemes_label":"Search Schemes","search_schemes_placeholder":"Search by scheme name, benefit, category or occupation","showing_results_prefix":"Showing","showing_results_mid":"matching schemes out of","showing_results_suffix":"verified government schemes","label_benefit":"Benefit:","primary_criteria_satisfied":"Primary eligibility criteria satisfied.","btn_view_details":"View Details →","btn_official_portal":"Official Portal ↗","doc_uploaded":"✓ Uploaded","doc_pending":"○ Upload pending","likely_eligible":"Likely Eligible","info_required":"Information Required","not_eligible":"Not Currently Eligible","no_schemes_found":"No Schemes Found","no_schemes_desc":"No schemes match your search. Try another name, category or keyword.","btn_clear_search":"Clear Search","btn_update_profile":"Update Profile Details","chip_age":"Age:","chip_gender":"Gender:","chip_education":"Education:","chip_category":"Category:","chip_income":"Income:","chip_state":"State:","chip_domicile":"Domicile:","chip_marks":"Marks:","chip_pwd":"PwD:","btn_edit_profile":"✏️ Edit Profile","not_specified":"Not Specified","years_suffix":"yrs","doc_aadhaar":"Aadhaar Card","doc_income_cert":"Income Certificate","doc_caste_cert":"Category Certificate","doc_marksheet":"Marksheet","doc_student_id":"College Bonafide","doc_bank_account":"Bank Passbook","doc_domicile_cert":"Domicile Certificate","doc_disability_cert":"Disability Certificate","status_active":"ACTIVE","btn_read_details":"🔊 Read Scheme Details","docs_ready_suffix":"Documents Ready","sec_advisory":"ℹ️ Statutory Information & Advisory","advisory_text":"Calculated matches are based on the criteria entered in your profile. SchemeMatch does not guarantee official approval. Final sanction is strictly decided by the competent government department upon physical document verification.","sec_why_matches":"Why this scheme matches your profile","sec_missing_criteria":"Criteria requiring verification / Missing details","sec_benefits":"🎁 Benefits & Financial Assistance","primary_entitlement":"Primary Entitlement:","sec_criteria":"⚖️ Official Eligibility Criteria","sec_docs_checklist":"📄 Required Documents Checklist","sec_docs_checklist_sub":"Check your paperwork preparation against official guidelines before initiating your application:","sec_how_to_apply":"📝 How to Apply (Step-by-Step Guidelines)","lbl_app_cycle":"Important Dates / Application Cycle:","btn_apply_official":"Apply on Official Website ↗","th_edu_level":"Target Education Level","th_courses":"Eligible Courses / Disciplines","th_category":"Social Category Requirement","th_income":"Annual Family Income Ceiling","th_marks":"Minimum Marks / Percentile","th_age":"Eligible Age Range","th_gender":"Gender Eligibility","th_state":"State & Domicile Criteria","th_pwd":"Disability (PwD) Criteria","th_minority":"Minority Community Criteria","doc_missing":"⚠️ Missing"},"hi-IN":{"nav_about":"परिचय","btn_voice_copilot":"सेवावाणी वॉयस को-पायलट","btn_new_search":"🔍 नई खोज","btn_back_results":"← परिणामों पर वापस","hero_h2_html":"पाएं <span class=\"hero-heading-highlight\">योजनाएं</span> जिनके आप पात्र हो सकते हैं","hero_badge_text":"मंत्रालय कल्याणकारी निर्देशिका • <span class=\"dynamic-active-schemes-count\">67</span> सत्यापित सक्रिय योजनाएं","trust_badge_free":"100% निःशुल्क नागरिक पोर्टल","trust_badge_redirect":"आधिकारिक पोर्टल पर सीधा आवेदन","trust_badge_voice":"बहुभाषी वॉयस सहायता","voice_adv_title":"सेवावाणी वॉयस को-पायलट उपलब्ध:","voice_adv_desc":"हिंदी या अंग्रेजी में पूछें: <em>\"PM-KISAN के लिए क्या चाहिए?\", \"आयुष्मान कार्ड कैसे बनाएं?\", \"मुद्रा लोन कैसे मिलेगा?\", \"फॉर्म कैसे भरें?\"</em>","screener_badge":"लाइव कैलकुलेटर","screener_title":"त्वरित नागरिक पात्रता जांच","screener_sub":"तुरंत मिलान वाली योजनाएं खोजने के लिए अपना व्यवसाय और आय चुनें:","lbl_occupation":"आपका व्यवसाय / आजीविका","lbl_social_cat":"सामाजिक श्रेणी","lbl_family_income":"वार्षिक पारिवारिक आय","screener_schemes_found":"योजनाएं मिलीं","screener_quote":"सही जानकारी से ही सही अवसर की शुरुआत होती है।","btn_screener_submit":"पात्र योजनाएं और नियम देखें →","screener_footer":"🛡️ पंजीकरण आवश्यक नहीं • गोपनीयता सुरक्षित","occ_all":"सभी नागरिक (कोई भी व्यवसाय)","occ_farmer":"🌾 किसान / कृषि श्रमिक","occ_dairy":"🐄 डेयरी किसान / मछुआरे","occ_artisan":"🔨 कारीगर / पारंपरिक शिल्पकार","occ_business":"💼 छोटा व्यवसाय / MSME मालिक","occ_self_emp":"🛒 स्वरोजगार / स्ट्रीट वेंडर","occ_worker":"🏗️ असंगठित / दिहाड़ी मजदूर","occ_driver":"🚗 चालक (टैक्सी / ऑटो / ट्रक)","occ_salaried":"👔 वेतनभोगी कर्मचारी (निजी क्षेत्र)","occ_govt":"🏛️ सरकारी कर्मचारी","occ_woman":"👩 महिला / SHG सदस्य / गृहिणी","occ_senior":"👴 वरिष्ठ नागरिक (60+)","occ_retired":"📋 सेवानिवृत्त (पेंशनभोगी)","occ_student":"🎓 छात्र / अध्येता","occ_unemployed":"🔍 बेरोजगार / नौकरी चाहने वाले","occ_other":"📝 अन्य","cat_all":"सभी श्रेणियां","cat_gen":"सामान्य (General)","cat_obc":"ओबीसी (OBC - अन्य पिछड़ा वर्ग)","cat_sc":"अनुसूचित जाति (SC)","cat_st":"अनुसूचित जनजाति (ST)","cat_ews":"ईडब्ल्यूएस (EWS - आर्थिक रूप से कमजोर)","cat_dnt":"विमुक्त व घुमंतू जनजातियां (DNT/VJNT)","inc_250k":"₹2.5 लाख तक","inc_450k":"₹4.5 लाख तक","inc_800k":"₹8.0 लाख तक","inc_above_800k":"₹8 लाख से अधिक","ticker_heading":"मान्यता प्राप्त केंद्रीय व राज्य मंत्रालयों के सत्यापित दिशानिर्देश","wizard_tag":"स्मार्ट पात्रता विज़ार्ड","wizard_title_html":"पाएं <span class=\"hero-heading-highlight\">योजनाएं</span> जिनके आप पात्र हो सकते हैं","wizard_desc":"6-चरणों की प्रोफ़ाइल भरें, अपने दस्तावेज़ अपलोड करें या कैमरे से कैप्चर करें, और हमारा इंजन 69+ सत्यापित सरकारी योजनाओं में से आपके लिए सबसे उपयुक्त योजनाएं खोजेगा।","demo_panel_title":"त्वरित नमूना प्रोफाइल (ऑटो-फिल)","demo_badge":"एक-क्लिक ऑटो-फिल","demo_panel_desc":"विज़ार्ड को तुरंत भरने और मिलान जांचने के लिए नीचे किसी भी डेमो प्रोफाइल पर क्लिक करें:","demo_btn_a":"👨‍🎓 प्रोफाइल A: कॉलेज छात्र (OBC, ₹2 लाख, इंजीनियरिंग)","demo_btn_b":"👩‍🎓 प्रोफाइल B: छात्रा (General, ₹3.5 लाख, प्रगति पात्र)","demo_btn_c":"🏛️ प्रोफाइल C: म.प्र. पोस्ट-मैट्रिक (OBC, ₹1.8 लाख, फार्मेसी)","demo_btn_d":"♿ प्रोफाइल D: दिव्यांग छात्र (SC, 40%+ PwD, सक्षम पात्र)","step_lbl_personal":"व्यक्तिगत","step_lbl_education":"शिक्षा","step_lbl_financial":"आय","step_lbl_other":"स्थान","step_lbl_documents":"दस्तावेज़","step_lbl_submit":"परिणाम","step1_heading":"1. व्यक्तिगत जानकारी","step1_badge":"चरण 1 / 6","step1_sub":"सटीक सरकारी पात्रता गणना के लिए अपना जनसांख्यिकीय विवरण दर्ज करें।","lbl_name":"पूरा नाम","ph_name":"अपना पूरा नाम दर्ज करें","help_name":"आधार कार्ड या अंकसूची के अनुसार।","lbl_age":"आयु (वर्ष)","ph_age":"अपनी आयु दर्ज करें","help_age":"अपनी वर्तमान आयु दर्ज करें (1 से 120 वर्ष)।","lbl_gender":"लिंग","opt_gender_select":"लिंग चुनें","opt_gender_male":"पुरुष (Male)","opt_gender_female":"महिला (Female - प्रगति व बालिका योजनाओं हेतु पात्र)","opt_gender_other":"अन्य / ट्रांसजेंडर","lbl_social_category":"सामाजिक श्रेणी","opt_cat_select":"श्रेणी चुनें","lbl_occ":"वर्तमान व्यवसाय / आजीविका","opt_occ_select":"व्यवसाय चुनें","lbl_state":"वर्तमान निवास का राज्य","opt_state_select":"राज्य चुनें","lbl_district":"ज़िला","ph_district":"अपना ज़िला दर्ज करें","lbl_pwd":"क्या आप दिव्यांग (PwD 40%+) हैं?","opt_pwd_select":"दिव्यांगता स्थिति चुनें","opt_pwd_no":"नहीं","opt_pwd_yes":"हाँ (सक्षम व DEPwD योजनाओं हेतु पात्र)","lbl_pwd_pct":"दिव्यांगता प्रतिशत","opt_pwd_pct_select":"दिव्यांगता प्रतिशत चुनें","opt_pwd_pct_40":"40% या अधिक (मानक दिव्यांगता - सरकारी मानदंडों के अनुसार)","opt_pwd_pct_less40":"40% से कम","lbl_minority":"क्या आप अधिसूचित अल्पसंख्यक समुदाय से हैं?","opt_minority_select":"अल्पसंख्यक स्थिति चुनें","opt_minority_no":"नहीं","opt_minority_yes":"हाँ (अल्पसंख्यक कार्य मंत्रालय की योजनाओं हेतु पात्र)","lbl_minority_comm":"अल्पसंख्यक समुदाय","opt_minority_comm_select":"समुदाय चुनें","btn_next_edu":"शिक्षा विवरण →","btn_next_fin":"वित्तीय विवरण →","btn_prev":"← पिछला चरण","btn_prev_edu":"← शिक्षा विवरण","btn_prev_personal":"← व्यक्तिगत विवरण","step2_heading":"2. शिक्षा संबंधी जानकारी","step2_badge":"चरण 2 / 6","step2_sub":"छात्रवृत्ति मिलान के लिए अपने वर्तमान पाठ्यक्रम, संकाय और संस्थान का विवरण दें।","lbl_edu_level":"वर्तमान शिक्षा स्तर","opt_edu_select":"शिक्षा स्तर चुनें","lbl_course":"पाठ्यक्रम / संकाय","opt_course_select":"पाठ्यक्रम / संकाय चुनें","lbl_branch":"विशेषज्ञता / शाखा","ph_branch":"अपनी शाखा या विशेषज्ञता दर्ज करें","lbl_year":"अध्ययन वर्ष / सेमेस्टर","opt_year_select":"वर्ष / सेमेस्टर चुनें","lbl_college_type":"कॉलेज / संस्थान का प्रकार","opt_college_type_select":"संस्थान प्रकार चुनें","lbl_college_state":"कॉलेज का राज्य","opt_college_state_select":"कॉलेज राज्य चुनें","lbl_score_type":"अंक स्कोर का प्रकार","lbl_academic_marks":"वर्तमान अंक / CGPA","ph_academic_marks":"प्रतिशत या CGPA दर्ज करें","help_academic_marks":"वर्तमान पाठ्यक्रम या नवीनतम सेमेस्टर परीक्षा में कुल प्रतिशत।","lbl_prev_marks":"पिछली योग्यता के अंक (10वीं / 12वीं %)","ph_prev_marks":"प्रतिशत दर्ज करें","help_prev_marks":"केंद्रीय क्षेत्र की योजनाओं के लिए 12वीं में 80वीं परसेंटाइल से अधिक अंक आवश्यक हैं।","step3_heading":"3. वित्तीय जानकारी","step3_badge":"चरण 3 / 6","step3_sub":"आय सीमा जांचने के लिए अपनी वार्षिक पारिवारिक आय व राशन स्थिति दर्ज करें।","lbl_income":"वार्षिक पारिवारिक आय (₹ INR)","ph_income":"वार्षिक पारिवारिक आय दर्ज करें","help_income":"सभी स्रोतों से माता-पिता/अभिभावक की कुल वार्षिक सकल आय।","lbl_income_cert_status":"क्या सक्षम आय प्रमाण पत्र उपलब्ध है?","opt_income_cert_select":"प्रमाण पत्र स्थिति चुनें","opt_income_cert_yes":"हाँ (तहसीलदार / राजस्व अधिकारी / SDO द्वारा जारी)","opt_income_cert_in_process":"प्रक्रियाधीन / ई-डिस्ट्रिक्ट पोर्टल पर आवेदन किया है","opt_income_cert_no":"नहीं / अभी आवेदन नहीं किया","lbl_other_scholarship":"क्या वर्तमान में कोई अन्य सरकारी छात्रवृत्ति मिल रही है?","lbl_fee_reimbursement":"क्या ट्यूशन फीस प्रतिपूर्ति प्राप्त हो रही है?","lbl_loan_status":"शिक्षा ऋण की स्थिति","parent_info_heading":"👨‍👩‍👧 माता-पिता / अभिभावक की जानकारी (केवल छात्रों के लिए)","lbl_parent_occ":"माता-पिता / अभिभावक का व्यवसाय","lbl_govt_employee":"क्या माता या पिता में से कोई क्लास-I / राजपत्रित अधिकारी हैं?","lbl_defence_relation":"सशस्त्र पुलिस बल (CAPF) या RPF से संबंध","step4_heading":"4. विशेष श्रेणी एवं मूल निवास","step4_badge":"चरण 4 / 6","step4_sub":"लक्षित योजनाओं और कोटे के लिए मूल निवास और विशेष विवरण दर्ज करें।","lbl_domicile":"स्थायी मूल निवास का राज्य","opt_domicile_select":"स्थायी मूल निवास राज्य चुनें","lbl_special_quota":"विशेष श्रेणी / कोटा","opt_special_quota_select":"विशेष श्रेणी चुनें","step5_heading":"5. दस्तावेज़ अपलोड एवं सत्यापन","step5_badge":"चरण 5 / 6","doc_upload_banner_title":"सत्यापन दस्तावेज़ अपलोड करें","doc_upload_banner_desc":"पात्रता सत्यापित करने और अपना दस्तावेज़ तत्परता स्कोर जानने के लिए अपने पहचान, आय और श्रेणी दस्तावेज़ संलग्न करें।","readiness_title":"दस्तावेज़ तत्परता स्कोर","camera_banner_title":"स्कैन की गई फ़ाइल नहीं है?","camera_banner_desc":"अपने डिवाइस कैमरे से अपने भौतिक प्रमाण पत्र की त्वरित फोटो लें।","btn_choose_file":"📁 फ़ाइल चुनें","hint_drag_drop":"या PDF / फोटो खींचकर यहां लाएं","privacy_banner_title":"100% ब्राउज़र गोपनीयता गारंटी:","privacy_banner_desc":"अपलोड और कैमरे से लिए गए दस्तावेज़ केवल आपके वेब ब्राउज़र में प्रोसेस होते हैं। आपकी गोपनीय फाइलें किसी बाहरी सर्वर पर नहीं भेजी जाती हैं।","step6_heading":"6. प्रोफ़ाइल समीक्षा एवं परिणाम","step6_sub":"अब आपकी प्रोफ़ाइल का हमारे नियम-आधारित पारदर्शी इंजन द्वारा 69 सत्यापित सरकारी योजनाओं में मूल्यांकन किया जाएगा।","btn_calc_matches":"🔍 पात्रता स्कोर की गणना करें →","btn_back_docs":"← दस्तावेज़ों पर वापस","loader_heading":"आपकी प्रोफ़ाइल का विश्लेषण जारी है...","loader_sub":"सत्यापित सरकारी रिकॉर्ड में आपके विवरण का मिलान किया जा रहा है","loader_step_edu":"शिक्षा स्तर और संकाय मानदंडों की जांच","loader_step_income":"वार्षिक पारिवारिक आय सीमा की जांच","loader_step_category":"सामाजिक श्रेणी और आरक्षण कोटे की जांच","loader_step_domicile":"राज्य मूल निवास और क्षेत्रीय दिशानिर्देशों की जांच","loader_step_special":"विशेष पात्रता (बालिका, दिव्यांग, अल्पसंख्यक) की जांच","loader_step_final":"पारदर्शी मिलान स्कोर तैयार किए जा रहे हैं","results_heading_html":"आपकी पात्र <span class=\"hero-heading-highlight\">योजनाएं</span>","results_sub_prefix":"आपकी प्रोफ़ाइल और दस्तावेज़ स्थिति के आधार पर हमें आपके लिए","results_sub_suffix":"उपयुक्त योजनाएं मिली हैं।","search_schemes_label":"योजनाएं खोजें","search_schemes_placeholder":"योजना का नाम, लाभ, श्रेणी या व्यवसाय से खोजें...","showing_results_prefix":"प्रदर्शित","showing_results_mid":"उपयुक्त योजनाएं, कुल","showing_results_suffix":"सत्यापित सरकारी योजनाओं में से","label_benefit":"लाभ:","primary_criteria_satisfied":"मुख्य पात्रता मानदंड पूरे हैं।","btn_view_details":"विवरण देखें →","btn_official_portal":"आधिकारिक पोर्टल ↗","doc_uploaded":"✓ अपलोड किया गया","doc_pending":"○ अपलोड बाकी","likely_eligible":"संभावित पात्र","info_required":"अतिरिक्त जानकारी आवश्यक","not_eligible":"वर्तमान में पात्र नहीं","no_schemes_found":"कोई योजना नहीं मिली","no_schemes_desc":"आपकी खोज से मेल खाती कोई योजना नहीं मिली। कृपया कोई अन्य नाम या श्रेणी खोजें।","btn_clear_search":"खोज हटाएं","btn_update_profile":"प्रोफ़ाइल विवरण अपडेट करें","chip_age":"आयु:","chip_gender":"लिंग:","chip_education":"शिक्षा:","chip_category":"श्रेणी:","chip_income":"आय:","chip_state":"राज्य:","chip_domicile":"मूल निवास:","chip_marks":"अंक:","chip_pwd":"दिव्यांगता:","btn_edit_profile":"✏️ प्रोफ़ाइल संपादित करें","not_specified":"निर्दिष्ट नहीं","years_suffix":"वर्ष","doc_aadhaar":"आधार कार्ड","doc_income_cert":"आय प्रमाण पत्र","doc_caste_cert":"जाति / श्रेणी प्रमाण पत्र","doc_marksheet":"अंकसूची / मार्कशीट","doc_student_id":"कॉलेज बोनाफाइड / छात्र आईडी","doc_bank_account":"बैंक पासबुक","doc_domicile_cert":"मूल निवास प्रमाण पत्र","doc_disability_cert":"दिव्यांगता प्रमाण पत्र","status_active":"सक्रिय","btn_read_details":"🔊 योजना विवरण सुनें","docs_ready_suffix":"दस्तावेज़ तैयार","sec_advisory":"ℹ️ वैधानिक जानकारी व सलाह","advisory_text":"यह परिणाम आपकी प्रोफ़ाइल जानकारी पर आधारित हैं। SchemeMatch आधिकारिक स्वीकृति की गारंटी नहीं देता है। अंतिम स्वीकृति संबंधित सरकारी विभाग द्वारा भौतिक दस्तावेज़ सत्यापन के बाद ही दी जाती है।","sec_why_matches":"यह योजना आपकी प्रोफ़ाइल से क्यों मेल खाती है","sec_missing_criteria":"सत्यापन आवश्यक मानदंड / अधूरी जानकारी","sec_benefits":"🎁 लाभ एवं वित्तीय सहायता","primary_entitlement":"मुख्य लाभ:","sec_criteria":"⚖️ आधिकारिक पात्रता मानदंड","sec_docs_checklist":"📄 आवश्यक दस्तावेज़ सूची","sec_docs_checklist_sub":"आवेदन शुरू करने से पहले आधिकारिक दिशानिर्देशों के अनुसार अपने दस्तावेज़ जांचें:","sec_how_to_apply":"📝 आवेदन कैसे करें (चरण-दर-चरण)","lbl_app_cycle":"महत्वपूर्ण तिथियां / आवेदन चक्र:","btn_apply_official":"आधिकारिक वेबसाइट पर आवेदन करें ↗","th_edu_level":"लक्षित शिक्षा स्तर","th_courses":"पात्र पाठ्यक्रम / संकाय","th_category":"सामाजिक श्रेणी","th_income":"वार्षिक पारिवारिक आय सीमा","th_marks":"न्यूनतम अंक / प्रतिशत","th_age":"पात्र आयु सीमा","th_gender":"लिंग पात्रता","th_state":"राज्य व मूल निवास मानदंड","th_pwd":"दिव्यांगता (PwD) मानदंड","th_minority":"अल्पसंख्यक समुदाय मानदंड","doc_missing":"⚠️ अनुपलब्ध / आवश्यक"},"mr-IN":{"nav_about":"माहिती","btn_voice_copilot":"सेवावाणी व्हॉईस को-पायलट","btn_new_search":"🔍 नवीन शोध","btn_back_results":"← निकालांवर परत","hero_h2_html":"आपण पात्र असणाऱ्या <span class=\"hero-heading-highlight\">शासकीय योजना</span> शोधा","trust_badge_free":"100% मोफत नागरिक पोर्टल","trust_badge_redirect":"अधिकृत पोर्टलवर थेट अर्ज","trust_badge_voice":"बहुभाषिक व्हॉईस सहाय्य","screener_badge":"लाईव्ह कॅल्क्युलेटर","screener_title":"जलद नागरिक पात्रता तपासणी","screener_sub":"पात्र योजना शोधण्यासाठी आपला व्यवसाय आणि उत्पन्न निवडा:","lbl_occupation":"आपला व्यवसाय / उपजीविका","lbl_social_cat":"सामाजिक प्रवर्ग","lbl_family_income":"वार्षिक कौटुंबिक उत्पन्न","screener_schemes_found":"योजना सापडल्या","btn_screener_submit":"पात्र योजना व अटी पहा →","results_heading_html":"आपल्या पात्र <span class=\"hero-heading-highlight\">योजना</span>","search_schemes_label":"योजना शोधा","search_schemes_placeholder":"योजनेचे नाव, लाभ, प्रवर्ग किंवा व्यवसायानुसार शोधा...","btn_view_details":"तपशील पहा →","btn_official_portal":"अधिकृत पोर्टल ↗","likely_eligible":"पात्र असण्याची शक्यता","info_required":"अधिक माहिती आवश्यक","not_eligible":"सध्या अपात्र","doc_uploaded":"✓ जोडले","doc_pending":"○ जोडणे बाकी","label_benefit":"फायदा:"},"bn-IN":{"nav_about":"সম্পর্কে","btn_voice_copilot":"সেবাভাণী ভয়েস কো-পাইলট","btn_new_search":"🔍 নতুন অনুসন্ধান","btn_back_results":"← ফলাফলে ফিরুন","hero_h2_html":"আপনার যোগ্য <span class=\"hero-heading-highlight\">সরকারি যোজনা</span> খুঁজুন","trust_badge_free":"১০০% বিনামূল্যে নাগরিক পোর্টাল","trust_badge_redirect":"অফিসিয়াল পোর্টালে সরাসরি আবেদন","trust_badge_voice":"বহুভাষিক ভয়েস সহায়তা","screener_badge":"লাইভ ক্যালকুলেটর","screener_title":"দ্রুত নাগরিক যোগ্যতা যাচাই","screener_sub":"আপনার পেশা ও আয় নির্বাচন করে অবিলম্বে উপযুক্ত যোজনা খুঁজুন:","lbl_occupation":"আপনার পেশা / জীবিকা","lbl_social_cat":"সামাজিক শ্রেণি","lbl_family_income":"বার্ষিক পারিবারিক আয়","screener_schemes_found":"যোজনা পাওয়া গেছে","btn_screener_submit":"উপযুক্ত যোজনা ও নিয়মাবলী দেখুন →","results_heading_html":"আপনার উপযুক্ত <span class=\"hero-heading-highlight\">যোজনা</span>","search_schemes_label":"যোজনা খুঁজুন","search_schemes_placeholder":"যোজনার নাম, সুবিধা, শ্রেণি বা পেশা দ্বারা খুঁজুন...","btn_view_details":"বিস্তারিত দেখুন →","btn_official_portal":"অফিসিয়াল পোর্টাল ↗","likely_eligible":"যোগ্য হওয়ার সম্ভাবনা","info_required":"তথ্য প্রয়োজন","not_eligible":"বর্তমানে যোগ্য নয়","doc_uploaded":"✓ আপলোড করা হয়েছে","doc_pending":"○ আপলোড বাকি","label_benefit":"সুবিধা:"},"ta-IN":{"nav_about":"பற்றி","btn_voice_copilot":"சேவாவாணி குரல் கோ-பைலட்","btn_new_search":"🔍 புதிய தேடல்","btn_back_results":"← முடிவுகளுக்கு திரும்பு","hero_h2_html":"நீங்கள் தகுதியுள்ள <span class=\"hero-heading-highlight\">அரசு திட்டங்களை</span> கண்டறியுங்கள்","trust_badge_free":"100% இலவச பொது தளம்","trust_badge_redirect":"அதிகாரப்பூர்வ தளத்திற்கு நேரடி இணைப்பு","trust_badge_voice":"பன்மொழி குரல் உதவி","screener_badge":"நேரலை கணக்கீடு","screener_title":"விரைவு குடிமக்கள் தகுதி சரிபார்ப்பு","screener_sub":"திட்டங்களைக் கண்டறிய உங்கள் தொழில் மற்றும் வருமானத்தைத் தேர்ந்தெடுக்கவும்:","lbl_occupation":"உங்கள் தொழில் / வாழ்வாதாரம்","lbl_social_cat":"சமூகப் பிரிவு","lbl_family_income":"ஆண்டு குடும்ப வருமானம்","screener_schemes_found":"திட்டங்கள் உள்ளன","btn_screener_submit":"பொருந்தும் திட்டங்கள் மற்றும் விதிகளைக் காண்க →","results_heading_html":"நீங்கள் தகுதியுள்ள <span class=\"hero-heading-highlight\">திட்டங்கள்</span>","search_schemes_label":"திட்டங்களைத் தேடுங்கள்","search_schemes_placeholder":"திட்டத்தின் பெயர், பயன், பிரிவு மூலம் தேடுக...","btn_view_details":"விவரங்களைக் காண்க →","btn_official_portal":"அதிகாரப்பூர்வ தளம் ↗","likely_eligible":"தகுதியுள்ள வாய்ப்பு","info_required":"கூடுதல் தகவல் தேவை","not_eligible":"தற்போது தகுதியில்லை","doc_uploaded":"✓ பதிவேற்றப்பட்டது","doc_pending":"○ நிலுவையில் உள்ளது","label_benefit":"பயன்:"},"te-IN":{"nav_about":"గురించి","btn_voice_copilot":"సేవావాణి వాయిస్ కో-పైలట్","btn_new_search":"🔍 కొత్త శోధన","btn_back_results":"← ఫలితాలకు తిరిగి వెళ్లండి","hero_h2_html":"మీరు అర్హత గల <span class=\"hero-heading-highlight\">ప్రభుత్వ పథకాలను</span> కనుగొనండి","trust_badge_free":"100% ఉచిత పౌర పోర్టల్","trust_badge_redirect":"అధికారిక పోర్టల్‌కు నేరుగా వెళ్లండి","trust_badge_voice":"బహుభాషా వాయిస్ సహాయం","screener_badge":"లైవ్ కాలిక్యులేటర్","screener_title":"త్వరిత పౌర అర్హత తనిఖీ","screener_sub":"పథకాలను కనుగొనడానికి మీ వృత్తి మరియు ఆదాయాన్ని ఎంచుకోండి:","lbl_occupation":"మీ వృత్తి / జీవనోపాధి","lbl_social_cat":"సామాజిక వర్గం","lbl_family_income":"వార్షిక కుటుంబ ఆదాయం","screener_schemes_found":"పథకాలు కనుగొనబడ్డాయి","btn_screener_submit":"సరిపోలే పథకాలు & నిబంధనలు చూడండి →","results_heading_html":"మీ సరిపోలే <span class=\"hero-heading-highlight\">పథకాలు</span>","search_schemes_label":"పథకాలను శోధించండి","search_schemes_placeholder":"పథకం పేరు, ప్రయోజనం, వర్గం ద్వారా వెతకండి...","btn_view_details":"వివరాలు చూడండి →","btn_official_portal":"అధికారిక పోర్టల్ ↗","likely_eligible":"అర్హత సాధించే అవకాశం","info_required":"సమాచారం అవసరం","not_eligible":"ప్రస్తుతం అర్హత లేదు","doc_uploaded":"✓ అప్‌లోడ్ చేయబడింది","doc_pending":"○ పెండింగ్‌లో ఉంది","label_benefit":"ప్రయోజనం:"}};
-Object.keys(_EXTRA_I18N_DATA).forEach(lang => {
-  if (!I18N[lang]) I18N[lang] = {};
-  Object.assign(I18N[lang], _EXTRA_I18N_DATA[lang]);
-});
-
-function t(key, fallback = "") {
-  try {
-    const dict = I18N[currentLangCode] || I18N["en-IN"];
-    if (dict && dict[key] !== undefined && dict[key] !== null) return dict[key];
-    if (I18N["en-IN"] && I18N["en-IN"][key] !== undefined) return I18N["en-IN"][key];
-  } catch (e) {}
-  return fallback || key;
-}
-
 let currentLangCode = localStorage.getItem("schemematch_lang") || "en-IN";
 let isListening = false;
 let globalRecognition = null;
@@ -5132,68 +5115,21 @@ let globalRecognition = null;
 // 4. LANGUAGE TRANSLATION MANAGER
 // ==========================================================================
 function applyLanguageTranslations(langCode) {
-  if (!langCode || !I18N[langCode]) langCode = "en-IN";
   currentLangCode = langCode;
   localStorage.setItem("schemematch_lang", langCode);
   const dict = I18N[langCode] || I18N["en-IN"];
-  const enDict = I18N["en-IN"] || {};
 
-  // 1. Text elements
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
-    const val = (dict && dict[key] !== undefined) ? dict[key] : enDict[key];
-    if (val !== undefined && val !== null) {
-      el.textContent = val;
+    if (dict[key]) {
+      el.textContent = dict[key];
     }
   });
 
-  // 2. HTML elements
-  document.querySelectorAll("[data-i18n-html]").forEach(el => {
-    const key = el.getAttribute("data-i18n-html");
-    const val = (dict && dict[key] !== undefined) ? dict[key] : enDict[key];
-    if (val !== undefined && val !== null) {
-      el.innerHTML = val;
-    }
-  });
-
-  // 3. Placeholders
-  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
-    const key = el.getAttribute("data-i18n-placeholder");
-    const val = (dict && dict[key] !== undefined) ? dict[key] : enDict[key];
-    if (val !== undefined && val !== null) {
-      el.setAttribute("placeholder", val);
-    }
-  });
-
-  // 4. Titles
-  document.querySelectorAll("[data-i18n-title]").forEach(el => {
-    const key = el.getAttribute("data-i18n-title");
-    const val = (dict && dict[key] !== undefined) ? dict[key] : enDict[key];
-    if (val !== undefined && val !== null) {
-      el.setAttribute("title", val);
-    }
-  });
-
-  // 5. Aria Labels
-  document.querySelectorAll("[data-i18n-aria-label]").forEach(el => {
-    const key = el.getAttribute("data-i18n-aria-label");
-    const val = (dict && dict[key] !== undefined) ? dict[key] : enDict[key];
-    if (val !== undefined && val !== null) {
-      el.setAttribute("aria-label", val);
-    }
-  });
-
-  // 6. Sync dropdowns
   const langSelects = document.querySelectorAll("#site-lang-select");
   langSelects.forEach(sel => {
     sel.value = langCode;
   });
-
-  // 7. Sync SevaVaani
-  const langText = document.getElementById("sevavaani-lang-text");
-  if (langText) {
-    langText.textContent = langCode.startsWith("hi") ? "HI" : (langCode.substring(0, 2).toUpperCase());
-  }
 
   const langInfo = document.getElementById("voice-modal-lang-info");
   if (langInfo) {
@@ -5201,23 +5137,6 @@ function applyLanguageTranslations(langCode) {
   }
 
   renderVoiceCommandHints(langCode);
-
-  // 8. Re-render dynamic components
-  if (typeof window.updateHeroQuickScreenerText === 'function') {
-    window.updateHeroQuickScreenerText();
-  }
-
-  if (typeof window.refreshResultsPage === 'function') {
-    window.refreshResultsPage();
-  }
-
-  if (typeof window.refreshSchemeDetailsPage === 'function') {
-    window.refreshSchemeDetailsPage();
-  }
-
-  if (typeof window.updateWizardLocalizedButtons === 'function') {
-    window.updateWizardLocalizedButtons();
-  }
 }
 
 function renderVoiceCommandHints(langCode) {
@@ -6926,8 +6845,7 @@ function initHeroQuickScreener() {
       return true;
     });
 
-    if (countBadge) countBadge.textContent = matching.length + ' ' + t("screener_schemes_found", "Schemes Found");
-    window.updateHeroQuickScreenerText = updateQuickMatch;
+    if (countBadge) countBadge.textContent = matching.length + ' Schemes Found';
   }
 
   if (occSelect) occSelect.addEventListener('change', updateQuickMatch);
@@ -7074,13 +6992,12 @@ function initFindSchemesPage() {
     }
 
     if (btnPersonalNext) {
-      btnPersonalNext.innerHTML = isStudent ? t("btn_next_edu", "Education Information →") : t("btn_next_fin", "Financial Information →");
+      btnPersonalNext.innerHTML = isStudent ? "Education Information →" : "Financial Information →";
     }
 
     if (btnFinPrev) {
-      btnFinPrev.innerHTML = isStudent ? t("btn_prev_edu", "← Education Information") : t("btn_prev_personal", "← Personal Details");
+      btnFinPrev.innerHTML = isStudent ? "← Education Information" : "← Personal Details";
     }
-    window.updateWizardLocalizedButtons = updateOccupationConditionalFields;
 
     if (!isStudent) {
       const pOcc = document.getElementById("parent-occupation");
@@ -7886,19 +7803,19 @@ function initResultsPage() {
               ${safeOcc} Profile: <strong>${safeName}</strong>
             </h2>
             <div class="user-chips-row">
-              <span class="profile-chip"><strong>${t("chip_age", "Age:")}</strong> ${profile.age ? profile.age + ' ' + t("years_suffix", "yrs") : t("not_specified", "Not Specified")}</span>
-              <span class="profile-chip"><strong>${t("chip_gender", "Gender:")}</strong> ${safeGender}</span>
-              <span class="profile-chip"><strong>${t("chip_education", "Education:")}</strong> ${safeEdu}</span>
-              <span class="profile-chip"><strong>${t("chip_category", "Category:")}</strong> ${safeCat}</span>
-              <span class="profile-chip"><strong>${t("chip_income", "Income:")}</strong> ${incomeStr}</span>
-              <span class="profile-chip"><strong>${t("chip_state", "State:")}</strong> ${safeState}</span>
-              <span class="profile-chip"><strong>${t("chip_domicile", "Domicile:")}</strong> ${safeDomicile}</span>
-              ${profile.academicMarks ? '<span class="profile-chip"><strong>' + t("chip_marks", "Marks:") + '</strong> ' + profile.academicMarks + '%</span>' : ''}
-              ${profile.disabilityStatus === 'Yes' ? '<span class="profile-chip" style="color:#38bdf8;"><strong>' + t("chip_pwd", "PwD:") + '</strong> ' + escapeHtml(profile.disabilityPct || '40%+') + '</span>' : ''}
+              <span class="profile-chip"><strong>Age:</strong> ${profile.age ? profile.age + ' yrs' : 'Not Specified'}</span>
+              <span class="profile-chip"><strong>Gender:</strong> ${safeGender}</span>
+              <span class="profile-chip"><strong>Education:</strong> ${safeEdu}</span>
+              <span class="profile-chip"><strong>Category:</strong> ${safeCat}</span>
+              <span class="profile-chip"><strong>Income:</strong> ${incomeStr}</span>
+              <span class="profile-chip"><strong>State:</strong> ${safeState}</span>
+              <span class="profile-chip"><strong>Domicile:</strong> ${safeDomicile}</span>
+              ${profile.academicMarks ? '<span class="profile-chip"><strong>Marks:</strong> ' + profile.academicMarks + '%</span>' : ''}
+              ${profile.disabilityStatus === 'Yes' ? '<span class="profile-chip" style="color:#38bdf8;"><strong>PwD:</strong> ' + escapeHtml(profile.disabilityPct || '40%+') + '</span>' : ''}
             </div>
           </div>
           <div>
-            <a href="find-schemes.html" class="btn btn-outline btn-sm">${t("btn_edit_profile", "✏️ Edit Profile")}</a>
+            <a href="find-schemes.html" class="btn btn-outline btn-sm">✏️ Edit Profile</a>
           </div>
         </div>
       `;
@@ -7988,13 +7905,8 @@ function initResultsPage() {
     });
 
     if (resultsCount) {
-      resultsCount.textContent = t("showing_results_prefix", "Showing") + ' ' + filtered.length + ' ' + t("showing_results_mid", "matching schemes out of") + ' ' + evaluatedSchemes.length + ' ' + t("showing_results_suffix", "verified government schemes");
+      resultsCount.textContent = 'Showing ' + filtered.length + ' matching schemes out of ' + evaluatedSchemes.length + ' verified government schemes';
     }
-    const pageHeadingSub = document.querySelector(".page-heading p");
-    if (pageHeadingSub) {
-      pageHeadingSub.innerHTML = t("results_sub_prefix", "Based on your profile and document status, we found") + ' <strong>' + filtered.length + '</strong> ' + t("results_sub_suffix", "matching schemes for you.");
-    }
-    window.refreshResultsPage = renderSchemes;
 
     if (filtered.length === 0) {
       schemesContainer.innerHTML = `
@@ -8027,19 +7939,18 @@ function initResultsPage() {
       const docBadgesHtml = (scheme.required_documents || []).map(dKey => {
         const hasDoc = normalizedUserDocs.includes(normalizeDocKey(dKey));
         const documentLabels = {
-          aadhaar: t("doc_aadhaar", "Aadhaar Card"),
-          income_cert: t("doc_income_cert", "Income Certificate"),
-          caste_cert: t("doc_caste_cert", "Category Certificate"),
-          marksheet: t("doc_marksheet", "Marksheet"),
-          student_id: t("doc_student_id", "College Bonafide"),
-          bank_account: t("doc_bank_account", "Bank Passbook"),
-          domicile_cert: t("doc_domicile_cert", "Domicile Certificate"),
-          disability_cert: t("doc_disability_cert", "Disability Certificate")
+          aadhaar: "Aadhaar Card",
+          income_cert: "Income Certificate",
+          caste_cert: "Category Certificate",
+          marksheet: "Marksheet",
+          student_id: "College Bonafide",
+          bank_account: "Bank Passbook",
+          domicile_cert: "Domicile Certificate",
+          disability_cert: "Disability Certificate"
         };
         const fallbackLabel = dKey.replace(/_/g, " ").replace(/\b\w/g, character => character.toUpperCase());
         const label = escapeHtml(documentLabels[normalizeDocKey(dKey)] || fallbackLabel);
-        const docStatus = hasDoc ? t("doc_uploaded", "✓ Uploaded") : t("doc_pending", "○ Upload pending");
-        return '<span class="doc-tag ' + (hasDoc ? "present" : "pending") + '">' + docStatus + ' · ' + label + '</span>';
+        return '<span class="doc-tag ' + (hasDoc ? "present" : "pending") + '">' + (hasDoc ? "✓ Uploaded" : "○ Upload pending") + ' · ' + label + '</span>';
       }).join("");
 
       const matchedList = scheme.matchedReasons.slice(0, 2).map(r => '<li><span style="color: #34d399; font-weight:700;">✓</span> ' + escapeHtml(r) + '</li>').join("");
@@ -8047,7 +7958,7 @@ function initResultsPage() {
         ? scheme.unmatchedReasons.slice(0, 1).map(r => '<li><span style="color: #fbbf24; font-weight:700;">⚠️</span> ' + escapeHtml(r) + '</li>').join("")
         : (scheme.missingReasons && scheme.missingReasons.length > 0)
           ? scheme.missingReasons.slice(0, 1).map(r => '<li><span style="color: #f59e0b; font-weight:700;">ℹ</span> ' + escapeHtml(r) + '</li>').join("")
-          : '<li><span style="color: #38bdf8;">✓</span> ' + t("primary_criteria_satisfied", "Primary eligibility criteria satisfied.") + '</li>';
+          : '<li><span style="color: #38bdf8;">✓</span> Primary eligibility criteria satisfied.</li>';
 
       return `
         <article class="scheme-card">
@@ -8067,7 +7978,7 @@ function initResultsPage() {
 
           <div class="scheme-benefit-box">
             <span class="benefit-icon">🎁</span>
-            <p class="benefit-text"><strong>${t("label_benefit", "Benefit:")}</strong> ${escapeHtml(scheme.benefits)}</p>
+            <p class="benefit-text"><strong>Benefit:</strong> ${escapeHtml(scheme.benefits)}</p>
           </div>
 
           <div class="scheme-reasons-preview">
@@ -8091,10 +8002,10 @@ function initResultsPage() {
             </div>
             <div class="card-actions">
               <a href="scheme-details.html?id=${encodeURIComponent(scheme.id)}" class="btn btn-primary btn-sm">
-                ${t("btn_view_details", "View Details →")}
+                View Details →
               </a>
               <a href="${escapeHtml(scheme.application_url)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-                ${t("btn_official_portal", "Official Portal ↗")}
+                Official Portal ↗
               </a>
             </div>
           </div>
@@ -8114,7 +8025,6 @@ function initResultsPage() {
 }
 
 function initSchemeDetailsPage() {
-  window.refreshSchemeDetailsPage = initSchemeDetailsPage;
   const container = document.getElementById("scheme-details-container");
   if (!container) return;
 
@@ -8171,7 +8081,7 @@ function initSchemeDetailsPage() {
       <div class="doc-check-item">
         <span style="font-size: 0.95rem; color: #ffffff;">📄 ${label}</span>
         <span class="badge ${isAttached ? "badge-success" : "badge-warning"}">
-          ${isAttached ? t("doc_uploaded", "✓ Uploaded") : t("doc_missing", "⚠️ Missing")}
+          ${isAttached ? "✓ Uploaded" : "⚠️ Missing"}
         </span>
       </div>
     `;
@@ -8194,7 +8104,7 @@ function initSchemeDetailsPage() {
           </p>
           <div>
             <button type="button" id="read-details-aloud-btn" class="btn btn-voice btn-sm">
-              ${t("btn_read_details", "🔊 Read Scheme Details")}
+              🔊 Read Scheme Details
             </button>
           </div>
         </div>
@@ -8203,7 +8113,7 @@ function initSchemeDetailsPage() {
           <span class="score-pct-large">${match.score}%</span>
           <span class="score-tag-text">${stateMeta.label}</span>
           <div style="margin-top: 0.6rem; font-size: 0.8rem; color: var(--text-light);">
-            ${docReadiness.percentage}% ${t("docs_ready_suffix", "Documents Ready")}
+            ${docReadiness.percentage}% Documents Ready
           </div>
         </div>
       </div>
@@ -8211,7 +8121,7 @@ function initSchemeDetailsPage() {
 
     <!-- Statutory / Student Advisory Notice -->
     <div class="disclaimer-box">
-      <h4>${t("sec_advisory", "ℹ️ Statutory Information & Advisory")}</h4>
+      <h4>ℹ️ Statutory Information &amp; Advisory</h4>
       <p>
         Calculated matches are based on the criteria entered in your profile. 
         <strong>SchemeMatch does not guarantee official approval.</strong> Final sanction is strictly decided by the competent government department upon physical document verification.
@@ -8222,7 +8132,7 @@ function initSchemeDetailsPage() {
     <div class="match-evaluation-box">
       <div class="eval-col matched">
         <div class="eval-title">
-          <span>✓</span> ${t("sec_why_matches", "Why this scheme matches your profile")}
+          <span>✓</span> Why this scheme matches your profile
         </div>
         <ul class="eval-list">
           ${matchedListHtml}
@@ -8231,7 +8141,7 @@ function initSchemeDetailsPage() {
 
       <div class="eval-col unmatched">
         <div class="eval-title">
-          <span>⚠️</span> ${t("sec_missing_criteria", "Criteria requiring verification / Missing details")}
+          <span>⚠️</span> Criteria requiring verification / Missing details
         </div>
         <ul class="eval-list">
           ${unmatchedListHtml}
@@ -8241,56 +8151,56 @@ function initSchemeDetailsPage() {
 
     <!-- Benefits Section -->
     <section class="details-section-card">
-      <h3>${t("sec_benefits", "🎁 Benefits & Financial Assistance")}</h3>
+      <h3>🎁 Benefits &amp; Financial Assistance</h3>
       <div class="scheme-benefit-box" style="margin-top: 0.8rem;">
         <span class="benefit-icon">✨</span>
-        <p class="benefit-text"><strong>${t("primary_entitlement", "Primary Entitlement:")}</strong> ${escapeHtml(scheme.benefits)}</p>
+        <p class="benefit-text"><strong>Primary Entitlement:</strong> ${escapeHtml(scheme.benefits)}</p>
       </div>
     </section>
 
     <!-- Official Eligibility Criteria Table (Derived from eligibilityRules) -->
     <section class="details-section-card">
-      <h3>${t("sec_criteria", "⚖️ Official Eligibility Criteria")}</h3>
+      <h3>⚖️ Official Eligibility Criteria</h3>
       <table class="eligibility-table">
         <tbody>
           <tr>
-            <th>${t("th_edu_level", "Target Education Level")}</th>
+            <th>Target Education Level</th>
             <td>${escapeHtml(getSchemeEduText(scheme))}</td>
           </tr>
           <tr>
-            <th>${t("th_courses", "Eligible Courses / Disciplines")}</th>
+            <th>Eligible Courses / Disciplines</th>
             <td>${escapeHtml(getSchemeCourseText(scheme))}</td>
           </tr>
           <tr>
-            <th>${t("th_category", "Social Category Requirement")}</th>
+            <th>Social Category Requirement</th>
             <td>${escapeHtml(getSchemeCategoryText(scheme))}</td>
           </tr>
           <tr>
-            <th>${t("th_income", "Annual Family Income Ceiling")}</th>
+            <th>Annual Family Income Ceiling</th>
             <td>${escapeHtml(getSchemeIncomeText(scheme))}</td>
           </tr>
           <tr>
-            <th>${t("th_marks", "Minimum Marks / Percentile")}</th>
+            <th>Minimum Marks / Percentile</th>
             <td>${escapeHtml(getSchemeMarksText(scheme))}</td>
           </tr>
           <tr>
-            <th>${t("th_age", "Eligible Age Range")}</th>
+            <th>Eligible Age Range</th>
             <td>${escapeHtml(getSchemeAgeText(scheme))}</td>
           </tr>
           <tr>
-            <th>${t("th_gender", "Gender Eligibility")}</th>
+            <th>Gender Eligibility</th>
             <td>${escapeHtml(getSchemeGenderText(scheme))}</td>
           </tr>
           <tr>
-            <th>${t("th_state", "State & Domicile Criteria")}</th>
+            <th>State &amp; Domicile Criteria</th>
             <td>${escapeHtml(getSchemeStateText(scheme))}</td>
           </tr>
           <tr>
-            <th>${t("th_pwd", "Disability (PwD) Criteria")}</th>
+            <th>Disability (PwD) Criteria</th>
             <td>${escapeHtml(getSchemeDisabilityText(scheme))}</td>
           </tr>
           <tr>
-            <th>${t("th_minority", "Minority Community Criteria")}</th>
+            <th>Minority Community Criteria</th>
             <td>${escapeHtml(getSchemeMinorityText(scheme))}</td>
           </tr>
         </tbody>
@@ -8299,9 +8209,9 @@ function initSchemeDetailsPage() {
 
     <!-- Required Documents Checklist -->
     <section class="details-section-card">
-      <h3>${t("sec_docs_checklist", "📄 Required Documents Checklist")}</h3>
+      <h3>📄 Required Documents Checklist</h3>
       <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">
-        ${t("sec_docs_checklist_sub", "Check your paperwork preparation against official guidelines before initiating your application:")}
+        Check your paperwork preparation against official guidelines before initiating your application:
       </p>
       <div class="docs-checklist-container">
         ${docsChecklistHtml}
@@ -8310,7 +8220,7 @@ function initSchemeDetailsPage() {
 
     <!-- Step-by-Step How to Apply -->
     <section class="details-section-card">
-      <h3>${t("sec_how_to_apply", "📝 How to Apply (Step-by-Step Guidelines)")}</h3>
+      <h3>📝 How to Apply (Step-by-Step Guidelines)</h3>
       <div class="apply-steps-box">
         <p style="line-height: 1.7; color: var(--text-main); font-size: 0.95rem;">
           ${escapeHtml(scheme.application_process)}
@@ -8319,12 +8229,12 @@ function initSchemeDetailsPage() {
 
       <div style="margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
         <div>
-          <span style="font-size: 0.85rem; color: var(--text-muted); display: block;">${t("lbl_app_cycle", "Important Dates / Application Cycle:")}</span>
+          <span style="font-size: 0.85rem; color: var(--text-muted); display: block;">Important Dates / Application Cycle:</span>
           <strong style="color: #ffffff; font-size: 0.95rem;">${escapeHtml(scheme.important_dates)}</strong>
         </div>
         <div>
           <a href="${escapeHtml(scheme.application_url)}" target="_blank" rel="noopener noreferrer" class="btn btn-cyan btn-lg">
-            ${t("btn_apply_official", "Apply on Official Website ↗")}
+            Apply on Official Website ↗
           </a>
         </div>
       </div>
@@ -8430,681 +8340,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log(`SchemeMatch initialized successfully with ${SCHEME_DATABASE.length} verified schemes (${SCHEME_DATABASE.filter(s => s.status === 'ACTIVE').length} active).`);
 });
-
-
-
-
-// === PERFECT MULTILINGUAL TRANSLATION ENGINE ===
-(function() {
-  function getActiveLang(target) {
-    if (target) return target;
-    var sel = document.getElementById('site-lang-select') || document.querySelector('.lang-select');
-    if (sel && sel.value) return sel.value;
-    return (typeof currentLangCode !== 'undefined' && currentLangCode) ? currentLangCode : 'en-IN';
-  }
-
-  function executeFullTranslation(forcedLang) {
-    var lang = getActiveLang(forcedLang);
-    if (typeof currentLangCode !== 'undefined') {
-      currentLangCode = lang;
-    }
-
-    // 1. Merge EXTRA_I18N into I18N
-    if (typeof I18N !== 'undefined' && typeof EXTRA_I18N !== 'undefined') {
-      Object.keys(EXTRA_I18N).forEach(function(l) {
-        if (!I18N[l]) I18N[l] = {};
-        Object.assign(I18N[l], EXTRA_I18N[l]);
-      });
-    }
-
-    var dict = (typeof I18N !== 'undefined' && I18N[lang]) ? I18N[lang] : ((typeof I18N !== 'undefined' && I18N['en-IN']) ? I18N['en-IN'] : {});
-
-    // 2. Translate all data-i18n elements
-    document.querySelectorAll('[data-i18n]').forEach(function(el) {
-      var k = el.getAttribute('data-i18n');
-      if (dict[k]) el.textContent = dict[k];
-    });
-    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
-      var k = el.getAttribute('data-i18n-html');
-      if (dict[k]) el.innerHTML = dict[k];
-    });
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
-      var k = el.getAttribute('data-i18n-placeholder');
-      if (dict[k]) el.placeholder = dict[k];
-    });
-
-    // 3. Translate Dropdown Options (Occupation, Category, Income)
-    var optMap = {
-      '': 'occ_all', 'all': 'occ_all', 'farmer': 'occ_farmer', 'artisan': 'occ_artisan',
-      'small_business': 'occ_small_biz', 'self_employed': 'occ_self_emp', 'daily_wage': 'occ_daily_wage',
-      'woman_shg': 'occ_woman', 'senior_citizen': 'occ_senior', 'student': 'occ_student', 'unemployed': 'occ_unemployed',
-      'general': 'cat_general', 'obc': 'cat_obc', 'sc': 'cat_sc', 'st': 'cat_st', 'ews': 'cat_ews', 'minority': 'cat_minority',
-      '100000': 'income_1', '250000': 'income_2_5', '500000': 'income_5', '800000': 'income_8', 'above': 'income_above'
-    };
-    document.querySelectorAll('select option').forEach(function(opt) {
-      var v = (opt.value || '').trim();
-      if (optMap[v] && dict[optMap[v]]) {
-        opt.textContent = dict[optMap[v]];
-      }
-    });
-
-    // 4. Translate About Section Elements
-    document.querySelectorAll('*').forEach(function(el) {
-      if (el.children.length === 0) {
-        var t = el.textContent.trim();
-        if (t === 'Karan Rajput' && dict['dev1_name']) el.textContent = dict['dev1_name'];
-        if ((t === 'Co-Developer & UI Designer' || t === 'Co-Developer &amp; UI Designer') && dict['dev1_role']) el.textContent = dict['dev1_role'];
-        if (t === 'Akanksha Shrivastava' && dict['dev2_name']) el.textContent = dict['dev2_name'];
-        if ((t === 'Co-Developer & Research' || t === 'Co-Developer &amp; Research') && dict['dev2_role']) el.textContent = dict['dev2_role'];
-        if (t === 'First Year' && dict['dev1_year']) el.textContent = dict['dev1_year'];
-        if (t.indexOf('B.Tech.') !== -1 && dict['dev1_dept']) el.textContent = dict['dev1_dept'];
-        if (t === 'TEAM SYNTAX//ERROR' && dict['about_team']) el.textContent = dict['about_team'];
-        if (t === 'Likely Eligible' && dict['likely_eligible']) el.textContent = dict['likely_eligible'];
-      }
-    });
-
-    var h2 = document.querySelector('#about h2, .about-section h2');
-    if (h2 && dict['about_heading']) h2.textContent = dict['about_heading'];
-    var p = document.querySelector('#about p, .about-section p');
-    if (p && dict['about_desc']) p.textContent = dict['about_desc'];
-  }
-
-  // Override applyLanguageTranslations with proper argument forwarding
-  var originalFn = window.applyLanguageTranslations;
-  window.applyLanguageTranslations = function(targetLang) {
-    if (typeof originalFn === 'function') {
-      try { originalFn.apply(this, arguments); } catch(e) {}
-    }
-    executeFullTranslation(targetLang);
-  };
-
-  // Immediate event listener for Dropdown change
-  document.addEventListener('change', function(e) {
-    if (e.target && (e.target.id === 'site-lang-select' || e.target.classList.contains('lang-select'))) {
-      executeFullTranslation(e.target.value);
-    }
-  });
-
-  // Run on load
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() { executeFullTranslation(); });
-  } else {
-    executeFullTranslation();
-  }
-})();
-
-
-// === COMPLETE MULTI-SECTION DEEP TRANSLATION (ABOUT, SCHEMES, MINISTRIES) ===
-(function() {
-  var DICTS = {
-    "hi-IN": {
-      "Ministry of Education (MoE)": "शिक्षा मंत्रालय (MoE)",
-      "Ministry of Social Justice": "सामाजिक न्याय मंत्रालय",
-      "AICTE Student Welfare": "एआईसीटीई छात्र कल्याण",
-      "University Grants Commission (UGC)": "विश्वविद्यालय अनुदान आयोग (UGC)",
-      "Ministry of Tribal Affairs": "जनजातीय कार्य मंत्रालय",
-      "Vidya Lakshmi Education Loans": "विद्या लक्ष्मी शिक्षा ऋण",
-      "Scholarships": "छात्रवृत्ति",
-      "Healthcare & Wellness": "स्वास्थ्य एवं कल्याण",
-      "Skills & Employment": "कौशल एवं रोजगार",
-      "Agriculture": "कृषि",
-      "Housing": "आवास",
-      "ACTIVE": "सक्रिय",
-      "All India": "सम्पूर्ण भारत",
-      "Madhya Pradesh": "मध्य प्रदेश",
-      "Ration Card": "राशन कार्ड",
-      "Family Id": "परिवार आईडी",
-      "Aadhar Card": "आधार कार्ड",
-      "Income Certificate": "आय प्रमाण पत्र",
-      "Domicile Certificate": "मूल निवास प्रमाण पत्र",
-      "TEAM SYNTAX//ERROR": "टीम SYNTAX//ERROR",
-      "MITS": "एमआईटीएस",
-      "Karan Rajput": "करण राजपूत",
-      "Akanksha Shrivastava": "आकांक्षा श्रीवास्तव",
-      "Co-Developer & UI Designer": "सह-डेवलपर और यूआई डिज़ाइनर",
-      "Co-Developer & Research": "सह-डेवलपर और रिसर्च",
-      "B.Tech. – Computer Science and Design": "बी.टेक. – कंप्यूटर साइंस और डिज़ाइन",
-      "First Year": "प्रथम वर्ष",
-      "Madhya Pradesh Mukhyamantri Medhavi Vidyarthi Yojana (MMVY)": "मध्य प्रदेश मुख्यमंत्री मेधावी विद्यार्थी योजना (MMVY)",
-      "Financial support for meritorious Madhya Pradesh students pursuing eligible undergraduate professional courses in engineering, medicine, law and other notified programs.": "इंजीनियरिंग, मेडिकल, लॉ और अन्य पाठ्यक्रमों में पढ़ाई करने वाले मध्य प्रदेश के मेधावी छात्रों के लिए वित्तीय सहायता।",
-      "Ayushman Bharat PM-JAY (Pradhan Mantri Jan Arogya Yojana)": "आयुष्मान भारत पीएम-जय (प्रधानमंत्री जन आरोग्य योजना)",
-      "World's largest government-funded health insurance scheme offering cashless treatment of up to ₹5 Lakhs per family per year for secondary and tertiary care.": "अस्पताल में भर्ती के लिए प्रति परिवार प्रति वर्ष ₹5 लाख तक का कैशलेस स्वास्थ्य उपचार प्रदान करने वाली योजना।",
-      "Pradhan Mantri Kaushal Vikas Yojana (PMKVY 4.0)": "प्रधानमंत्री कौशल विकास योजना (PMKVY 4.0)",
-      "Flagship skill certification scheme enabling Indian youth to take up industry-relevant skill training for better livelihood opportunities.": "भारतीय युवाओं को बेहतर आजीविका के लिए उद्योग-प्रासंगिक कौशल प्रशिक्षण प्रदान करने वाली प्रमुख योजना।"
-    },
-    "mr-IN": {
-      "Ministry of Education (MoE)": "शिक्षण मंत्रालय (MoE)",
-      "Ministry of Social Justice": "सामाजिक न्याय मंत्रालय",
-      "AICTE Student Welfare": "एआयसीटीई विद्यार्थी कल्याण",
-      "University Grants Commission (UGC)": "विद्यापीठ अनुदान आयोग (UGC)",
-      "Ministry of Tribal Affairs": "आदिवासी कार्य मंत्रालय",
-      "Vidya Lakshmi Education Loans": "विद्या लक्ष्मी शैक्षणिक कर्ज",
-      "Scholarships": "शिष्यवृत्ती",
-      "Healthcare & Wellness": "आरोग्य आणि कल्याण",
-      "Skills & Employment": "कौशल्य आणि रोजगार",
-      "Agriculture": "कृषी",
-      "Housing": "गृहनिर्माण",
-      "ACTIVE": "सक्रिय",
-      "All India": "संपूर्ण भारत",
-      "Madhya Pradesh": "मध्य प्रदेश",
-      "Ration Card": "रेशन कार्ड",
-      "Family Id": "कुटुंब आयडी",
-      "Aadhar Card": "आधार कार्ड",
-      "TEAM SYNTAX//ERROR": "टीम SYNTAX//ERROR",
-      "MITS": "एमआयटीएस",
-      "Karan Rajput": "करण राजपूत",
-      "Akanksha Shrivastava": "आकांक्षा श्रीवास्तव",
-      "Co-Developer & UI Designer": "सह-डेव्हलपर आणि UI डिझायनर",
-      "Co-Developer & Research": "सह-डेव्हलपर आणि संशोधन",
-      "B.Tech. – Computer Science and Design": "बी.टेक. – कॉम्प्युटर सायन्स व डिझाइन",
-      "First Year": "प्रथम वर्ष",
-      "Madhya Pradesh Mukhyamantri Medhavi Vidyarthi Yojana (MMVY)": "मध्य प्रदेश मुख्यमंत्री मेधावी विद्यार्थी योजना (MMVY)",
-      "Ayushman Bharat PM-JAY (Pradhan Mantri Jan Arogya Yojana)": "आयुष्मान भारत पीएम-जय (प्रधानमंत्री जन आरोग्य योजना)",
-      "Pradhan Mantri Kaushal Vikas Yojana (PMKVY 4.0)": "प्रधानमंत्री कौशल विकास योजना (PMKVY 4.0)"
-    },
-    "bn-IN": {
-      "Ministry of Education (MoE)": "শিক্ষা মন্ত্রক (MoE)",
-      "Ministry of Social Justice": "সামাজিক ন্যায়বিচার মন্ত্রক",
-      "AICTE Student Welfare": "এআইসিটিই ছাত্র কল্যাণ",
-      "University Grants Commission (UGC)": "বিশ্ববিদ্যালয় মঞ্জুরি কমিশন (UGC)",
-      "Ministry of Tribal Affairs": "উপজাতি বিষয়ক মন্ত্রক",
-      "Vidya Lakshmi Education Loans": "বিদ্যা লক্ষ্মী শিক্ষা ঋণ",
-      "Scholarships": "বৃত্তি",
-      "Healthcare & Wellness": "স্বাস্থ্য ও কল্যাণ",
-      "Skills & Employment": "দক্ষতা ও কর্মসংস্থান",
-      "ACTIVE": "সক্রিয়",
-      "All India": "সারা ভারত",
-      "Ration Card": "রেশন কার্ড",
-      "Family Id": "পারিবারিক আইডি",
-      "Karan Rajput": "করণ রাজপুত",
-      "Akanksha Shrivastava": "আকাঙ্ক্ষা শ্রীবাস্তব",
-      "Co-Developer & UI Designer": "সহ-ডেভেলপার ও UI ডিজাইনার",
-      "Co-Developer & Research": "সহ-ডেভেলপার ও গবেষণা",
-      "First Year": "প্রথম বর্ষ"
-    },
-    "ta-IN": {
-      "Ministry of Education (MoE)": "கல்வி அமைச்சகம் (MoE)",
-      "Ministry of Social Justice": "சமூக நீதி அமைச்சகம்",
-      "Scholarships": "உதவித்தொகை",
-      "Healthcare & Wellness": "சுகாதாரம் மற்றும் நல்வாழ்வு",
-      "Skills & Employment": "திறன் மற்றும் வேலைவாய்ப்பு",
-      "ACTIVE": "செயலில்",
-      "All India": "அகில இந்திய",
-      "Ration Card": "ரேஷன் கார்டு",
-      "Family Id": "குடும்ப ஐடி",
-      "Karan Rajput": "கரண் ராஜ்புத்",
-      "Akanksha Shrivastava": "அகன்க்ஷா ஸ்ரீவஸ்தவா"
-    },
-    "te-IN": {
-      "Ministry of Education (MoE)": "విద్యా మంత్రిత్వ శాఖ (MoE)",
-      "Ministry of Social Justice": "సామాజిక న్యాయ మంత్రిత్వ శాఖ",
-      "Scholarships": "స్కాలర్‌షిప్‌లు",
-      "Healthcare & Wellness": "ఆరోగ్యం మరియు సంక్షేమం",
-      "Skills & Employment": "నైపుణ్యాలు మరియు ఉపాధి",
-      "ACTIVE": "క్రియాశీల",
-      "All India": "అఖిల భారత",
-      "Ration Card": "రేషన్ కార్డు",
-      "Family Id": "కుటుంబ ఐడి",
-      "Karan Rajput": "కరణ్ రాజ్‌పుత్",
-      "Akanksha Shrivastava": "ఆకాంక్ష శ్రీవాస్తవ"
-    }
-  };
-
-  function translateDeepElements() {
-    var lang = (typeof currentLangCode !== 'undefined' && currentLangCode) ? currentLangCode : (document.getElementById('site-lang-select') ? document.getElementById('site-lang-select').value : 'en-IN');
-    if (lang === 'en-IN') return;
-
-    var curDict = DICTS[lang] || DICTS['hi-IN'];
-    if (!curDict) return;
-
-    // 1. Text node replacements across the whole page
-    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
-    var node;
-    while ((node = walker.nextNode())) {
-      var val = node.nodeValue.trim();
-      if (curDict[val]) {
-        node.nodeValue = curDict[val];
-      }
-    }
-
-    // 2. About section Heading & Description
-    var h2 = document.querySelector('#about h2, .about-section h2');
-    if (h2) {
-      if (lang === 'hi-IN') h2.innerHTML = '<span class="text-accent">SchemeMatch</span> के बारे में';
-      else if (lang === 'mr-IN') h2.innerHTML = '<span class="text-accent">SchemeMatch</span> बद्दल';
-      else if (lang === 'bn-IN') h2.innerHTML = '<span class="text-accent">SchemeMatch</span> সম্পর্কে';
-      else if (lang === 'ta-IN') h2.innerHTML = '<span class="text-accent">SchemeMatch</span> பற்றி';
-      else if (lang === 'te-IN') h2.innerHTML = '<span class="text-accent">SchemeMatch</span> గురించి';
-    }
-
-    var descP = document.querySelector('#about p, .about-section p');
-    if (descP) {
-      if (lang === 'hi-IN') descP.textContent = 'SchemeMatch को करण राजपूत और आकांक्षा श्रीवास्तव ने मिलकर बनाया है ताकि सरकारी योजनाएं खोजना आसान, स्पष्ट और सुलभ हो सके।';
-      else if (lang === 'mr-IN') descP.textContent = 'SchemeMatch हे करण राजपूत आणि आकांक्षा श्रीवास्तव यांनी सरकारी योजना शोधणे अधिक सोपे आणि सुलभ बनवण्यासाठी तयार केले आहे.';
-      else if (lang === 'bn-IN') descP.textContent = 'সরকারি সুযোগ-সুবিধা সহজে সবার কাছে পৌঁছে দিতে করণ রাজপুত ও আকাঙ্ক্ষা শ্রীবাস্তব SchemeMatch তৈরি করেছেন।';
-      else if (lang === 'ta-IN') descP.textContent = 'அரசு திட்டங்களை எளிமையாகவும் தெளிவாகவும் கண்டறிய கரண் ராஜ்புத் மற்றும் அகன்க்ஷா ஸ்ரீவஸ்தவா ஆகியோரால் உருவாக்கப்பட்டது.';
-      else if (lang === 'te-IN') descP.textContent = 'ప్రభుత్వ పథకాలను సులభంగా కనుగొనడానికి కరణ్ రాజ్‌పుత్ మరియు ఆకాంక్ష శ్రీవాస్తవ SchemeMatch ను రూపొందించారు.';
-    }
-  }
-
-  // Hook into scheme renderers & interval
-  setInterval(translateDeepElements, 300);
-  document.addEventListener('DOMContentLoaded', translateDeepElements);
-})();
-
-
-// === EXTRA TAGLINE & BRAND TRANSLATIONS ===
-(function() {
-  var EXTRA_WORDS = {
-    "hi-IN": {
-      "Designing simple solutions for real-world needs": "वास्तविक दुनिया की ज़रूरतों के लिए सरल समाधान तैयार करना",
-      "SYNTAX//ERROR": "सिंटेक्स//एरर",
-      "SchemeMatch": "स्कीममैच"
-    },
-    "mr-IN": {
-      "Designing simple solutions for real-world needs": "वास्तविक गरजांसाठी साधे उपाय तयार करणे",
-      "SYNTAX//ERROR": "सिंटेक्स//एरर",
-      "SchemeMatch": "स्कीममॅच"
-    },
-    "bn-IN": {
-      "Designing simple solutions for real-world needs": "বাস্তব প্রয়োজনের জন্য সহজ সমাধান তৈরি করা",
-      "SYNTAX//ERROR": "সিনট্যাক্স//এরর",
-      "SchemeMatch": "স্কিমম্যাচ"
-    },
-    "ta-IN": {
-      "Designing simple solutions for real-world needs": "நிஜ உலக தேவைகளுக்கான எளிய தீர்வுகளை உருவாக்குதல்",
-      "SYNTAX//ERROR": "சின்டாக்ஸ்//எரர்",
-      "SchemeMatch": "ஸ்கீம்ம್ಯಾட்ச்"
-    },
-    "te-IN": {
-      "Designing simple solutions for real-world needs": "నిజ జీవిత అవసరాలకు సరళమైన పరిష్కారాలను రూపొందించడం",
-      "SYNTAX//ERROR": "సింటాక్స్//ఎర్రర్",
-      "SchemeMatch": "స్కీమ్‌మ్యాచ్"
-    }
-  };
-
-  function translateTaglineAndBrand() {
-    var lang = (typeof currentLangCode !== 'undefined' && currentLangCode) ? currentLangCode : (document.getElementById('site-lang-select') ? document.getElementById('site-lang-select').value : 'en-IN');
-    if (lang === 'en-IN') return;
-
-    var dict = EXTRA_WORDS[lang];
-    if (!dict) return;
-
-    // 1. Tagline text
-    document.querySelectorAll('*').forEach(function(el) {
-      if (el.children.length === 0) {
-        var t = el.textContent.trim();
-        if (dict[t]) {
-          el.textContent = dict[t];
-        }
-      }
-    });
-
-    // 2. Heading SchemeMatch text
-    var brandSpan = document.querySelector('#about h2 .text-accent, .about-section h2 .text-accent');
-    if (brandSpan && dict["SchemeMatch"]) {
-      brandSpan.textContent = dict["SchemeMatch"];
-    }
-  }
-
-  setInterval(translateTaglineAndBrand, 300);
-})();
-
-
-
-
-// === PERFECT PLAY/STOP CONTROLLER FOR ORIGINAL READ-ALOUD ===
-(function() {
-  var isSpeaking = false;
-
-  function setButtons(speaking) {
-    document.querySelectorAll('button, a').forEach(function(b) {
-      var t = b.textContent.toLowerCase();
-      if (t.includes('read page') || t.includes('पेज पढ़ें') || t.includes('stop') || t.includes('रोकें') || (b.id && b.id.includes('read-page'))) {
-        if (speaking) {
-          b.setAttribute('data-orig-text', b.innerHTML);
-          b.innerHTML = '⏹ Stop (पढ़ना रोकें)';
-          b.style.backgroundColor = '#e53e3e';
-          b.style.color = '#ffffff';
-        } else {
-          var orig = b.getAttribute('data-orig-text');
-          if (orig) {
-            b.innerHTML = orig;
-          } else {
-            var l = (typeof currentLangCode !== 'undefined' && currentLangCode) ? currentLangCode : 'hi-IN';
-            b.innerHTML = (l === 'hi-IN') ? '🔊 पेज पढ़ें' : '🔊 Read Page';
-          }
-          b.style.backgroundColor = '';
-          b.style.color = '';
-        }
-      }
-    });
-  }
-
-  // Original readAloudText ko intercept karke Toggle Stop banayein
-  var originalRead = window.readAloudText;
-  window.readAloudText = function(textToSpeak, onStart, onEnd) {
-    // 1. AGAR PEHLE SE BOL RAHA HAI TOH TURANT STOP KARO!
-    if (isSpeaking || (window.speechSynthesis && window.speechSynthesis.speaking)) {
-      if (window.speechSynthesis) window.speechSynthesis.cancel();
-      isSpeaking = false;
-      setButtons(false);
-      return; // Stop and exit!
-    }
-
-    // 2. Text ko thoda saaf karein taaki kachra na padhe
-    var clean = textToSpeak;
-    if (clean && typeof clean === 'string') {
-      clean = clean.replace(/https?:\/\/\S+/gi, '')
-                   .replace(/\b(Home|Find Schemes|Results|Help|About|Menu|Close|Search|Toggle)\b/gi, '')
-                   .replace(/\s+/g, ' ')
-                   .trim();
-    }
-
-    isSpeaking = true;
-    setButtons(true);
-
-    if (typeof originalRead === 'function') {
-      originalRead(clean, function() {
-        isSpeaking = true;
-        setButtons(true);
-        if (onStart) onStart();
-      }, function() {
-        isSpeaking = false;
-        setButtons(false);
-        if (onEnd) onEnd();
-      });
-    } else {
-      var utter = new SpeechSynthesisUtterance(clean);
-      utter.lang = (typeof currentLangCode !== 'undefined' && currentLangCode) ? currentLangCode : 'hi-IN';
-      utter.onend = function() { isSpeaking = false; setButtons(false); };
-      utter.onerror = function() { isSpeaking = false; setButtons(false); };
-      window.speechSynthesis.speak(utter);
-    }
-  };
-
-  // Keyboard Escape dabate hi turant aawaz band
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' || e.keyCode === 27) {
-      if (window.speechSynthesis) window.speechSynthesis.cancel();
-      isSpeaking = false;
-      setButtons(false);
-    }
-  });
-})();
-
-
-// === PERFECT HIGH CONTRAST & READ PAGE ENGINE ===
-(function() {
-  // 1. DYNAMIC HIGH CONTRAST STYLES INJECTION
-  var styleId = 'accessibility-high-contrast-styles';
-  var existingStyle = document.getElementById(styleId);
-  if (!existingStyle) {
-    var style = document.createElement('style');
-    style.id = styleId;
-    style.innerHTML = `
-      body.high-contrast-mode {
-        background-color: #000000 !important;
-        color: #ffffff !important;
-      }
-      body.high-contrast-mode * {
-        text-shadow: none !important;
-        box-shadow: none !important;
-      }
-      body.high-contrast-mode .hero, 
-      body.high-contrast-mode .screener-card,
-      body.high-contrast-mode .scheme-card,
-      body.high-contrast-mode .detail-card,
-      body.high-contrast-mode .modal-content,
-      body.high-contrast-mode nav,
-      body.high-contrast-mode header,
-      body.high-contrast-mode footer,
-      body.high-contrast-mode .card,
-      body.high-contrast-mode [class*="card"] {
-        background-color: #0a0a0a !important;
-        color: #ffffff !important;
-        border: 2px solid #ffffff !important;
-      }
-      body.high-contrast-mode h1, 
-      body.high-contrast-mode h2, 
-      body.high-contrast-mode h3, 
-      body.high-contrast-mode .text-accent,
-      body.high-contrast-mode .hero-heading-highlight {
-        color: #ffff00 !important;
-      }
-      body.high-contrast-mode p, 
-      body.high-contrast-mode span, 
-      body.high-contrast-mode label {
-        color: #ffffff !important;
-      }
-      body.high-contrast-mode button, 
-      body.high-contrast-mode .btn,
-      body.high-contrast-mode input[type="submit"] {
-        background-color: #ffff00 !important;
-        color: #000000 !important;
-        font-weight: bold !important;
-        border: 2px solid #ffffff !important;
-      }
-      body.high-contrast-mode input, 
-      body.high-contrast-mode select, 
-      body.high-contrast-mode textarea {
-        background-color: #1a1a1a !important;
-        color: #ffff00 !important;
-        border: 2px solid #ffff00 !important;
-      }
-      body.high-contrast-mode a {
-        color: #00ffff !important;
-        text-decoration: underline !important;
-      }
-    `;
-    document.head.appendChild(style);
-  }
-
-  // 2. MULTILINGUAL LABELS FOR CONTRAST & READ PAGE
-  var LABELS = {
-    "hi-IN": {
-      normal: "☀️ सामान्य कंट्रास्ट",
-      high: "🌓 उच्च कंट्रास्ट",
-      read: "🔊 पेज पढ़ें",
-      stop: "⏹ पढ़ना रोकें"
-    },
-    "mr-IN": {
-      normal: "☀️ सामान्य कॉन्ट्रास्ट",
-      high: "🌓 उच्च कॉन्ट्रास्ट",
-      read: "🔊 पेज वाचा",
-      stop: "⏹ थांबवा"
-    },
-    "bn-IN": {
-      normal: "☀️ স্বাভাবিক কনট্রাস্ট",
-      high: "🌓 উচ্চ কনট্রাস্ট",
-      read: "🔊 পৃষ্ঠা পড়ুন",
-      stop: "⏹ পড়া বন্ধ করুন"
-    },
-    "ta-IN": {
-      normal: "☀️ இயல்பான மாறுபாடு",
-      high: "🌓 அதிக மாறுபாடு",
-      read: "🔊 பக்கத்தைப் படியுங்கள்",
-      stop: "⏹ நிறுத்துங்கள்"
-    },
-    "te-IN": {
-      normal: "☀️ సాధారణ కాంట్రాస్ట్",
-      high: "🌓 అధిక కాంట్రాస్ట్",
-      read: "🔊 పేజీ చదవండి",
-      stop: "⏹ ఆపండి"
-    },
-    "en-IN": {
-      normal: "☀️ Normal Contrast",
-      high: "🌓 High Contrast",
-      read: "🔊 Read Page",
-      stop: "⏹ Stop Reading"
-    }
-  };
-
-  function updateAccessibilityBar() {
-    var lang = (typeof currentLangCode !== 'undefined' && currentLangCode) ? currentLangCode : (document.getElementById('site-lang-select') ? document.getElementById('site-lang-select').value : 'en-IN');
-    var l = LABELS[lang] || LABELS["en-IN"];
-
-    var cBtn = document.getElementById("high-contrast-btn");
-    if (cBtn) {
-      var isHigh = document.body.classList.contains("high-contrast-mode");
-      cBtn.textContent = isHigh ? l.normal : l.high;
-    }
-
-    var rBtn = document.getElementById("read-page-global-btn");
-    if (rBtn) {
-      var isSpeaking = window.speechSynthesis && window.speechSynthesis.speaking;
-      rBtn.innerHTML = isSpeaking ? l.stop : l.read;
-      rBtn.style.backgroundColor = isSpeaking ? '#e53e3e' : '';
-      rBtn.style.color = isSpeaking ? '#ffffff' : '';
-    }
-  }
-
-  // 3. OVERRIDE CONTRAST TOGGLE
-  var cBtn = document.getElementById("high-contrast-btn");
-  if (cBtn) {
-    cBtn.onclick = function(e) {
-      e.preventDefault();
-      var isHigh = document.body.classList.toggle("high-contrast-mode");
-      localStorage.setItem("schemematch_contrast", isHigh.toString());
-      updateAccessibilityBar();
-    };
-  }
-
-  // 4. OVERRIDE READ PAGE PLAY/STOP TOGGLE
-  var rBtn = document.getElementById("read-page-global-btn");
-  if (rBtn) {
-    rBtn.onclick = function(e) {
-      e.preventDefault();
-      if (window.speechSynthesis && window.speechSynthesis.speaking) {
-        window.speechSynthesis.cancel();
-        setTimeout(updateAccessibilityBar, 50);
-        return;
-      }
-
-      window.speechSynthesis.cancel();
-
-      // Read meaningful clean summary of current page
-      var text = "";
-      var mainHeading = document.querySelector('h1, .hero-heading');
-      if (mainHeading) text += mainHeading.textContent.trim() + "। ";
-
-      var cards = document.querySelectorAll('.scheme-card, .result-card');
-      if (cards.length > 0) {
-        text += "पात्र योजनाएं हैं: ";
-        cards.forEach(function(c, idx) {
-          if (idx < 4) {
-            var title = c.querySelector('h2, h3, .scheme-name');
-            if (title) text += (idx + 1) + ". " + title.textContent.trim() + "। ";
-          }
-        });
-      } else {
-        var desc = document.querySelector('.hero-subtext, p');
-        if (desc) text += desc.textContent.trim();
-      }
-
-      var lang = (typeof currentLangCode !== 'undefined' && currentLangCode) ? currentLangCode : 'hi-IN';
-      var utter = new SpeechSynthesisUtterance(text);
-      utter.lang = lang;
-      utter.rate = 0.95;
-
-      var voices = window.speechSynthesis.getVoices();
-      var v = voices.find(function(item) { return item.lang && item.lang.startsWith(lang.split('-')[0]); });
-      if (v) utter.voice = v;
-
-      utter.onstart = updateAccessibilityBar;
-      utter.onend = updateAccessibilityBar;
-      utter.onerror = updateAccessibilityBar;
-
-      window.speechSynthesis.speak(utter);
-      setTimeout(updateAccessibilityBar, 50);
-    };
-  }
-
-  // ESC key stops speech immediately
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && window.speechSynthesis && window.speechSynthesis.speaking) {
-      window.speechSynthesis.cancel();
-      setTimeout(updateAccessibilityBar, 50);
-    }
-  });
-
-  setInterval(updateAccessibilityBar, 400);
-})();
-
-
-// === HIGH CONTRAST BUTTON TEXT VISIBILITY FIX ===
-(function() {
-  var style = document.getElementById('accessibility-high-contrast-styles');
-  if (!style) {
-    style = document.createElement('style');
-    style.id = 'accessibility-high-contrast-styles';
-    document.head.appendChild(style);
-  }
-
-  style.innerHTML = `
-    body.high-contrast-mode {
-      background-color: #000000 !important;
-      color: #ffffff !important;
-    }
-    body.high-contrast-mode .hero, 
-    body.high-contrast-mode .screener-card,
-    body.high-contrast-mode .scheme-card,
-    body.high-contrast-mode .detail-card,
-    body.high-contrast-mode .modal-content,
-    body.high-contrast-mode nav,
-    body.high-contrast-mode header,
-    body.high-contrast-mode footer,
-    body.high-contrast-mode .card,
-    body.high-contrast-mode [class*="card"] {
-      background-color: #0a0a0a !important;
-      color: #ffffff !important;
-      border: 2px solid #ffffff !important;
-    }
-    body.high-contrast-mode h1, 
-    body.high-contrast-mode h2, 
-    body.high-contrast-mode h3, 
-    body.high-contrast-mode .text-accent,
-    body.high-contrast-mode .hero-heading-highlight {
-      color: #ffff00 !important;
-    }
-    body.high-contrast-mode p, 
-    body.high-contrast-mode span:not(button span):not(.btn span), 
-    body.high-contrast-mode label {
-      color: #ffffff !important;
-    }
-
-    /* === SARE BUTTONS PAR BLACK TEXT WITH HIGH VISIBILITY === */
-    body.high-contrast-mode button,
-    body.high-contrast-mode button *,
-    body.high-contrast-mode .btn,
-    body.high-contrast-mode .btn *,
-    body.high-contrast-mode [class*="btn"],
-    body.high-contrast-mode [class*="btn"] *,
-    body.high-contrast-mode .floating-btn,
-    body.high-contrast-mode .floating-btn * {
-      background-color: #ffff00 !important;
-      color: #000000 !important;
-      font-weight: 800 !important;
-      border-color: #ffffff !important;
-    }
-
-    /* Red Stop Button Exceptions */
-    body.high-contrast-mode button#read-page-global-btn[style*="rgb(229, 62, 62)"],
-    body.high-contrast-mode button#read-page-global-btn[style*="rgb(229, 62, 62)"] * {
-      background-color: #e53e3e !important;
-      color: #ffffff !important;
-    }
-
-    body.high-contrast-mode input, 
-    body.high-contrast-mode select, 
-    body.high-contrast-mode textarea {
-      background-color: #1a1a1a !important;
-      color: #ffff00 !important;
-      border: 2px solid #ffff00 !important;
-    }
-    body.high-contrast-mode a:not(button):not(.btn) {
-      color: #00ffff !important;
-      text-decoration: underline !important;
-    }
-  `;
-})();

@@ -74,14 +74,14 @@
           <li><a href="find-schemes.html" class="nav-link" data-i18n="nav_find">Find Schemes</a></li>
           <li><a href="results.html" class="nav-link" data-i18n="nav_results">Results</a></li>
           <li><a href="#how-it-works" class="nav-link" data-i18n="nav_help">Help</a></li>
-          <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
         </ul>
       </nav>
 
       <!-- Right Action Controls -->
       <div class="nav-actions">
         <button type="button" id="voice-assistant-trigger" class="btn btn-voice btn-sm" title="Open SevaVaani Voice Assistant">
-          🎙️ <span class="nav-btn-text" data-i18n="btn_voice_copilot">SevaVaani Voice Co-Pilot</span>
+          🎙️ <span class="nav-btn-text">SevaVaani Voice Co-Pilot</span>
         </button>
         <button type="button" id="accessibility-toggle-btn" class="btn btn-outline btn-sm" title="Toggle Accessibility Tools">
           ♿ <span class="nav-btn-text" data-i18n="btn_accessibility">Accessibility</span>
@@ -105,7 +105,7 @@
             <span data-i18n="hero_pill">Direct Ministry Welfare Directory • <span class="dynamic-active-schemes-count">67</span> Verified Active Schemes</span>
           </div>
 
-          <h2 class="hero-heading" data-i18n-html="hero_h2_html">Find <span class="hero-heading-highlight">Schemes</span> You May Be Eligible For</h2>
+          <h2 class="hero-heading">Find <span class="hero-heading-highlight">Schemes</span> You May Be Eligible For</h2>
 
           <p class="hero-desc" data-i18n="hero_desc">
             Discover <span class="dynamic-schemes-count">69</span> verified central &amp; state welfare programs — for farmers, artisans, business owners, workers, women, senior citizens, and students. Check eligibility instantly and apply directly.
@@ -123,21 +123,21 @@
           <!-- Trust Badges Row -->
           <div class="hero-trust-row">
             <div class="trust-pill-item">
-              <span class="trust-check">✓</span> <span data-i18n="trust_badge_free">100% Free Public Portal</span>
+              <span class="trust-check">✓</span> 100% Free Public Portal
             </div>
             <div class="trust-pill-item">
-              <span class="trust-check">✓</span> <span data-i18n="trust_badge_redirect">Direct Redirection to NSP / Official Portals</span>
+              <span class="trust-check">✓</span> Direct Redirection to NSP / Official Portals
             </div>
             <div class="trust-pill-item">
-              <span class="trust-check">✓</span> <span data-i18n="trust_badge_voice">Multilingual Voice Assistance</span>
+              <span class="trust-check">✓</span> Multilingual Voice Assistance
             </div>
           </div>
 
           <div class="hero-voice-advisory">
             <span class="voice-advisory-icon">🎙️</span>
             <div>
-              <strong data-i18n="voice_adv_title">SevaVaani Voice Co-Pilot Available:</strong>
-              <p data-i18n-html="voice_adv_desc">Speak in Hindi or English to ask: <em>"PM-KISAN ke liye kya chahiye?", "Ayushman card kaise banaye?", "Mudra loan kaise milega?", "Form kaise bhare?"</em></p>
+              <strong>SevaVaani Voice Co-Pilot Available:</strong>
+              <p>Speak in Hindi or English to ask: <em>"PM-KISAN ke liye kya chahiye?", "Ayushman card kaise banaye?", "Mudra loan kaise milega?", "Form kaise bhare?"</em></p>
             </div>
           </div>
         </div>
@@ -149,49 +149,49 @@
             <div class="screener-card-header">
               <div class="screener-badge">
                 <span class="screener-pulse"></span>
-                <span data-i18n="screener_badge">Live Calculator</span>
+                <span>Live Calculator</span>
               </div>
-              <h3 class="screener-title" data-i18n="screener_title">Quick Citizen Eligibility Check</h3>
-              <p class="screener-sub" data-i18n="screener_sub">Select your occupation &amp; income to instantly find matching welfare schemes:</p>
+              <h3 class="screener-title">Quick Citizen Eligibility Check</h3>
+              <p class="screener-sub">Select your occupation &amp; income to instantly find matching welfare schemes:</p>
             </div>
 
             <form class="screener-form" onsubmit="return false;">
               <div class="screener-form-group">
-                <label for="hero-screener-occ" class="screener-label" data-i18n="lbl_occupation">Your Occupation / Livelihood</label>
+                <label for="hero-screener-occ" class="screener-label">Your Occupation / Livelihood</label>
                 <select id="hero-screener-occ" class="screener-select">
-                  <option value="All" selected data-i18n="occ_all">All Citizens (Any Occupation)</option>
-                  <option value="Farmer" data-i18n="occ_farmer">🌾 Farmer / Agricultural Worker</option>
-                  <option value="Artisan" data-i18n="occ_artisan">🔨 Artisan / Traditional Craftsman</option>
-                  <option value="Business Owner" data-i18n="occ_business">💼 Small Business / MSME Owner</option>
-                  <option value="Self-Employed" data-i18n="occ_self_emp">🛒 Self-Employed / Street Vendor</option>
-                  <option value="Worker" data-i18n="occ_worker">🏗️ Unorganized / Daily Wage Worker</option>
-                  <option value="Woman" data-i18n="occ_woman">👩 Woman / SHG Member / Homemaker</option>
-                  <option value="Senior Citizen" data-i18n="occ_senior">👴 Senior Citizen (60+)</option>
-                  <option value="Student" data-i18n="occ_student">🎓 Student / Scholar</option>
-                  <option value="Unemployed" data-i18n="occ_unemployed">🔍 Unemployed / Job Seeker</option>
+                  <option value="All" selected>All Citizens (Any Occupation)</option>
+                  <option value="Farmer">🌾 Farmer / Agricultural Worker</option>
+                  <option value="Artisan">🔨 Artisan / Traditional Craftsman</option>
+                  <option value="Business Owner">💼 Small Business / MSME Owner</option>
+                  <option value="Self-Employed">🛒 Self-Employed / Street Vendor</option>
+                  <option value="Worker">🏗️ Unorganized / Daily Wage Worker</option>
+                  <option value="Woman">👩 Woman / SHG Member / Homemaker</option>
+                  <option value="Senior Citizen">👴 Senior Citizen (60+)</option>
+                  <option value="Student">🎓 Student / Scholar</option>
+                  <option value="Unemployed">🔍 Unemployed / Job Seeker</option>
                 </select>
               </div>
 
               <div class="screener-form-grid">
                 <div class="screener-form-group">
-                  <label for="hero-screener-cat" class="screener-label" data-i18n="lbl_social_cat">Social Category</label>
+                  <label for="hero-screener-cat" class="screener-label">Social Category</label>
                   <select id="hero-screener-cat" class="screener-select">
-                    <option value="All" data-i18n="cat_all">All Categories</option>
-                    <option value="OBC" selected data-i18n="cat_obc">OBC</option>
-                    <option value="SC" data-i18n="cat_sc">SC</option>
-                    <option value="ST" data-i18n="cat_st">ST</option>
-                    <option value="General" data-i18n="cat_gen">General</option>
-                    <option value="EWS" data-i18n="cat_ews">EWS</option>
+                    <option value="All">All Categories</option>
+                    <option value="OBC" selected>OBC</option>
+                    <option value="SC">SC</option>
+                    <option value="ST">ST</option>
+                    <option value="General">General</option>
+                    <option value="EWS">EWS</option>
                   </select>
                 </div>
 
                 <div class="screener-form-group">
-                  <label for="hero-screener-inc" class="screener-label" data-i18n="lbl_family_income">Annual Family Income</label>
+                  <label for="hero-screener-inc" class="screener-label">Annual Family Income</label>
                   <select id="hero-screener-inc" class="screener-select">
-                    <option value="250000" selected data-i18n="inc_250k">Up to ₹2.5 Lakhs</option>
-                    <option value="450000" data-i18n="inc_450k">Up to ₹4.5 Lakhs</option>
-                    <option value="800000" data-i18n="inc_800k">Up to ₹8.0 Lakhs</option>
-                    <option value="1000000" data-i18n="inc_above_800k">Above ₹8 Lakhs</option>
+                    <option value="250000" selected>Up to ₹2.5 Lakhs</option>
+                    <option value="450000">Up to ₹4.5 Lakhs</option>
+                    <option value="800000">Up to ₹8.0 Lakhs</option>
+                    <option value="1000000">Above ₹8 Lakhs</option>
                   </select>
                 </div>
               </div>
@@ -201,18 +201,18 @@
                 <div class="screener-result-top">
                   <div>
                     <span class="screener-result-count" id="hero-screener-count">50 Schemes Found</span>
-                    <span class="screener-result-desc screener-result-quote" data-i18n="screener_quote">The right opportunity starts with the right information.</span>
+                    <span class="screener-result-desc screener-result-quote">The right opportunity starts with the right information.</span>
                   </div>
                 </div>
               </div>
 
               <button type="button" id="hero-screener-submit" class="btn btn-primary btn-block btn-screener">
-                <span data-i18n="btn_screener_submit">View Matching Schemes &amp; Criteria →</span>
+                View Matching Schemes &amp; Criteria →
               </button>
             </form>
 
             <div class="screener-card-footer">
-              <span data-i18n="screener_footer">🛡️ No registration required • Privacy protected</span>
+              <span>🛡️ No registration required • Privacy protected</span>
             </div>
 
           </div>
@@ -225,7 +225,7 @@
   <!-- Section: Ministry & Official Source Accreditation Ticker -->
   <section class="ministry-ticker-section" aria-label="Official Verification Sources">
     <div class="container">
-      <p class="ticker-heading" data-i18n="ticker_heading">VERIFIED GUIDELINES FROM RECOGNIZED CENTRAL &amp; STATE MINISTRIES</p>
+      <p class="ticker-heading">VERIFIED GUIDELINES FROM RECOGNIZED CENTRAL &amp; STATE MINISTRIES</p>
       <div class="ministry-logo-grid">
         <div class="ministry-item">
           <span class="ministry-seal">🏛️</span>
