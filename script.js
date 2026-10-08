@@ -8834,213 +8834,17 @@ document.addEventListener("DOMContentLoaded", () => {
 })();
 
 
-// === PERFECT HIGH CONTRAST & READ PAGE ENGINE ===
+
+
+// === CLEAN HIGH CONTRAST & ACCESSIBILITY AUDIO ENGINE ===
 (function() {
-  // 1. DYNAMIC HIGH CONTRAST STYLES INJECTION
-  var styleId = 'accessibility-high-contrast-styles';
-  var existingStyle = document.getElementById(styleId);
-  if (!existingStyle) {
-    var style = document.createElement('style');
-    style.id = styleId;
-    style.innerHTML = `
-      body.high-contrast-mode {
-        background-color: #000000 !important;
-        color: #ffffff !important;
-      }
-      body.high-contrast-mode * {
-        text-shadow: none !important;
-        box-shadow: none !important;
-      }
-      body.high-contrast-mode .hero, 
-      body.high-contrast-mode .screener-card,
-      body.high-contrast-mode .scheme-card,
-      body.high-contrast-mode .detail-card,
-      body.high-contrast-mode .modal-content,
-      body.high-contrast-mode nav,
-      body.high-contrast-mode header,
-      body.high-contrast-mode footer,
-      body.high-contrast-mode .card,
-      body.high-contrast-mode [class*="card"] {
-        background-color: #0a0a0a !important;
-        color: #ffffff !important;
-        border: 2px solid #ffffff !important;
-      }
-      body.high-contrast-mode h1, 
-      body.high-contrast-mode h2, 
-      body.high-contrast-mode h3, 
-      body.high-contrast-mode .text-accent,
-      body.high-contrast-mode .hero-heading-highlight {
-        color: #ffff00 !important;
-      }
-      body.high-contrast-mode p, 
-      body.high-contrast-mode span, 
-      body.high-contrast-mode label {
-        color: #ffffff !important;
-      }
-      body.high-contrast-mode button, 
-      body.high-contrast-mode .btn,
-      body.high-contrast-mode input[type="submit"] {
-        background-color: #ffff00 !important;
-        color: #000000 !important;
-        font-weight: bold !important;
-        border: 2px solid #ffffff !important;
-      }
-      body.high-contrast-mode input, 
-      body.high-contrast-mode select, 
-      body.high-contrast-mode textarea {
-        background-color: #1a1a1a !important;
-        color: #ffff00 !important;
-        border: 2px solid #ffff00 !important;
-      }
-      body.high-contrast-mode a {
-        color: #00ffff !important;
-        text-decoration: underline !important;
-      }
-    `;
-    document.head.appendChild(style);
-  }
-
-  // 2. MULTILINGUAL LABELS FOR CONTRAST & READ PAGE
-  var LABELS = {
-    "hi-IN": {
-      normal: "☀️ सामान्य कंट्रास्ट",
-      high: "🌓 उच्च कंट्रास्ट",
-      read: "🔊 पेज पढ़ें",
-      stop: "⏹ पढ़ना रोकें"
-    },
-    "mr-IN": {
-      normal: "☀️ सामान्य कॉन्ट्रास्ट",
-      high: "🌓 उच्च कॉन्ट्रास्ट",
-      read: "🔊 पेज वाचा",
-      stop: "⏹ थांबवा"
-    },
-    "bn-IN": {
-      normal: "☀️ স্বাভাবিক কনট্রাস্ট",
-      high: "🌓 উচ্চ কনট্রাস্ট",
-      read: "🔊 পৃষ্ঠা পড়ুন",
-      stop: "⏹ পড়া বন্ধ করুন"
-    },
-    "ta-IN": {
-      normal: "☀️ இயல்பான மாறுபாடு",
-      high: "🌓 அதிக மாறுபாடு",
-      read: "🔊 பக்கத்தைப் படியுங்கள்",
-      stop: "⏹ நிறுத்துங்கள்"
-    },
-    "te-IN": {
-      normal: "☀️ సాధారణ కాంట్రాస్ట్",
-      high: "🌓 అధిక కాంట్రాస్ట్",
-      read: "🔊 పేజీ చదవండి",
-      stop: "⏹ ఆపండి"
-    },
-    "en-IN": {
-      normal: "☀️ Normal Contrast",
-      high: "🌓 High Contrast",
-      read: "🔊 Read Page",
-      stop: "⏹ Stop Reading"
-    }
-  };
-
-  function updateAccessibilityBar() {
-    var lang = (typeof currentLangCode !== 'undefined' && currentLangCode) ? currentLangCode : (document.getElementById('site-lang-select') ? document.getElementById('site-lang-select').value : 'en-IN');
-    var l = LABELS[lang] || LABELS["en-IN"];
-
-    var cBtn = document.getElementById("high-contrast-btn");
-    if (cBtn) {
-      var isHigh = document.body.classList.contains("high-contrast-mode");
-      cBtn.textContent = isHigh ? l.normal : l.high;
-    }
-
-    var rBtn = document.getElementById("read-page-global-btn");
-    if (rBtn) {
-      var isSpeaking = window.speechSynthesis && window.speechSynthesis.speaking;
-      rBtn.innerHTML = isSpeaking ? l.stop : l.read;
-      rBtn.style.backgroundColor = isSpeaking ? '#e53e3e' : '';
-      rBtn.style.color = isSpeaking ? '#ffffff' : '';
-    }
-  }
-
-  // 3. OVERRIDE CONTRAST TOGGLE
-  var cBtn = document.getElementById("high-contrast-btn");
-  if (cBtn) {
-    cBtn.onclick = function(e) {
-      e.preventDefault();
-      var isHigh = document.body.classList.toggle("high-contrast-mode");
-      localStorage.setItem("schemematch_contrast", isHigh.toString());
-      updateAccessibilityBar();
-    };
-  }
-
-  // 4. OVERRIDE READ PAGE PLAY/STOP TOGGLE
-  var rBtn = document.getElementById("read-page-global-btn");
-  if (rBtn) {
-    rBtn.onclick = function(e) {
-      e.preventDefault();
-      if (window.speechSynthesis && window.speechSynthesis.speaking) {
-        window.speechSynthesis.cancel();
-        setTimeout(updateAccessibilityBar, 50);
-        return;
-      }
-
-      window.speechSynthesis.cancel();
-
-      // Read meaningful clean summary of current page
-      var text = "";
-      var mainHeading = document.querySelector('h1, .hero-heading');
-      if (mainHeading) text += mainHeading.textContent.trim() + "। ";
-
-      var cards = document.querySelectorAll('.scheme-card, .result-card');
-      if (cards.length > 0) {
-        text += "पात्र योजनाएं हैं: ";
-        cards.forEach(function(c, idx) {
-          if (idx < 4) {
-            var title = c.querySelector('h2, h3, .scheme-name');
-            if (title) text += (idx + 1) + ". " + title.textContent.trim() + "। ";
-          }
-        });
-      } else {
-        var desc = document.querySelector('.hero-subtext, p');
-        if (desc) text += desc.textContent.trim();
-      }
-
-      var lang = (typeof currentLangCode !== 'undefined' && currentLangCode) ? currentLangCode : 'hi-IN';
-      var utter = new SpeechSynthesisUtterance(text);
-      utter.lang = lang;
-      utter.rate = 0.95;
-
-      var voices = window.speechSynthesis.getVoices();
-      var v = voices.find(function(item) { return item.lang && item.lang.startsWith(lang.split('-')[0]); });
-      if (v) utter.voice = v;
-
-      utter.onstart = updateAccessibilityBar;
-      utter.onend = updateAccessibilityBar;
-      utter.onerror = updateAccessibilityBar;
-
-      window.speechSynthesis.speak(utter);
-      setTimeout(updateAccessibilityBar, 50);
-    };
-  }
-
-  // ESC key stops speech immediately
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && window.speechSynthesis && window.speechSynthesis.speaking) {
-      window.speechSynthesis.cancel();
-      setTimeout(updateAccessibilityBar, 50);
-    }
-  });
-
-  setInterval(updateAccessibilityBar, 400);
-})();
-
-
-// === HIGH CONTRAST BUTTON TEXT VISIBILITY FIX ===
-(function() {
-  var style = document.getElementById('accessibility-high-contrast-styles');
+  // 1. High Contrast Styling
+  var style = document.getElementById('high-contrast-override-style');
   if (!style) {
     style = document.createElement('style');
-    style.id = 'accessibility-high-contrast-styles';
+    style.id = 'high-contrast-override-style';
     document.head.appendChild(style);
   }
-
   style.innerHTML = `
     body.high-contrast-mode {
       background-color: #000000 !important;
@@ -9050,12 +8854,11 @@ document.addEventListener("DOMContentLoaded", () => {
     body.high-contrast-mode .screener-card,
     body.high-contrast-mode .scheme-card,
     body.high-contrast-mode .detail-card,
-    body.high-contrast-mode .modal-content,
+    body.high-contrast-mode .card,
+    body.high-contrast-mode [class*="card"],
     body.high-contrast-mode nav,
     body.high-contrast-mode header,
-    body.high-contrast-mode footer,
-    body.high-contrast-mode .card,
-    body.high-contrast-mode [class*="card"] {
+    body.high-contrast-mode footer {
       background-color: #0a0a0a !important;
       color: #ffffff !important;
       border: 2px solid #ffffff !important;
@@ -9072,29 +8875,18 @@ document.addEventListener("DOMContentLoaded", () => {
     body.high-contrast-mode label {
       color: #ffffff !important;
     }
-
-    /* === SARE BUTTONS PAR BLACK TEXT WITH HIGH VISIBILITY === */
-    body.high-contrast-mode button,
-    body.high-contrast-mode button *,
+    body.high-contrast-mode button:not(#read-page-global-btn.speaking),
+    body.high-contrast-mode button:not(#read-page-global-btn.speaking) *,
     body.high-contrast-mode .btn,
-    body.high-contrast-mode .btn *,
-    body.high-contrast-mode [class*="btn"],
-    body.high-contrast-mode [class*="btn"] *,
-    body.high-contrast-mode .floating-btn,
-    body.high-contrast-mode .floating-btn * {
+    body.high-contrast-mode .btn * {
       background-color: #ffff00 !important;
       color: #000000 !important;
       font-weight: 800 !important;
-      border-color: #ffffff !important;
     }
-
-    /* Red Stop Button Exceptions */
-    body.high-contrast-mode button#read-page-global-btn[style*="rgb(229, 62, 62)"],
-    body.high-contrast-mode button#read-page-global-btn[style*="rgb(229, 62, 62)"] * {
+    body.high-contrast-mode #read-page-global-btn.speaking {
       background-color: #e53e3e !important;
       color: #ffffff !important;
     }
-
     body.high-contrast-mode input, 
     body.high-contrast-mode select, 
     body.high-contrast-mode textarea {
@@ -9107,4 +8899,139 @@ document.addEventListener("DOMContentLoaded", () => {
       text-decoration: underline !important;
     }
   `;
+
+  var cBtn = document.getElementById("high-contrast-btn");
+  var rBtn = document.getElementById("read-page-global-btn");
+  var isSpeaking = false;
+
+  function updateBarLabels() {
+    var lang = (typeof currentLangCode !== 'undefined' && currentLangCode) ? currentLangCode : 'en-IN';
+    var isHigh = document.body.classList.contains("high-contrast-mode");
+    
+    if (cBtn) {
+      if (lang === 'hi-IN') cBtn.textContent = isHigh ? "☀️ सामान्य कंट्रास्ट" : "🌓 उच्च कंट्रास्ट";
+      else if (lang === 'mr-IN') cBtn.textContent = isHigh ? "☀️ सामान्य कॉन्ट्रास्ट" : "🌓 उच्च कॉन्ट्रास्ट";
+      else if (lang === 'bn-IN') cBtn.textContent = isHigh ? "☀️ স্বাভাবিক কনট্রাস্ট" : "🌓 উচ্চ কনট্রাস্ট";
+      else if (lang === 'ta-IN') cBtn.textContent = isHigh ? "☀️ இயல்பான மாறுபாடு" : "🌓 அதிக மாறுபாடு";
+      else if (lang === 'te-IN') cBtn.textContent = isHigh ? "☀️ సాధారణ కాంట్రాస్ట్" : "🌓 అధిక కాంట్రాస్ట్";
+      else cBtn.textContent = isHigh ? "☀️ Normal Contrast" : "🌓 High Contrast";
+    }
+
+    if (rBtn) {
+      if (isSpeaking) {
+        rBtn.classList.add('speaking');
+        rBtn.style.backgroundColor = '#e53e3e';
+        rBtn.style.color = '#ffffff';
+        rBtn.innerHTML = '⏹ Stop Reading';
+      } else {
+        rBtn.classList.remove('speaking');
+        rBtn.style.backgroundColor = '';
+        rBtn.style.color = '';
+        if (lang === 'hi-IN') rBtn.innerHTML = '🔊 पेज पढ़ें';
+        else if (lang === 'mr-IN') rBtn.innerHTML = '🔊 पेज वाचा';
+        else if (lang === 'bn-IN') rBtn.innerHTML = '🔊 পৃষ্ঠা পড়ুন';
+        else if (lang === 'ta-IN') rBtn.innerHTML = '🔊 பக்கத்தைப் படியுங்கள்';
+        else if (lang === 'te-IN') rBtn.innerHTML = '🔊 పేజీ చదవండి';
+        else rBtn.innerHTML = '🔊 Read Page';
+      }
+    }
+  }
+
+  function stopSpeech() {
+    if (window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+    }
+    isSpeaking = false;
+    updateBarLabels();
+  }
+
+  // 2. High Contrast Toggle Click
+  if (cBtn) {
+    cBtn.onclick = function(e) {
+      if (e) e.preventDefault();
+      var isHigh = document.body.classList.toggle("high-contrast-mode");
+      localStorage.setItem("schemematch_contrast", isHigh.toString());
+      updateBarLabels();
+    };
+  }
+
+  // 3. Read Page Play/Stop Click
+  if (rBtn) {
+    rBtn.onclick = function(e) {
+      if (e) e.preventDefault();
+
+      // Agar bol raha hai -> STOP KARO
+      if (isSpeaking || (window.speechSynthesis && window.speechSynthesis.speaking)) {
+        stopSpeech();
+        return;
+      }
+
+      if (!('speechSynthesis' in window)) {
+        alert("Speech synthesis is not supported in this browser.");
+        return;
+      }
+
+      window.speechSynthesis.cancel();
+
+      // Chrome delay bypass: 80ms wait so audio speaks smoothly
+      setTimeout(function() {
+        var text = "";
+        var h1 = document.querySelector('h1, .hero-heading');
+        if (h1) text += h1.textContent.trim() + "। ";
+
+        var cards = document.querySelectorAll('.scheme-card, .result-card');
+        if (cards.length > 0) {
+          text += "पात्र योजनाएं: ";
+          cards.forEach(function(c, i) {
+            if (i < 4) {
+              var title = c.querySelector('h2, h3, .scheme-name');
+              if (title) text += (i + 1) + ". " + title.textContent.trim() + "। ";
+            }
+          });
+        } else {
+          var desc = document.querySelector('.hero-subtext, p');
+          if (desc) text += desc.textContent.trim();
+        }
+
+        if (!text) text = "Welcome to SchemeMatch Portal.";
+
+        var lang = (typeof currentLangCode !== 'undefined' && currentLangCode) ? currentLangCode : 'hi-IN';
+        var utter = new SpeechSynthesisUtterance(text);
+        utter.lang = lang;
+        utter.rate = 0.95;
+
+        var voices = window.speechSynthesis.getVoices();
+        if (voices && voices.length > 0) {
+          var v = voices.find(function(item) { return item.lang && item.lang.startsWith(lang.split('-')[0]); });
+          if (v) utter.voice = v;
+        }
+
+        utter.onstart = function() {
+          isSpeaking = true;
+          updateBarLabels();
+        };
+        utter.onend = function() {
+          isSpeaking = false;
+          updateBarLabels();
+        };
+        utter.onerror = function() {
+          isSpeaking = false;
+          updateBarLabels();
+        };
+
+        window.speechSynthesis.speak(utter);
+        isSpeaking = true;
+        updateBarLabels();
+      }, 80);
+    };
+  }
+
+  // Keyboard Escape dabate hi turant Stop
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && isSpeaking) {
+      stopSpeech();
+    }
+  });
+
+  setInterval(updateBarLabels, 500);
 })();
